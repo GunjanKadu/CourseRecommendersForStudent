@@ -5,14 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None"  WindowStartupLocation="CenterScreen">
     <Grid>
-        <Frame x:Name="Main" Content="" HorizontalAlignment="Center" Height="399" VerticalAlignment="Top" Width="442" Margin="340,10,0,0" NavigationUIVisibility="Hidden"/>
-        <Label Content="Testing" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="103,33,0,0"/>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Margin="77,191,0,185" Width="97" >
-            <Button Content="Page1" Click="Btn_clickP1"/>
-            <Button Content="Page2" Click="Btn_clickP2" Margin="20,0,0,0"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="401*"/>
+        </Grid.RowDefinitions>
+        <StackPanel VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="442" Background="#FF1E1E1E" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.281"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.495"/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
         </StackPanel>
+
+        <StackPanel Height="9" VerticalAlignment="Top" HorizontalAlignment="Center" Width="590" Margin="202,0,0,0" Background="#FFB20837" Grid.ColumnSpan="2" />
+        <StackPanel HorizontalAlignment="Left" Height="112" VerticalAlignment="Top" Width="83" Margin="255,0,0,0" Background="#FFB20837" Grid.RowSpan="2"/>
+        <Label Content="SMICE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,22,0,0" FontFamily="Arial Black" Foreground="White" FontWeight="Bold" Width="59" Grid.Row="1" />
+        <Image Margin="270,14,37,379" Source="MainIcon.png" Stretch="Fill" RenderTransformOrigin="0.579,-0.306" Grid.RowSpan="2"/>
+        <Label Content="Smart Choice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="269,41,0,0" FontFamily="Arial" Foreground="White" Width="62" FontSize="8" RenderTransformOrigin="0.662,-0.509" Grid.Row="1" />
+        <Button Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="23,71,0,0" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Grid.Row="1" />
+        <Button Content="     Courses" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="23,142,0,0" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Grid.Row="1" />
+        <Button Content="Test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="23,210,0,0" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Grid.Row="1" />
+        <Image Margin="26,71,304,300" Grid.Row="1" Source="icons8_home_30px.png" Stretch="Fill"/>
+        <Image Margin="23,142,304,229" Grid.Row="1" Source="icons8_book_50px.png" Stretch="Fill"/>
+        <Image Margin="23,210,304,161" Grid.Row="1" Source="icons8_test_50px_2.png" Stretch="Fill"/>
+        <Frame x:Name="Main"  NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="269" Margin="222,77,0,0" Grid.Row="1" VerticalAlignment="Top" Width="550" Grid.ColumnSpan="2"/>
+        <Button Content="Next" Grid.Column="1" HorizontalAlignment="Left" Margin="337,351,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Btn_GoToCourses" Background="#FF1E1E1E" Foreground="White" />
+        <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="33,351,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Btn_GoToInfo" Background="#FF1E1E1E" Foreground="White" />
 
     </Grid>
 </Window>

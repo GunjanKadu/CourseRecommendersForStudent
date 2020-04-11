@@ -6,9 +6,9 @@
       xmlns:local="clr-namespace:WpfApp1"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Page2">
+      Title="Courses">
 
     <Grid>
-        <TextBlock Text="Page 2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
+        <TextBlock Text="Courses" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
     </Grid>
 </Page>

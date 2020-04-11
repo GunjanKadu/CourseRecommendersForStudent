@@ -23,15 +23,18 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Btn_clickP1(object sender, RoutedEventArgs e)
-        {
             Main.Content = new Page1();
         }
-        private void Btn_clickP2(object sender, RoutedEventArgs e)
+
+        private void Btn_GoToCourses(object sender, RoutedEventArgs e)
         {
             Main.Content = new Page2();
         }
+        private void Btn_GoToInfo(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Page1();
+        }
+        
+
     }
 }

@@ -108,5 +108,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MainIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8_home_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8_home_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8_book_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8_book_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8_book_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8_test_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8_test_50px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8_test_50px_2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
