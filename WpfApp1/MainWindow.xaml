@@ -39,7 +39,7 @@
         <Image Margin="23,210,304,161" Grid.Row="1" Source="icons8_test_50px_2.png" Stretch="Fill"/>
         <Frame x:Name="Main"  NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="269" Margin="222,77,0,0" Grid.Row="1" VerticalAlignment="Top" Width="550" Grid.ColumnSpan="2"/>
         <Button Content="Next" Grid.Column="1" HorizontalAlignment="Left" Margin="337,351,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Btn_GoToCourses" Background="#FF1E1E1E" Foreground="White" />
-        <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="33,351,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Btn_GoToInfo" Background="#FF1E1E1E" Foreground="White" />
+        <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="246,351,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Btn_GoToInfo" Background="#FF1E1E1E" Foreground="White" />
 
     </Grid>
 </Window>
