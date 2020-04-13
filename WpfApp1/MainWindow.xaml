@@ -30,9 +30,8 @@
         <Image Margin="23,71,734.333,342.333" Source="icons8_home_30px.png" Stretch="Fill" RenderTransformOrigin="0.451,-0.533"/>
         <Image Margin="23,148,740.333,271.333" Source="icons8_book_50px.png" Stretch="Fill"/>
         <Image Margin="23,210,734.333,203.333" Source="icons8_test_50px_2.png" Stretch="Fill"/>
-        <Frame x:Name="Main"  NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="291" Margin="233,117,0,0" VerticalAlignment="Top" Width="550"/>
-        <Button Content="Next" HorizontalAlignment="Left" Margin="686,413,0,0" VerticalAlignment="Top" Width="75" Click="Btn_GoToCourses" Background="#FF1E1E1E" Foreground="White" />
-        <Button Content="Back" HorizontalAlignment="Left" Margin="595,413,0,0" VerticalAlignment="Top" Width="75" Click="Btn_GoToInfo" Background="#FF1E1E1E" Foreground="White" />
+        <Frame x:Name="Main"  NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="443" VerticalAlignment="Top" Width="793"/>
+        
 
     </Grid>
 </Window>

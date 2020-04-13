@@ -9,7 +9,7 @@
       Title="Page1">
 
     <Grid Margin="0,0,0,10">
-        <StackPanel Margin="10,10,10,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="225">
+        <StackPanel Margin="219,135,30,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="255">
 
             <TextBlock Text="How It Works?" FontWeight="Bold" FontSize="18" Height="36" Foreground="White" Margin="10,0,0,0"/>
 
@@ -25,6 +25,12 @@
             <TextBlock Text="&#x9;&#x9;•Courses Suggested" Foreground="White" />
             <TextBlock Text="&#x9;&#x9;•Universities Offering Thouse Courses" Foreground="White" />
             <TextBlock Text="&#x9;&#x9;•Jobs Eligible For" Foreground="White" />
+
+        </StackPanel>
+        <StackPanel Margin="219,395,30,10">
+            <Button Margin="479,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" RenderTransformOrigin="4.295,-0.694" Width="65" Background="Black" Foreground="White">
+                <Hyperlink NavigateUri="Page2.xaml" Foreground="White" TextDecorations="{x:Null}">Next>></Hyperlink>
+            </Button>
 
         </StackPanel>
 

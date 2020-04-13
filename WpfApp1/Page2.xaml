@@ -8,8 +8,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Courses">
 
-    <Grid>
-        <StackPanel Margin="10,10,10,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="225">
+    <Grid Height="450" VerticalAlignment="Top">
+        <StackPanel  Margin="219,135,30,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="255">
 
             <TextBlock Text="Courses Know More...." FontWeight="Bold" FontSize="18" Height="36" Foreground="White" Margin="10,0,0,0"/>
             <RadioButton Content="Programming" Foreground="White" Margin="99,0,0,0" Height="24"/>
@@ -20,9 +20,18 @@
             <RadioButton Content="Data Science" Foreground="White" Margin="99,0,0,0" Height="24"/>
             <RadioButton Content="Data Analysis" Foreground="White" Margin="99,0,0,0" Height="24"/>
             <RadioButton Content="Signals and System" Foreground="White" Margin="99,0,0,0" Height="24"/>
-            <Button Content="Next"/>
 
         </StackPanel>
-       
+        <StackPanel Margin="219,395,30,10">
+            <Button  Margin="473,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" RenderTransformOrigin="4.295,-0.694" Width="70" Background="Black" Foreground="White">
+                <Hyperlink NavigateUri="Page2.xaml" Foreground="White" TextDecorations="{x:Null}">Next&gt;&gt;</Hyperlink>
+            </Button>
+            <Button Margin="0,-21,86.667,0" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="4.295,-0.694" Width="70" Background="Black" Foreground="White"  >
+                <Hyperlink NavigateUri="Page1.xaml" Foreground="White" TextDecorations="{x:Null}">&lt;&lt;Previous</Hyperlink>
+            </Button>
+
+        </StackPanel>
+
+
     </Grid>
 </Page>
