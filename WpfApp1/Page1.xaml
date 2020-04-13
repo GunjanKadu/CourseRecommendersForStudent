@@ -8,18 +8,24 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Grid>
-        <StackPanel Margin="10,10,10,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="290">
+    <Grid Margin="0,0,0,10">
+        <StackPanel Margin="10,10,10,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="225">
 
             <TextBlock Text="How It Works?" FontWeight="Bold" FontSize="18" Height="36" Foreground="White" Margin="10,0,0,0"/>
 
             <TextBlock Text="&#x9;•Check The Courses Offered" Foreground="White"/>
+            <TextBlock Text="&#x9;&#x9;•Electrical &amp; Electronics - Microprocessor, Signals...." Foreground="White" />
+            <TextBlock Text="&#x9;&#x9;•Information Technology - Data Science, Cloud Copmuting...." Foreground="White"/>
+            <TextBlock Text="&#x9;&#x9;•Computer Science - Mathematics, Programming...." Foreground="White"/>
+
+            <TextBlock />
             <TextBlock Text="&#x9;•Fill Out the Smart Questionnaire" Foreground="White"/>
-            <TextBlock Text="&#x9;•Check Your Results With Details" Foreground="White"/>
+            <TextBlock />
+            <TextBlock Text="&#x9;•Check Out The" Foreground="White"/>
+            <TextBlock Text="&#x9;&#x9;•Courses Suggested" Foreground="White" />
+            <TextBlock Text="&#x9;&#x9;•Universities Offering Thouse Courses" Foreground="White" />
+            <TextBlock Text="&#x9;&#x9;•Jobs Eligible For" Foreground="White" />
 
-            
-
-         
         </StackPanel>
 
     </Grid>
