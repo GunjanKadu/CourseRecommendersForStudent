@@ -20,7 +20,7 @@
             <RadioButton Content="Data Science" Foreground="White" Margin="99,0,0,0" Height="24"/>
             <RadioButton Content="Data Analysis" Foreground="White" Margin="99,0,0,0" Height="24"/>
             <RadioButton Content="Signals and System" Foreground="White" Margin="99,0,0,0" Height="24"/>
-
+            <Button Content="Next"/>
 
         </StackPanel>
        
