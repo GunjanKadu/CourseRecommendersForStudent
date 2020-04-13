@@ -34,7 +34,7 @@ namespace WpfApp1
         {
             Main.Content = new Page1();
         }
-        
 
+        
     }
 }
