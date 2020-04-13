@@ -9,6 +9,20 @@
       Title="Courses">
 
     <Grid>
-        <TextBlock Text="Courses" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
+        <StackPanel Margin="10,10,10,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="225">
+
+            <TextBlock Text="Courses Know More...." FontWeight="Bold" FontSize="18" Height="36" Foreground="White" Margin="10,0,0,0"/>
+            <RadioButton Content="Programming" Foreground="White" Margin="99,0,0,0" Height="24"/>
+            <RadioButton Content="Mathematics" Foreground="White" Margin="99,0,0,0"  Height="24"/>
+            <RadioButton Content="Security" Foreground="White" Margin="99,0,0,0" Height="24"/>
+            <RadioButton Content="Cloud Computing" Foreground="White" Margin="99,0,0,0" Height="24"/>
+            <RadioButton Content="MicroProcessors and MicroController" Foreground="White" Margin="99,0,0,0" Height="24"/>
+            <RadioButton Content="Data Science" Foreground="White" Margin="99,0,0,0" Height="24"/>
+            <RadioButton Content="Data Analysis" Foreground="White" Margin="99,0,0,0" Height="24"/>
+            <RadioButton Content="Signals and System" Foreground="White" Margin="99,0,0,0" Height="24"/>
+
+
+        </StackPanel>
+       
     </Grid>
 </Page>
