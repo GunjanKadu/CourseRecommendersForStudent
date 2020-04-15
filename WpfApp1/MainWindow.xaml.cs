@@ -23,18 +23,17 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            Main.Content = new Page1();
         }
 
         private void Btn_GoToCourses(object sender, RoutedEventArgs e)
         {
-            Main.Content = new Page2();
+            var win = new Courses();
+            win.Owner = this;
+            //win.Show();
+            Visibility = Visibility.Hidden;
+            win.ShowDialog();
         }
-        private void Btn_GoToInfo(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new Page1();
-        }
-
+      
         
     }
 }

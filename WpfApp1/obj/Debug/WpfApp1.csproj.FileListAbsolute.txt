@@ -17,3 +17,5 @@ C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStu
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Courses.g.cs
+C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Courses.baml
