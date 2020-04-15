@@ -11,10 +11,11 @@
         <Grid Height="450" VerticalAlignment="Top">
             <StackPanel  Margin="230,0,0.333,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="417">
                 <StackPanel Margin="10,0,-0.667,0" Orientation="Vertical" DataContext="{Binding ElementName=List_Courses,Path=SelectedItem}">
-
-                    <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="18" Height="36" Foreground="White"/>
+                    <TextBlock x:Name="CourseTitle" Text="{Binding Title}" FontWeight="Bold" FontSize="18" Height="36" Foreground="White"/>
+                    <TextBlock Text="{Binding content_1}"  Foreground="White" Margin="60,0,0,10"/>
+                    <TextBlock Text="{Binding content_2}"  Foreground="White" Margin="60,0,0,10"/>
+                    <TextBlock Text="{Binding content_3}"  Foreground="White" Margin="60,0,0,10"/>
                 </StackPanel>
-
             </StackPanel>
             <ListBox Name="List_Courses" HorizontalAlignment="Left" Height="417" VerticalAlignment="Top" Width="230" Background="#FF1E1E1E" SelectionChanged="List_Courses_SelectionChanged" >
                 <ListBox.ItemTemplate>
