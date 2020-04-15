@@ -31,7 +31,7 @@
             <Button Content="     Courses" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Btn_GoToCourses" />
         </StackPanel>
         <StackPanel Margin="21,218,635.333,195.333" Orientation="Horizontal">
-            <Image Source="icons8_test_50px_2.png" Stretch="Fill" Width="30"/>
+            <Image Source="icons8_test_50px.png" Stretch="Fill" Width="30"/>
             <Button Content="Test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" />
         </StackPanel>
         <StackPanel Margin="224,160,25.333,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="255">

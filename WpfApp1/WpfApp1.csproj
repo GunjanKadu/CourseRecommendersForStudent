@@ -75,22 +75,8 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Page1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Page2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page1.xaml.cs">
-      <DependentUpon>Page1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page2.xaml.cs">
-      <DependentUpon>Page2.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -123,34 +109,10 @@
     <Resource Include="Home.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icons8_home_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="icons8_home_30px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="icons8_book_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="icons8_book_32px_1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="icons8_book_50px.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icons8_test_50px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="icons8_test_50px_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="icons8_test_50px_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="icons8_question_mark_100px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="icons8_help_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

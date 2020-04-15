@@ -3,14 +3,10 @@ C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStu
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\bin\Debug\WpfApp1.pdb
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\MainWindow.g.cs
-C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Page1.g.cs
-C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Page2.g.cs
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\App.g.cs
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\MainWindow.baml
-C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Page1.baml
-C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Page2.baml
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.g.resources
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
