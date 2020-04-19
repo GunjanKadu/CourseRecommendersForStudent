@@ -19,18 +19,18 @@ namespace WpfApp1
     /// </summary>
     public partial class Courses : Window
     {
+            List<Course> courseItem = new List<Course>();
         public Courses()
         {
             InitializeComponent();
-            List<Course> courseItem = new List<Course>();
-            courseItem.Add(new Course() { Title = "Programming",content_1="C",content_2="C++",content_3="Java" });
-            courseItem.Add(new Course() { Title = "Mathematics", content_1 = "Coding Theory", content_2 = "Game Theory", content_3 = "Graph Theory" });
-            courseItem.Add(new Course() { Title = "Security", content_1 = "Hacking Tools", content_2 = "Infrastructure Security", content_3 = "Cloud Security" });
-            courseItem.Add(new Course() { Title = "Cloud Computing", content_1 = "Enterprise Social Media", content_2 = "Marketing Analytics", content_3 = "CRM" });
-            courseItem.Add(new Course() { Title = "Micro-Controllers & Micro-Processors", content_1 = "VLSI", content_2 = "Embedded Systems", content_3 = "Assembly Language Progarmming" });
-            courseItem.Add(new Course() { Title = "Data Science", content_1 = "Data Storage Tools", content_2 = "Data Transforming Tools", content_3 = "Developement Tools" });
-            courseItem.Add(new Course() { Title = "Data Analytics", content_1 = "Graphs", content_2 = "Data Analysis Platform", content_3 = "Data WareHousing" });
-            courseItem.Add(new Course() { Title = "Signals & Systems", content_1 = "Digital Communication ", content_2 = "Computer Communication Networks", content_3 = "Electronics Devices & Circuits" });
+            courseItem.Add(new Course() { Title = "Bachelor's In Computer Science",content_1="C",content_2="C++",content_3="Java" });
+            courseItem.Add(new Course() { Title = "Bachelor's In Information Technology", content_1 = "Coding Theory", content_2 = "Game Theory", content_3 = "Graph Theory" });
+            courseItem.Add(new Course() { Title = "Bachelor's In Electronics & Telecommunication", content_1 = "Hacking Tools", content_2 = "Infrastructure Security", content_3 = "Cloud Security" });
+            courseItem.Add(new Course() { Title = "Master's In Computer Science", content_1 = "Enterprise Social Media", content_2 = "Marketing Analytics", content_3 = "CRM" });
+            courseItem.Add(new Course() { Title = "Master's In Big Data & Business Analytics", content_1 = "VLSI", content_2 = "Embedded Systems", content_3 = "Assembly Language Progarmming" });
+            courseItem.Add(new Course() { Title = "Master's In Big Information Technology", content_1 = "Data Storage Tools", content_2 = "Data Transforming Tools", content_3 = "Developement Tools" });
+            courseItem.Add(new Course() { Title = "Master's In International Business And Engineering", content_1 = "Graphs", content_2 = "Data Analysis Platform", content_3 = "Data WareHousing" });
+            courseItem.Add(new Course() { Title = "Master's In Computer Engineering", content_2 = "Computer Communication Networks", content_3 = "Electronics Devices & Circuits" });
 
             List_Courses.ItemsSource = courseItem;
         }
@@ -41,9 +41,11 @@ namespace WpfApp1
 
         }
 
-        private void List_Courses_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Course_Filter_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            var filter = (sender as TextBox).Text.ToLower();
+            var lst = from s in courseItem where s.Title.ToLower().Contains(filter) select s;
+            List_Courses.ItemsSource = lst;
         }
     }
 }
