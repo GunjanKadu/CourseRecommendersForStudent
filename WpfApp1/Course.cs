@@ -12,6 +12,9 @@ namespace WpfApp1
         public string content_1 { get; set; }
         public string content_2 { get; set; }
         public string content_3 { get; set; }
+        public string content_4 { get; set; }
+        public string content_5 { get; set; }
+        public string content_6 { get; set; }
         public string contentDescription_1 { get; set; }
         public string contentDescription_2 { get; set; }
         public string contentDescription_3 { get; set; }
