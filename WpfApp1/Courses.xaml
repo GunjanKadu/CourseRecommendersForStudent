@@ -17,6 +17,7 @@
                 <StackPanel Margin="10,0,-0.667,0" Orientation="Vertical" DataContext="{Binding ElementName=List_Courses,Path=SelectedItem}">
                     <TextBlock x:Name="CourseTitle" Text="{Binding Title}" FontWeight="Bold" Margin="0,10,0,0" FontSize="18" Height="36" Foreground="White" HorizontalAlignment="Center"/>
                     <TextBlock Text="{Binding content_1}"  Foreground="White" Margin="60,0,0,10"/>
+                    <TextBlock Text="{Binding contentDescription_1}"  Foreground="White" Margin="60,0,10,10" Height="61"/>
                     <TextBlock Text="{Binding content_2}"  Foreground="White" Margin="60,0,0,10"/>
                     <TextBlock Text="{Binding content_3}"  Foreground="White" Margin="60,0,0,10"/>
                     <TextBlock Text="{Binding content_4}"  Foreground="White" Margin="60,0,0,10"/>
