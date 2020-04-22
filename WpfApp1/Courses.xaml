@@ -19,18 +19,13 @@
             <StackPanel  Margin="260,0,0.333,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="417">
                 <StackPanel Margin="10,0,-0.667,0" Orientation="Vertical" DataContext="{Binding ElementName=List_Courses,Path=SelectedItem}">
                     <TextBlock x:Name="CourseTitle" Text="{Binding Title}" FontWeight="Bold" Margin="0,10,0,0" FontSize="18" Height="36" Foreground="White" HorizontalAlignment="Center"/>
-                    <!--<TextBlock Text="{Binding content_1}"  Foreground="White" Margin="60,0,0,10"/>
-                    <TextBlock Text="{Binding contentDescription_1}"  Foreground="White" Margin="60,0,10,10" Height="61"/>
-                    <TextBlock Text="{Binding content_2}"  Foreground="White" Margin="60,0,0,10"/>
-                    <TextBlock Text="{Binding content_3}"  Foreground="White" Margin="60,0,0,10"/>
-                    <TextBlock Text="{Binding content_4}"  Foreground="White" Margin="60,0,0,10"/>
-                    <TextBlock Text="{Binding content_5}"  Foreground="White" Margin="60,0,0,10"/>
-                    <TextBlock Text="{Binding content_6}"  Foreground="White" Margin="60,0,0,10"/>-->
                 </StackPanel>
-                <ComboBox Name="Cmbx_CourseTopics" Margin="204,0,97.333,0" SelectionChanged="Cmbx_CourseTopics_SelectionChanged"/>
+                <ComboBox Name="Cmbx_CourseTopics" Margin="204,0,51.333,0" SelectionChanged="Cmbx_CourseTopics_SelectionChanged"/>
             </StackPanel>
-                <TextBlock x:Name="Txt_CourseDesc" TextWrapping="Wrap" Margin="524,103,39,70" Foreground="#FFFEFEFE" FontSize="14" TextAlignment="Justify"/>
-            <ListBox Name="List_Courses" HorizontalAlignment="Left" Height="379" VerticalAlignment="Bottom" Width="246" Background="{x:Null}"  Margin="5,0,0,33" SelectionChanged="List_Courses_SelectionChanged" >
+            <Rectangle Fill="#FFF4F4F5" Stroke="Black" Margin="260,73,0,373"/>
+            <Image Name="Course_Image" Margin="309,164,297,158"/>
+            <TextBlock x:Name="Txt_CourseDesc" TextWrapping="Wrap" Margin="524,108,36,57" Foreground="#FFFEFEFE" FontSize="14" TextAlignment="Justify" />
+            <ListBox Name="List_Courses" HorizontalAlignment="Left" Height="379" VerticalAlignment="Bottom" Width="246" Background="{x:Null}"  Margin="5,0,0,33" SelectionChanged="List_Courses_SelectionChanged" FontSize="11" >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid Margin="0,2">
@@ -44,7 +39,7 @@
                 </ListBox.ItemTemplate>
 
             </ListBox>
-            <TextBlock HorizontalAlignment="Left" Margin="332,46,0,0" TextWrapping="Wrap" Text="Please Select The Topic : " VerticalAlignment="Top" Height="22" Foreground="#FFFBF3F3"/>
+            <TextBlock HorizontalAlignment="Left" Margin="320,48,0,0" TextWrapping="Wrap" Text="Please Select The Topic : " VerticalAlignment="Top" Height="22" Foreground="#FFFBF3F3" FontWeight="Bold"/>
         </Grid>
         <TextBox HorizontalAlignment="Left" Name="Course_Filter" TextChanged="Course_Filter_TextChanged"   Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="245" Margin="6,10,0,0"/>
         <Image Margin="227,12,13.333,381.667" Source="Img/Search.png" Stretch="Fill" RenderTransformOrigin="-0.568,0.457"/>

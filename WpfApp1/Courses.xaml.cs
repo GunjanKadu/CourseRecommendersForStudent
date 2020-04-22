@@ -20,7 +20,7 @@ namespace WpfApp1
     /// </summary>
     public partial class Courses : Window
     {
-            List<Course> courseItem = new List<Course>();
+            
         public Courses()
         {
             InitializeComponent();
@@ -30,13 +30,12 @@ namespace WpfApp1
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Owner.Visibility = Visibility.Visible;
-
         }
 
         private void Course_Filter_TextChanged(object sender, TextChangedEventArgs e)
         {
             var filter = (sender as TextBox).Text.ToLower();
-            var lst = from s in courseItem where s.Title.ToLower().Contains(filter) select s;
+            var lst = from s in App._courses where s.Title.ToLower().Contains(filter) select s;
             List_Courses.ItemsSource = lst;
         }
 
@@ -48,6 +47,20 @@ namespace WpfApp1
 
         private void List_Courses_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (Txt_CourseDesc.Text != "" && Course_Image.Source != null)
+            {
+                // Clean Previously selected course
+                Txt_CourseDesc.Text = "";
+
+                // Clean Previously Selected Image
+                //string imagePath ="";
+                //Uri uri = new Uri(imagePath, UriKind.Absolute);
+                //ImageSource imgSource = new BitmapImage(uri);
+                Course_Image.Source = null;
+
+            }
+
+            // Adding the selected Course Into Combo Box source 
             var lstCourseItems = new List<string>();
             var selection = (sender as ListBox).SelectedItem as Course;
             lstCourseItems.Add(selection.content_1);
@@ -69,10 +82,25 @@ namespace WpfApp1
 
                 foreach (XmlNode node  in doc.DocumentElement)
                 {
+
+                // Loading a selected image from xml file
+
                     string name = node.Attributes[0].InnerText;
-                    if (name==Cmbx_CourseTopics.SelectedItem.ToString())
+                    if (name==Cmbx_CourseTopics.SelectedItem.ToString() + "_img")
                     {
                         foreach (XmlNode child  in node.ChildNodes)
+                        {
+                            string imagePath = child.InnerText;
+                            Uri uri = new Uri(imagePath, UriKind.Absolute);
+                            ImageSource imgSource = new BitmapImage(uri);
+                            Course_Image.Source = imgSource;
+                        }
+                    }
+
+                    // Loading a selected data from xml file
+                    if (name == Cmbx_CourseTopics.SelectedItem.ToString())
+                    {
+                        foreach (XmlNode child in node.ChildNodes)
                         {
                             Txt_CourseDesc.Text = child.InnerText;
                         }
