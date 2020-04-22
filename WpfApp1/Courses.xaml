@@ -18,18 +18,19 @@
             <StackPanel  Margin="260,0,0.333,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="417">
                 <StackPanel Margin="10,0,-0.667,0" Orientation="Vertical" DataContext="{Binding ElementName=List_Courses,Path=SelectedItem}">
                     <TextBlock x:Name="CourseTitle" Text="{Binding Title}" FontWeight="Bold" Margin="0,10,0,0" FontSize="18" Height="36" Foreground="White" HorizontalAlignment="Center"/>
-                    <TextBlock Text="{Binding content_1}"  Foreground="White" Margin="60,0,0,10"/>
+                    <!--<TextBlock Text="{Binding content_1}"  Foreground="White" Margin="60,0,0,10"/>
                     <TextBlock Text="{Binding contentDescription_1}"  Foreground="White" Margin="60,0,10,10" Height="61"/>
                     <TextBlock Text="{Binding content_2}"  Foreground="White" Margin="60,0,0,10"/>
                     <TextBlock Text="{Binding content_3}"  Foreground="White" Margin="60,0,0,10"/>
                     <TextBlock Text="{Binding content_4}"  Foreground="White" Margin="60,0,0,10"/>
                     <TextBlock Text="{Binding content_5}"  Foreground="White" Margin="60,0,0,10"/>
-                    <TextBlock Text="{Binding content_6}"  Foreground="White" Margin="60,0,0,10"/>
+                    <TextBlock Text="{Binding content_6}"  Foreground="White" Margin="60,0,0,10"/>-->
 
 
                 </StackPanel>
+                <ComboBox Name="Cmbx_CourseTopics" Margin="204,0,97.333,0"/>
             </StackPanel>
-            <ListBox Name="List_Courses" HorizontalAlignment="Left" Height="379" VerticalAlignment="Bottom" Width="246" Background="{x:Null}"  Margin="5,0,0,33" >
+            <ListBox Name="List_Courses" HorizontalAlignment="Left" Height="379" VerticalAlignment="Bottom" Width="246" Background="{x:Null}"  Margin="5,0,0,33" SelectionChanged="List_Courses_SelectionChanged" >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid Margin="0,2">

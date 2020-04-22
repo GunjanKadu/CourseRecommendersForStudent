@@ -14,3 +14,4 @@ C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStu
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.pdb
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Courses.g.cs
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Courses.baml
+C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
