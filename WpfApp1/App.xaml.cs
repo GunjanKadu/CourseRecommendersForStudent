@@ -15,10 +15,10 @@ namespace WpfApp1
     public partial class App : Application
     {
         public static ObservableCollection<Course> _courses;
-        private void Application_Exit(object sender, ExitEventArgs e)
-        {
-            MyStorage.WriteXml<ObservableCollection<Course>>(_courses, "courses.xml");
-        }
+        //private void Application_Exit(object sender, ExitEventArgs e)
+        //{
+        //    MyStorage.WriteXml<ObservableCollection<Course>>(_courses, "courses.xml");
+        //}
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {

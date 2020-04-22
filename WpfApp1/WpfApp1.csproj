@@ -104,19 +104,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="MainIcon.png" />
+    <Resource Include="Img\MainIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Home.png" />
+    <Resource Include="Img\Home.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icons8_book_50px.png" />
+    <Resource Include="Img\Book.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icons8_test_50px.png" />
+    <Resource Include="Img\Test.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icons8_search_40px.png" />
+    <Resource Include="Img\Search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

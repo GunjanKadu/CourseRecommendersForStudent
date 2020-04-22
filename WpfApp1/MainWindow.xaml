@@ -22,16 +22,16 @@
         <StackPanel Height="9" VerticalAlignment="Top" HorizontalAlignment="Center" Width="590" Margin="202,0,0,0" Background="#FFB20837" Grid.ColumnSpan="2" />
         <StackPanel HorizontalAlignment="Left" Height="131" VerticalAlignment="Top" Width="98" Margin="255,0,0,0" Background="#FFB20837"/>
         <StackPanel Margin="270,20,454.333,332.333" Orientation="Vertical">
-            <Image Margin="5,0,7,0" Source="MainIcon.png" Stretch="Fill" RenderTransformOrigin="0.579,-0.306" Height="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Image Margin="5,0,7,0" Source="Img/MainIcon.png" Stretch="Fill" RenderTransformOrigin="0.579,-0.306" Height="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Label Content="SMICE" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,0,0" FontFamily="Arial Black" Foreground="White" FontWeight="Bold" Width="59" />
             <Label Content="Smart Choice" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" Foreground="White" Width="62" FontSize="8" RenderTransformOrigin="0.662,-0.509" Height="24" Margin="3,0,0,0" />
         </StackPanel>
         <StackPanel Margin="22,149,634.333,264.333" Orientation="Horizontal">
-            <Image Margin="0,6,0,0" Source="icons8_book_50px.png" Stretch="Fill" Width="30"/>
+            <Image Margin="0,6,0,0" Source="Img/Book.png" Stretch="Fill" Width="30"/>
             <Button Content="     Courses" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Btn_GoToCourses" />
         </StackPanel>
         <StackPanel Margin="21,218,635.333,195.333" Orientation="Horizontal">
-            <Image Source="icons8_test_50px.png" Stretch="Fill" Width="30"/>
+            <Image Source="Img/Test.png" Stretch="Fill" Width="30"/>
             <Button Content="Test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" />
         </StackPanel>
         <StackPanel Margin="224,160,25.333,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="255">

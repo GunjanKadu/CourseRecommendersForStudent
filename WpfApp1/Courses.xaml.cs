@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace WpfApp1
 {
@@ -23,14 +24,6 @@ namespace WpfApp1
         public Courses()
         {
             InitializeComponent();
-            //courseItem.Add(new Course() { Title = "Bachelor's In Computer Science", content_1 = "Objected Oriented Programming C++", contentDescription_1 = "Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.", content_2 = "Objected Oriented Programming Java", content_3 = "Data Structures And Algorithm", content_4 = "Database Mananagement Systems", content_5 = "Computer Networks", content_6 = "Web Technologies" });
-            //courseItem.Add(new Course() { Title = "Bachelor's In Information Techcnology", content_1 = "Objected Oriented Programming", content_2 = "Computer Architecture", content_3 = "Digital Signal Processing", content_4 = "Image Processing", content_5 = "Web Technologies" });
-            //courseItem.Add(new Course() { Title = "Bachelor's In Electronics & Telecommunication", content_1 = "Electronic Devices And Circuits", content_2 = "Microprocessors and MicroControllers", content_3 = "Signals & Systems", content_4 = "Digital Communication", content_5 = "VHDL" });
-            //courseItem.Add(new Course() { Title = "Master's In Computer Science", content_1 = "IT-Security", content_2 = "International Project Management", content_3 = "Software Architecture & Development", content_4 = "Advanced Database", content_5 = "Business Computing", content_6 = "UI & UX" });
-            //courseItem.Add(new Course() { Title = "Master's In Big Data & Business Analytics", content_1 = "Data Engineering", content_2 = "Data Management", content_3 = "Privacy,Ethics & Management", content_4 = "International Law", content_5 = "Data Story Telling" });
-            //courseItem.Add(new Course() { Title = "Master's In Big Information Technology", content_1 = "Information & Coding Theory", content_2 = "Real Time Programming", content_3 = "Embedded Systems", content_4 = "Embedded Security", content_5 = "Robotics", content_6 = "Image Processing" });
-            //courseItem.Add(new Course() { Title = "Master's In International Business And Engineering", content_1 = "Business Law", content_2 = "Market Analysis ", content_3 = "Marketing & Saled", content_4 = "Human Resources", content_5 = "Business Startup" });
-            //courseItem.Add(new Course() { Title = "Master's In Computer Engineering", content_1 = "Computer Architecture", content_2 = "VLSI Design", content_3 = "Advanced Data Structure", content_4 = "Networks & Systems", content_5 = "Embedded Systems" });
 
         }
 
@@ -64,6 +57,28 @@ namespace WpfApp1
             lstCourseItems.Add(selection.content_5);
 
             Cmbx_CourseTopics.ItemsSource = lstCourseItems;
+           
+        }
+
+        private void Cmbx_CourseTopics_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+          if(Cmbx_CourseTopics.SelectedItem != null)
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.Load("Data_Course.xml");
+
+                foreach (XmlNode node  in doc.DocumentElement)
+                {
+                    string name = node.Attributes[0].InnerText;
+                    if (name==Cmbx_CourseTopics.SelectedItem.ToString())
+                    {
+                        foreach (XmlNode child  in node.ChildNodes)
+                        {
+                            Txt_CourseDesc.Text = child.InnerText;
+                        }
+                    }
+                }
+            }
         }
     }
 }
