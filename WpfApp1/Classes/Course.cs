@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace WpfApp1
 {
+    [Serializable]
     public class Course
     {
+        public Course()
+        {
+
+        }
         public string Title { get; set; }
         public string content_1 { get; set; }
         public string content_2 { get; set; }
@@ -18,7 +23,8 @@ namespace WpfApp1
         public string contentDescription_1 { get; set; }
         public string contentDescription_2 { get; set; }
         public string contentDescription_3 { get; set; }
-
+        public string contentDescription_4 { get; set; }
+        public string contentDescription_5 { get; set; }
 
     }
 }

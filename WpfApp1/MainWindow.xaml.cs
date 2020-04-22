@@ -33,7 +33,7 @@ namespace WpfApp1
             Visibility = Visibility.Hidden;
             win.ShowDialog();
         }
+
       
-        
     }
 }
