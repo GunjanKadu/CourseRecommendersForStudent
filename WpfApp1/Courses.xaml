@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Closing="Window_Closing"
         Loaded="Window_Loaded"
-        Title="Courses" Height="450" Width="800"
+        Title="Courses" Height="450" Width="800" WindowStartupLocation="CenterOwner"
         >
     <Grid>
         <Grid.ColumnDefinitions>

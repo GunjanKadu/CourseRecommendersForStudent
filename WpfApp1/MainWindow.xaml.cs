@@ -38,5 +38,14 @@ namespace WpfApp1
         {
             Close();
         }
+
+        private void Button_GoToQuestionareClick(object sender, RoutedEventArgs e)
+        {
+            var win = new Questionare();
+            win.Owner = this;
+            //win.Show();
+            Visibility = Visibility.Hidden;
+            win.ShowDialog();
+        }
     }
 }
