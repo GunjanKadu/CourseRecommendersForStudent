@@ -118,5 +118,11 @@
   <ItemGroup>
     <Resource Include="Img\Search.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\power1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

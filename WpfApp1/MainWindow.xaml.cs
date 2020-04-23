@@ -34,6 +34,9 @@ namespace WpfApp1
             win.ShowDialog();
         }
 
-      
+        private void Btn_Close_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
