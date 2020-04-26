@@ -21,7 +21,10 @@ namespace WpfApp1
     /// </summary>
     public partial class Questionare : Window
     {
+        int questionNumber = 1;
         List<AnswerList> lstAnswer = new List<AnswerList>();
+        List<AnswerList> selectedAnswers = new List<AnswerList>();
+
         public Questionare()
         {
             InitializeComponent();      
@@ -53,11 +56,11 @@ namespace WpfApp1
                         {
                             string name = child.Attributes[0].InnerText;
 
-                            if (name == "Q")
+                            if (name == "Q" + questionNumber)
                             {
                                 Txt_Question.Text = child.InnerText;
                             }
-                            else if (name == "A")
+                            else if (name == "A"+ questionNumber)
                             {
                                 lstAnswer.Add(new AnswerList() { Answer = child.InnerText });
                             }
@@ -71,14 +74,21 @@ namespace WpfApp1
 
         private void Lst_AnswerList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            var selection = (sender as ListBox).SelectedItem as AnswerList;
+            if (selection != null)
+            {
+                selectedAnswers.Add(new AnswerList() { SelectedAnswer = selection.Answer });
+               
+            }
 
         }
 
-       
+
     }
 }
 
 public class AnswerList
 {
     public string Answer { get; set; }
+    public string SelectedAnswer { get; set; }
 }
