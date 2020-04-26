@@ -22,13 +22,15 @@ namespace WpfApp1
     /// </summary>
     public partial class Questionare : Window
     {
-        int firstQuestionNumber = 1;
+        int questionNumber = 1;
         ObservableCollection<AnswerList> lstAnswer = new ObservableCollection<AnswerList>();
         ObservableCollection<AnswerList> selectedAnswers = new ObservableCollection<AnswerList>();
+        XmlDocument doc = new XmlDocument();
 
         public Questionare()
         {
-            InitializeComponent();      
+            InitializeComponent();
+            doc.Load("questions.xml");
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -41,63 +43,63 @@ namespace WpfApp1
             var res = MessageBox.Show("Are You Sure You Want To Start?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (res == MessageBoxResult.Yes)
             {
-                startApplication(firstQuestionNumber);
+                startApplication(questionNumber);
             }
 
         }
 
         private void startApplication(int questionNumber)
         {
-                Txt_PressStart.Visibility = Visibility.Hidden;
-                Btn_Start.Visibility = Visibility.Hidden;
-                Lst_AnswerList.Visibility = Visibility.Visible;
-                Txt_Question.Visibility = Visibility.Visible;
+            Txt_PressStart.Visibility = Visibility.Hidden;
+            Btn_Start.Visibility = Visibility.Hidden;
+            Lst_AnswerList.Visibility = Visibility.Visible;
+            Txt_Question.Visibility = Visibility.Visible;
 
+            foreach (XmlNode node in doc.DocumentElement)
+            {
+                string att1 = node.Attributes[0].InnerText;
+                string att2 = node.Attributes[1].InnerText;
+                if (att1 == "Question" && att2 == questionNumber.ToString())
                 {
-                    XmlDocument doc = new XmlDocument();
-                    doc.Load("questions.xml");
+                    // Loading a selected data from xml file
+                    foreach (XmlNode child in node.ChildNodes)
+                    {
+                        string name = child.Attributes[0].InnerText;
 
-                    foreach (XmlNode node in doc.DocumentElement)
-                    {
-                    string att1 = node.Attributes[0].InnerText;
-                    string att2 = node.Attributes[1].InnerText;
-                    if (att1 == "Question" && att2 == questionNumber.ToString())
-                    {
-                        // Loading a selected data from xml file
-                        foreach (XmlNode child in node.ChildNodes)
+                        if (name == "Q" + questionNumber)
                         {
-                            string name = child.Attributes[0].InnerText;
-
-                            if (name == "Q" + questionNumber)
-                            {
-                                Txt_Question.Text = child.InnerText;
-                            }
-                            if (name == "A" + questionNumber)
-                            {
-                                lstAnswer.Add(new AnswerList() { Answer = child.InnerText });
-                            }
-                            Lst_AnswerList.ItemsSource = lstAnswer;
+                            Txt_Question.Text = questionNumber + ")." + child.InnerText;
                         }
+                        if (name == "A" + questionNumber)
+                        {
+                            lstAnswer.Add(new AnswerList() { Answer = child.InnerText });
+                        }
+                        Lst_AnswerList.ItemsSource = lstAnswer;
                     }
                 }
-         }
-            
+            }
+
         }
 
         private void Lst_AnswerList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selection = (sender as ListBox).SelectedItem as AnswerList;
-            var res = MessageBox.Show("Your Selection Was:"+ selection + "Do You Want To Proceed?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (res == MessageBoxResult.Yes)
+            //var res = MessageBox.Show("Do You Want To Proceed ?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            //if (res == MessageBoxResult.Yes)
+            //{
+            if (selection != null && questionNumber <= 3)
             {
-                if (selection != null)
-                {
-                    lstAnswer.Clear();
-                    int nextQuestionNumber = firstQuestionNumber + 1;
-                    selectedAnswers.Add(new AnswerList() { SelectedAnswer = selection.Answer });
-                    startApplication(nextQuestionNumber);
-                }
+                lstAnswer.Clear();
+                selectedAnswers.Add(new AnswerList() { SelectedAnswer = selection.Answer });
+                questionNumber += 1;
+                startApplication(questionNumber);
             }
+            if (selection != null && questionNumber >= 4)
+            {
+
+            }
+            //}
 
         }
 
