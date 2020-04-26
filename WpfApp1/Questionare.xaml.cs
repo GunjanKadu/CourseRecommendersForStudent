@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,9 +22,9 @@ namespace WpfApp1
     /// </summary>
     public partial class Questionare : Window
     {
-        int questionNumber = 1;
-        List<AnswerList> lstAnswer = new List<AnswerList>();
-        List<AnswerList> selectedAnswers = new List<AnswerList>();
+        int firstQuestionNumber = 1;
+        ObservableCollection<AnswerList> lstAnswer = new ObservableCollection<AnswerList>();
+        ObservableCollection<AnswerList> selectedAnswers = new ObservableCollection<AnswerList>();
 
         public Questionare()
         {
@@ -40,6 +41,13 @@ namespace WpfApp1
             var res = MessageBox.Show("Are You Sure You Want To Start?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (res == MessageBoxResult.Yes)
             {
+                startApplication(firstQuestionNumber);
+            }
+
+        }
+
+        private void startApplication(int questionNumber)
+        {
                 Txt_PressStart.Visibility = Visibility.Hidden;
                 Btn_Start.Visibility = Visibility.Hidden;
                 Lst_AnswerList.Visibility = Visibility.Visible;
@@ -51,8 +59,12 @@ namespace WpfApp1
 
                     foreach (XmlNode node in doc.DocumentElement)
                     {
+                    string att1 = node.Attributes[0].InnerText;
+                    string att2 = node.Attributes[1].InnerText;
+                    if (att1 == "Question" && att2 == questionNumber.ToString())
+                    {
                         // Loading a selected data from xml file
-                            foreach (XmlNode child in node.ChildNodes)
+                        foreach (XmlNode child in node.ChildNodes)
                         {
                             string name = child.Attributes[0].InnerText;
 
@@ -60,7 +72,7 @@ namespace WpfApp1
                             {
                                 Txt_Question.Text = child.InnerText;
                             }
-                            else if (name == "A"+ questionNumber)
+                            if (name == "A" + questionNumber)
                             {
                                 lstAnswer.Add(new AnswerList() { Answer = child.InnerText });
                             }
@@ -68,17 +80,23 @@ namespace WpfApp1
                         }
                     }
                 }
-            }
-
+         }
+            
         }
 
         private void Lst_AnswerList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selection = (sender as ListBox).SelectedItem as AnswerList;
-            if (selection != null)
+            var res = MessageBox.Show("Your Selection Was:"+ selection + "Do You Want To Proceed?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (res == MessageBoxResult.Yes)
             {
-                selectedAnswers.Add(new AnswerList() { SelectedAnswer = selection.Answer });
-               
+                if (selection != null)
+                {
+                    lstAnswer.Clear();
+                    int nextQuestionNumber = firstQuestionNumber + 1;
+                    selectedAnswers.Add(new AnswerList() { SelectedAnswer = selection.Answer });
+                    startApplication(nextQuestionNumber);
+                }
             }
 
         }

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <root>
-	<section name="Qualification">
+	<section name="Question" id="1">
 		<Question id="Q1">
 			1).What Is Your Current Qualification?
 		</Question>
@@ -9,9 +9,11 @@
 		<Answer id="A1">Master's</Answer>
 		<Answer id="A1"> Other</Answer>
 	</section>
-	<section name="Reason">
+
+
+	<section name="Question" id="2">
 		<Question id="Q2">
-			2).What Is The Primary Reason You Are Looking/Taking This Course?
+		2).What Is The Primary Reason You Are Looking/Taking This Course?
 		</Question>
 		<Answer id="A2">Get A Job Immediately</Answer>
 		<Answer id="A2"> Start A Business</Answer>
