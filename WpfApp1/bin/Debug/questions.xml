@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<section name="Qualification">
+		<Question id="Q">
+			1).What Is Your Current Qualification
+		</Question>
+		<Answer id="A">High School Graduate</Answer>
+		<Answer id="A"> Bachelor's</Answer>
+		<Answer id="A">Master's</Answer>
+		<Answer id="A"> Other</Answer>
+	</section>
+
+</root>

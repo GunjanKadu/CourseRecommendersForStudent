@@ -27,7 +27,7 @@
         </StackPanel>
         <StackPanel Margin="22,149,634.333,264.333" Orientation="Horizontal">
             <Image Margin="0,6,0,0" Source="Img/Book.png" Stretch="Fill" Width="30"/>
-            <Button Style="{StaticResource MyButton}" Content="Courses" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Btn_GoToCourses" />
+            <Button Style="{StaticResource MyButton}" Content="Courses Offered" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Btn_GoToCourses" Margin="0,2,0,-2" />
         </StackPanel>
         <StackPanel Margin="21,218,635.333,195.333" Orientation="Horizontal">
             <Image Source="Img/Test.png" Stretch="Fill" Width="30"/>

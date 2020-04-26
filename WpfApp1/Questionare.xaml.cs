@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
 using WpfApp1.Classes;
 
 namespace WpfApp1
@@ -20,7 +21,7 @@ namespace WpfApp1
     /// </summary>
     public partial class Questionare : Window
     {
-        Question question;
+        List<AnswerList> lstAnswer = new List<AnswerList>();
         public Questionare()
         {
             InitializeComponent();      
@@ -41,15 +42,29 @@ namespace WpfApp1
                 Lst_AnswerList.Visibility = Visibility.Visible;
                 Txt_Question.Visibility = Visibility.Visible;
 
+                {
+                    XmlDocument doc = new XmlDocument();
+                    doc.Load("questions.xml");
 
+                    foreach (XmlNode node in doc.DocumentElement)
+                    {
+                        // Loading a selected data from xml file
+                            foreach (XmlNode child in node.ChildNodes)
+                        {
+                            string name = child.Attributes[0].InnerText;
 
-                question = new Question { id = 0, qText = "1).What is Your Current Qualification ?  " };
-                question.answers.Add(new Answer { aText = "High School Graduate", isCorrect = false });
-                question.answers.Add(new Answer { aText = "Bachelor's", isCorrect = false });
-                question.answers.Add(new Answer { aText = "Masters's", isCorrect = true });
-                question.answers.Add(new Answer { aText = "Other", isCorrect = false });
-
-                DataContext = question;
+                            if (name == "Q")
+                            {
+                                Txt_Question.Text = child.InnerText;
+                            }
+                            else if (name == "A")
+                            {
+                                lstAnswer.Add(new AnswerList() { Answer = child.InnerText });
+                            }
+                            Lst_AnswerList.ItemsSource = lstAnswer;
+                        }
+                    }
+                }
             }
 
         }
@@ -58,5 +73,12 @@ namespace WpfApp1
         {
 
         }
+
+       
     }
+}
+
+public class AnswerList
+{
+    public string Answer { get; set; }
 }

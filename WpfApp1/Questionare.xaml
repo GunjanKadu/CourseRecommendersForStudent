@@ -12,20 +12,20 @@
             <RowDefinition Height="7*"/>
             <RowDefinition Height="78*"/>
         </Grid.RowDefinitions>
-        <ListBox Name="Lst_AnswerList" SelectionChanged="Lst_AnswerList_SelectionChanged" ItemsSource="{Binding answers}" HorizontalAlignment="Left" Visibility="Hidden" Height="206" VerticalAlignment="Top" Width="356" Margin="29,157.667,0,0" Grid.Row="1">
+        <ListBox Name="Lst_AnswerList" SelectionChanged="Lst_AnswerList_SelectionChanged"  HorizontalAlignment="Left" Visibility="Hidden" Height="206" VerticalAlignment="Top" Width="356" Margin="29,157.667,0,0" Grid.Row="1">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="0,5">
                         <Ellipse Height="10" Width="10" Fill="Brown" Margin="0,0,8,0"/>
-                        <TextBlock Text="{Binding aText}" FontSize="13" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Answer}" FontSize="13" FontWeight="Bold" Foreground="Black"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="FIND YOUR PATH" VerticalAlignment="Top" RenderTransformOrigin="0.713,1.75" Margin="10,10,0,0" Width="111" FontWeight="Bold" Foreground="#FFBEBABA"/>
-        <TextBlock Name="Txt_Question" HorizontalAlignment="Left" Visibility="Hidden" Margin="29,28.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding qText}" VerticalAlignment="Top" Height="73" Width="356" FontWeight="Bold" FontSize="15"/>
-        <Button Name="Btn_Start" Content="START" HorizontalAlignment="Left" Height="46" Margin="90,157.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="233" Click="Btn_Start_Click"/>
+        <TextBox Name="Txt_Question" Visibility="Hidden" HorizontalAlignment="Left" Padding="0" TextWrapping="Wrap" Margin="29,32.667,0,0" Grid.Row="1"  Text="{Binding qText}" VerticalAlignment="Top" Height="65" Width="356" FontWeight="Bold" FontSize="14"/>
         <TextBlock Name="Txt_PressStart" HorizontalAlignment="Left" Height="26" Margin="124,126.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Press Start To Find Your Path" VerticalAlignment="Top" Width="168" FontWeight="Bold"/>
+        <Button Name="Btn_Start" Content="START" HorizontalAlignment="Left" Height="46" Margin="90,157.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="233" Click="Btn_Start_Click" Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold"/>
 
     </Grid>
 </Window>
