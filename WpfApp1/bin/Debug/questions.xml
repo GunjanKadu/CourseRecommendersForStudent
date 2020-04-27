@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <root>
-	<section name="Question" id="1">
+	<section name="Question" id="1" type="general">
 		<Question id="Q1">What Is Your Current Qualification?</Question>
 		<Answer id="A1">High School Graduate</Answer>
 		<Answer id="A1"> Bachelor's</Answer>
@@ -9,7 +9,7 @@
 	</section>
 
 
-	<section name="Question" id="2">
+	<section name="Question" id="2" type="general">
 		<Question id="Q2">What Is The Primary Reason You Are Looking/Taking This Course?</Question>
 		<Answer id="A2">Get A Job Immediately</Answer>
 		<Answer id="A2"> Start A Business</Answer>
@@ -19,7 +19,7 @@
 	</section>
 
 
-	<section name="Question" id="3">
+	<section name="Question" id="3" type="general">
 		<Question id="Q3">Which Of The Following Degree Do You Wish To Learn?</Question>
 		<Answer id="A3">Bachelor's In Computer Science</Answer>
 		<Answer id="A3">Bachelor's In Information Techcnology</Answer>
@@ -29,5 +29,21 @@
 		<Answer id="A3">Master's In Information Technology</Answer>
 		<Answer id="A3">Master's In International Business And Eng</Answer>
 		<Answer id="A3">Master's In Computer Engineering</Answer>
+	</section>
+
+	<section name="Question" id="4" type="MCS">
+		<Question id="Q4">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A4">Yes</Answer>
+		<Answer id="A4">No</Answer>
+	</section>
+	<section name="Question" id="5" type="MCS">
+		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Answer id="A5">Yes</Answer>
+		<Answer id="A5">No</Answer>
+	</section>
+	<section name="Question" id="6" type="MCS">
+		<Question id="Q6">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A6">Yes</Answer>
+		<Answer id="A6">No</Answer>
 	</section>
 </root>

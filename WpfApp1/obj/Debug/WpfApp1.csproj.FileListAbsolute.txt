@@ -17,3 +17,4 @@ C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStu
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\App.baml
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Questionare.g.cs
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Questionare.baml
+C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache

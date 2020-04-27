@@ -24,7 +24,7 @@ namespace WpfApp1
     {
         int questionNumber = 1;
         ObservableCollection<AnswerList> lstAnswer = new ObservableCollection<AnswerList>();
-        ObservableCollection<AnswerList> selectedAnswers = new ObservableCollection<AnswerList>();
+        ObservableCollection<string> selectedAnswers = new ObservableCollection<string>();
         XmlDocument doc = new XmlDocument();
 
         public Questionare()
@@ -43,12 +43,12 @@ namespace WpfApp1
             var res = MessageBox.Show("Are You Sure You Want To Start?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (res == MessageBoxResult.Yes)
             {
-                startApplication(questionNumber);
+                startApplication(questionNumber,"general");
             }
 
         }
 
-        private void startApplication(int questionNumber)
+        private void startApplication(int questionNumber,string questionType)
         {
             Txt_PressStart.Visibility = Visibility.Hidden;
             Btn_Start.Visibility = Visibility.Hidden;
@@ -59,7 +59,8 @@ namespace WpfApp1
             {
                 string att1 = node.Attributes[0].InnerText;
                 string att2 = node.Attributes[1].InnerText;
-                if (att1 == "Question" && att2 == questionNumber.ToString())
+                string att3 = node.Attributes[2].InnerText;
+                if (att1 == "Question" && att2 == questionNumber.ToString() && att3 == questionType)
                 {
                     // Loading a selected data from xml file
                     foreach (XmlNode child in node.ChildNodes)
@@ -88,17 +89,23 @@ namespace WpfApp1
 
             //if (res == MessageBoxResult.Yes)
             //{
-            if (selection != null && questionNumber <= 3)
+            if (selection != null)
             {
                 lstAnswer.Clear();
-                selectedAnswers.Add(new AnswerList() { SelectedAnswer = selection.Answer });
+                selectedAnswers.Add(selection.Answer.ToString());
                 questionNumber += 1;
-                startApplication(questionNumber);
-            }
-            if (selection != null && questionNumber >= 4)
-            {
+                if (selectedAnswers.Contains("Master's In Computer Science"))
+                {
+                    startApplication(questionNumber, "MCS");
 
+                }
+                else
+                {
+                    startApplication(questionNumber, "general");
+
+                }
             }
+
             //}
 
         }
