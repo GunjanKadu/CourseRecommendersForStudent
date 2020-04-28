@@ -20,7 +20,7 @@
 
 
 	<section name="Question" id="3" type="general">
-		<Question id="Q3">Which Of The Following Degree Do You Wish To Learn?</Question>
+		<Question id="Q3">Which Of The Following Degree Do You Wish To Study?</Question>
 		<Answer id="A3">Bachelor's In Computer Science</Answer>
 		<Answer id="A3">Bachelor's In Information Techcnology</Answer>
 		<Answer id="A3">Bachelor's In Electronics &amp; Telecomm</Answer>

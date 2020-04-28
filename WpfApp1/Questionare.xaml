@@ -13,13 +13,13 @@
             <RowDefinition Height="78*"/>
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="FIND YOUR PATH" VerticalAlignment="Top" RenderTransformOrigin="0.713,1.75" Margin="10,10,0,0" Width="111" FontWeight="Bold" Foreground="#FFBEBABA"/>
-        <StackPanel Margin="215,10.333,199.333,22.667" Orientation="Vertical" Grid.Row="1">
-            <Border Name="Txt_Question_Border" Visibility="Hidden" BorderBrush="Black" BorderThickness="0.5" Padding="0" Width="340" Margin="-30,0,0,0">
+        <StackPanel Margin="215,5.333,199.333,22.667" Orientation="Vertical" Grid.Row="1">
+            <Border Name="Txt_Question_Border" Visibility="Hidden" BorderBrush="Black" BorderThickness="0.5"  Width="340" Margin="-30,0,0,0">
                 <TextBlock x:Name="Txt_Question" HorizontalAlignment="Left" Visibility="Hidden" Padding="0" TextWrapping="Wrap"  Text="{Binding qText}" VerticalAlignment="Top" Height="65" Width="340" FontWeight="Bold" FontSize="14" />
             </Border>
-            <TextBlock x:Name="Txt_PressStart" HorizontalAlignment="Left" Height="26" Margin="60,55,0,0" TextWrapping="Wrap" Text="Press Start To Find Your Path" Width="168" FontWeight="Bold" VerticalAlignment="Center"/>
+            <TextBlock x:Name="Txt_PressStart" HorizontalAlignment="Left" Height="26" Margin="75,55,0,0" TextWrapping="Wrap" Text="Press Start To Find Your Path" Width="168" FontWeight="Bold" VerticalAlignment="Center"/>
             <Button x:Name="Btn_Start" Content="START"  Height="46" Margin="-50,0,0,0" Width="233" Click="Btn_Start_Click" Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold"/>
-            <ListBox x:Name="Lst_AnswerList" Visibility="Hidden"   SelectionChanged="Lst_AnswerList_SelectionChanged"  HorizontalAlignment="Left" Height="182" VerticalAlignment="Top" Width="340" Margin="0,-55,0,0">
+            <ListBox x:Name="Lst_AnswerList" Visibility="Hidden"    SelectionChanged="Lst_AnswerList_SelectionChanged"  HorizontalAlignment="Left" Height="182" VerticalAlignment="Top" Width="340" Margin="0,-55,0,0">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Margin="0,5">
@@ -29,19 +29,23 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
+            <StackPanel Margin="-5,-5,0,0" Orientation="Horizontal" Height="30">
+                <Button Name="Btn_Prev_Question" Visibility="Hidden" Height="20" Width="70" Background="#FFB20837" BorderBrush="#FFB20837" Foreground="Wheat" Margin="5,10,0,0" Content="&lt;&lt;PREV" FontWeight="Bold" Click="Btn_Prev_Question_Click"/>
+                <Button x:Name="Btn_Next_Question" Visibility="Hidden" Background="#FFB20837" Foreground="Wheat" Height="20" Width="70" Margin="200,10,0,0" FontWeight="Bold" BorderBrush="#FFB20837" Content="NEXT>>" Click="Btn_Next_Question_Click" />
+            </StackPanel>
         </StackPanel>
         <StackPanel Visibility="Hidden" Name="Stack_QuestionsAsked" Background="#FFB20837" Orientation="Vertical" VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="421"  Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-0.333">
             <TextBlock Text="Questions Asked" Foreground="White" Margin="10,15,0,0" FontWeight="Bold" FontSize="10">
             </TextBlock>
-            <ListBox HorizontalAlignment="Left"  Background="{x:Null}" Foreground="Wheat" Height="361" Name="Lst_AskedQuestion" Margin="10,10,0,0" Width="182">
+            <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Wheat" Height="361" Name="Lst_AskedQuestion" Margin="10,10,0,0" Width="182" DataContext="" >
                 <ListBox.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate >
                         <Grid Margin="0,2">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="100" />
                             </Grid.ColumnDefinitions>
-                            <TextBlock Margin="0,0,0,05" Text="{Binding AskedQuestion}" Foreground="Wheat" FontWeight="Bold"/>
+                            <TextBlock Margin="0,0,0,05" Text="{Binding AskedQuestion}"  Foreground="Wheat" FontWeight="Bold"/>
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

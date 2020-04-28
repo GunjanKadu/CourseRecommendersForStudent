@@ -23,12 +23,14 @@ namespace WpfApp1
     public partial class Questionare : Window
     {
         int questionNumber = 1;
+
+
         ObservableCollection<AnswerList> lstAnswer = new ObservableCollection<AnswerList>();
         ObservableCollection<string> selectedAnswers = new ObservableCollection<string>();
         ObservableCollection<AnswerList> askedQuestion = new ObservableCollection<AnswerList>();
 
         XmlDocument doc = new XmlDocument();
-        bool messagePrompt = true;
+
         public Questionare()
         {
             InitializeComponent();
@@ -51,10 +53,17 @@ namespace WpfApp1
         {
             Txt_PressStart.Visibility = Visibility.Hidden;
             Btn_Start.Visibility = Visibility.Hidden;
+
             Lst_AnswerList.Visibility = Visibility.Visible;
             Txt_Question.Visibility = Visibility.Visible;
             Txt_Question_Border.Visibility = Visibility.Visible;
             Stack_QuestionsAsked.Visibility = Visibility.Visible;
+            Btn_Next_Question.Visibility = Visibility.Visible;
+            Btn_Next_Question.IsEnabled = false;
+            if (questionNumber > 1)
+            {
+                Btn_Prev_Question.Visibility = Visibility.Visible;
+            }
 
             foreach (XmlNode node in doc.DocumentElement)
             {
@@ -73,7 +82,9 @@ namespace WpfApp1
                             Txt_Question.Text = questionNumber + "." + child.InnerText;
 
                             // Filling The Answered Questions
+
                             askedQuestion.Add(new AnswerList() { AskedQuestion = child.InnerText });
+
                             Lst_AskedQuestion.ItemsSource = askedQuestion;
 
                         }
@@ -94,33 +105,53 @@ namespace WpfApp1
 
             if (selection != null)
             {
-
                 selectedAnswers.Add(selection.Answer.ToString());
-                lstAnswer.Clear();
                 questionNumber += 1;
+                Btn_Next_Question.IsEnabled = true;
+            }
+        }
 
-                if (selectedAnswers.Contains("Master's In Computer Science"))
+        private void Btn_Next_Question_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            if (selectedAnswers.Count == questionNumber - 1)
+            {
+                lstAnswer.Clear();
+
+                if (selectedAnswers.Contains("Master's In Computer Science") && selectedAnswers[0] == "Master's")
                 {
-
-                    if (messagePrompt && questionNumber <= 4)
+                    var res = MessageBox.Show("Do You Again Want To Study A Master's Degree?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (res == MessageBoxResult.Yes)
                     {
-                        MessageBox.Show("Keep It Up..Just A Few More Question", "Keep It Up", MessageBoxButton.OK);
-                        messagePrompt = false;
+                        startApplication(questionNumber, "MCS");
                     }
-                    startApplication(questionNumber, "MCS");
+                    else
+                    {
+                        return;
+                    }
                 }
                 else
                 {
                     startApplication(questionNumber, "general");
-
                 }
             }
-
-
-
         }
 
+        private void Btn_Prev_Question_Click(object sender, RoutedEventArgs e)
+        {
+            lstAnswer.Clear();
+            questionNumber -= 1;
+            if (selectedAnswers.Contains("Master's In Computer Science") && questionNumber >= 5)
+            {
+                startApplication(questionNumber, "MCS");
+            }
+            if (questionNumber <= 4)
+            {
+                startApplication(questionNumber, "general");
+            }
 
+        }
     }
 }
 
