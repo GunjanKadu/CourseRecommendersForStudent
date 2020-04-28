@@ -27,14 +27,15 @@ namespace WpfApp1
 
         ObservableCollection<AnswerList> lstAnswer = new ObservableCollection<AnswerList>();
         ObservableCollection<string> selectedAnswers = new ObservableCollection<string>();
+
         ObservableCollection<AnswerList> askedQuestion = new ObservableCollection<AnswerList>();
 
         XmlDocument doc = new XmlDocument();
-
         public Questionare()
         {
             InitializeComponent();
             doc.Load("questions.xml");
+
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -57,9 +58,12 @@ namespace WpfApp1
             Lst_AnswerList.Visibility = Visibility.Visible;
             Txt_Question.Visibility = Visibility.Visible;
             Txt_Question_Border.Visibility = Visibility.Visible;
-            Stack_QuestionsAsked.Visibility = Visibility.Visible;
+            Stack_Summary.Visibility = Visibility.Visible;
             Btn_Next_Question.Visibility = Visibility.Visible;
             Btn_Next_Question.IsEnabled = false;
+
+            Btn_Next_Question.DataContext = new Classes.ToolTip() { toolTipText = "Select An Answer To See The Next Question" };
+
             if (questionNumber > 1)
             {
                 Btn_Prev_Question.Visibility = Visibility.Visible;
@@ -107,23 +111,24 @@ namespace WpfApp1
             {
                 selectedAnswers.Add(selection.Answer.ToString());
                 questionNumber += 1;
+
                 Btn_Next_Question.IsEnabled = true;
+                Btn_Next_Question.DataContext = new Classes.ToolTip() { toolTipText = "Click To See The Next Question" };
             }
         }
 
         private void Btn_Next_Question_Click(object sender, RoutedEventArgs e)
         {
-
-
+            askedQuestion.Add(new AnswerList() { SubmittedAnswers = "• " +selectedAnswers.Last<string>() });
             if (selectedAnswers.Count == questionNumber - 1)
             {
-                lstAnswer.Clear();
 
-                if (selectedAnswers.Contains("Master's In Computer Science") && selectedAnswers[0] == "Master's")
+                if (selectedAnswers.Contains("Master's In Computer Science") && selectedAnswers[0] == "Master's" && questionNumber==4)
                 {
                     var res = MessageBox.Show("Do You Again Want To Study A Master's Degree?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
                     if (res == MessageBoxResult.Yes)
                     {
+                        lstAnswer.Clear();
                         startApplication(questionNumber, "MCS");
                     }
                     else
@@ -131,8 +136,14 @@ namespace WpfApp1
                         return;
                     }
                 }
+                else if(selectedAnswers.Contains("Master's In Computer Science"))
+                {
+                    lstAnswer.Clear();
+                    startApplication(questionNumber, "MCS");
+                }
                 else
                 {
+                    lstAnswer.Clear();
                     startApplication(questionNumber, "general");
                 }
             }
@@ -160,5 +171,6 @@ public class AnswerList
     public string Answer { get; set; }
     public string AskedQuestion { get; set; }
 
+    public string SubmittedAnswers { get; set; }
 
 }

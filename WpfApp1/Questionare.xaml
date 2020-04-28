@@ -30,14 +30,17 @@
                 </ListBox.ItemTemplate>
             </ListBox>
             <StackPanel Margin="-5,-5,0,0" Orientation="Horizontal" Height="30">
-                <Button Name="Btn_Prev_Question" Visibility="Hidden" Height="20" Width="70" Background="#FFB20837" BorderBrush="#FFB20837" Foreground="Wheat" Margin="5,10,0,0" Content="&lt;&lt;PREV" FontWeight="Bold" Click="Btn_Prev_Question_Click"/>
-                <Button x:Name="Btn_Next_Question" Visibility="Hidden" Background="#FFB20837" Foreground="Wheat" Height="20" Width="70" Margin="200,10,0,0" FontWeight="Bold" BorderBrush="#FFB20837" Content="NEXT>>" Click="Btn_Next_Question_Click" />
+                <Button Name="Btn_Prev_Question" Visibility="Hidden" Height="20" Width="70" Style="{StaticResource MyButton}" Background="#FFB20837" BorderBrush="#FFB20837" Foreground="Wheat" Margin="5,10,0,0" Content="&lt;&lt;PREV" FontWeight="Bold" Click="Btn_Prev_Question_Click" ToolTip="Click To See The Previous Question" />
+                <Button x:Name="Btn_Next_Question" Visibility="Hidden" Background="#FFB20837" Style="{StaticResource MyButton}" Foreground="Wheat" Height="20" Width="70" Margin="200,10,0,0" FontWeight="Bold" BorderBrush="#FFB20837" Content="NEXT>>" Click="Btn_Next_Question_Click" 
+                 ToolTip="{Binding toolTipText}"
+                        ToolTipService.ShowOnDisabled="True"
+               />
             </StackPanel>
         </StackPanel>
-        <StackPanel Visibility="Hidden" Name="Stack_QuestionsAsked" Background="#FFB20837" Orientation="Vertical" VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="421"  Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-0.333">
-            <TextBlock Text="Questions Asked" Foreground="White" Margin="10,15,0,0" FontWeight="Bold" FontSize="10">
+        <StackPanel Visibility="Hidden" Name="Stack_Summary" Background="#FFB20837" Orientation="Vertical" VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="421"  Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-0.333">
+            <TextBlock Text="Summary" Foreground="White" Margin="10,15,0,0" FontWeight="Bold" FontSize="10">
             </TextBlock>
-            <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Wheat" Height="361" Name="Lst_AskedQuestion" Margin="10,10,0,0" Width="182" DataContext="" >
+            <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Wheat" Height="361" Name="Lst_AskedQuestion" Margin="10,10,0,0" Width="182" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
                 <ListBox.ItemTemplate>
                     <DataTemplate >
                         <Grid Margin="0,2">
@@ -45,12 +48,22 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="100" />
                             </Grid.ColumnDefinitions>
-                            <TextBlock Margin="0,0,0,05" Text="{Binding AskedQuestion}"  Foreground="Wheat" FontWeight="Bold"/>
+
+                            <TextBlock Width="175" TextTrimming="CharacterEllipsis" Margin="0,-5,0,5">
+                                 <Run Text="{Binding AskedQuestion}" ToolTip="{Binding AskedQuestion}" Foreground="White"/>
+                                 <Run Text="{Binding SubmittedAnswers}" FontWeight="Bold" FontSize="10" ToolTip="{Binding SubmittedAnswers}" Foreground="Wheat"/>
+                            </TextBlock>
+
+                            <!--<TextBlock Margin="0,0,0,0" Text="{Binding AskedQuestion}" TextTrimming="CharacterEllipsis" Width="175" Foreground="Wheat" FontWeight="Bold" ToolTip="{Binding AskedQuestion}"/>
+                            
+                            <TextBlock Margin="0,0,0,0" Text="{Binding SubmittedAnswers}" Width="175" Foreground="Aqua"  FontWeight="Bold" ToolTip="{Binding SubmittedAnswers}"/>-->
+                            
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
 
             </ListBox>
         </StackPanel>
+       
     </Grid>
 </Window>
