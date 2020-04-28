@@ -2,8 +2,7 @@
 <root>
 
 	<Course name="Objected Oriented Programming C++">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
 		</content>
 	</Course>
 	<Course name="Objected Oriented Programming C++_img">
@@ -13,8 +12,7 @@
 	</Course>
 
 	<Course name="Objected Oriented Programming Java">
-		<content>
-	Object Oriented programming is a programming style which is associated with the concepts like class, object, Inheritance, Encapsulation, Abstraction, Polymorphism. ... An object-based application in Java is based on declaring classes, creating objects from them and interacting between these objects.		</content>
+		<content>Object Oriented programming is a programming style which is associated with the concepts like class, object, Inheritance, Encapsulation, Abstraction, Polymorphism. ... An object-based application in Java is based on declaring classes, creating objects from them and interacting between these objects.		</content>
 	</Course>
 	<Course name="Objected Oriented Programming Java_img">
 		<content>
@@ -24,8 +22,7 @@
 
 
 	<Course name="Data Structures And Algorithm">
-		<content>
-In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.		</content>
+		<content>In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.		</content>
 	</Course>
 	<Course name="Data Structures And Algorithm_img">
 		<content> 
@@ -36,8 +33,7 @@ In computer science, a data structure is a data organization, management, and st
 
 
 	<Course name="Database Mananagement Systems">
-		<content>
-A database management system (DBMS) is system software for creating and managing databases. A DBMS makes it possible for end users to create, read, update and delete data in a database. The most prevalent type of data management platform, the DBMS essentially serves as an interface between databases and end users or application programs, ensuring that data is consistently organized and remains easily accessible.		</content>
+		<content>A database management system (DBMS) is system software for creating and managing databases. A DBMS makes it possible for end users to create, read, update and delete data in a database. The most prevalent type of data management platform, the DBMS essentially serves as an interface between databases and end users or application programs, ensuring that data is consistently organized and remains easily accessible.		</content>
 	</Course>
 	<Course name="Database Mananagement Systems_img">
 		<content>
@@ -48,8 +44,7 @@ A database management system (DBMS) is system software for creating and managing
 
 
 	<Course name="Computer Networks">
-		<content>
-A computer network is a digital telecommunications network for sharing resources between nodes, which are computing devices that use a common telecommunications technology. Data transmission between nodes is supported over data links consisting of physical cable media, such as twisted pair or fiber-optic cables, or by wireless methods, such as Wi-Fi		</content>
+		<content>A computer network is a digital telecommunications network for sharing resources between nodes, which are computing devices that use a common telecommunications technology. Data transmission between nodes is supported over data links consisting of physical cable media, such as twisted pair or fiber-optic cables, or by wireless methods, such as Wi-Fi		</content>
 	</Course>
 	<Course name="Computer Networks_img">
 		<content>
@@ -59,8 +54,7 @@ A computer network is a digital telecommunications network for sharing resources
 
 
 	<Course name="Web Technologies">
-		<content>
-Web technology refers to the means by which computers communicate with each other using markup languages and multimedia packages. It gives us a way to interact with hosted information, like websites. Web technology involves the use of hypertext markup language (HTML) and cascading style sheets (CSS).May		</content>
+		<content>Web technology refers to the means by which computers communicate with each other using markup languages and multimedia packages. It gives us a way to interact with hosted information, like websites. Web technology involves the use of hypertext markup language (HTML) and cascading style sheets (CSS).May		</content>
 	</Course>
 	<Course name="Web Technologies_img">
 		<content>
@@ -72,8 +66,7 @@ Web technology refers to the means by which computers communicate with each othe
 
 
 	<Course name="Objected Oriented Programming">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
 		</content>
 	</Course>
 	<Course name="Objected Oriented Programming_img">
@@ -84,8 +77,7 @@ Web technology refers to the means by which computers communicate with each othe
 
 
 	<Course name="Computer Architecture">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
 		</content>
 	</Course>
 	<Course name="Computer Architecture_img">
@@ -97,8 +89,7 @@ Web technology refers to the means by which computers communicate with each othe
 
 
 	<Course name="Digital Signal Processing">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
 		</content>
 	</Course>
 	<Course name="Digital Signal Processing_img">

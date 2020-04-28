@@ -42,8 +42,13 @@
 		<Answer id="A5">No</Answer>
 	</section>
 	<section name="Question" id="6" type="MCS">
-		<Question id="Q6">Are You Interested In Learning A Language For Web Applications</Question>
+		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
 		<Answer id="A6">Yes</Answer>
 		<Answer id="A6">No</Answer>
+	</section>
+	<section name="Question" id="7" type="MCS">
+		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A7">Yes</Answer>
+		<Answer id="A7">No</Answer>
 	</section>
 </root>

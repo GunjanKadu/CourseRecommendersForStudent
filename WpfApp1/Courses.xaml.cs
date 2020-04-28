@@ -20,7 +20,7 @@ namespace WpfApp1
     /// </summary>
     public partial class Courses : Window
     {
-            
+
         public Courses()
         {
             InitializeComponent();
@@ -63,32 +63,35 @@ namespace WpfApp1
             // Adding the selected Course Into Combo Box source 
             var lstCourseItems = new List<string>();
             var selection = (sender as ListBox).SelectedItem as Course;
-            lstCourseItems.Add(selection.content_1);
-            lstCourseItems.Add(selection.content_2);
-            lstCourseItems.Add(selection.content_3);
-            lstCourseItems.Add(selection.content_4);
-            lstCourseItems.Add(selection.content_5);
+            if (selection != null)
+            {
+                lstCourseItems.Add(selection.content_1);
+                lstCourseItems.Add(selection.content_2);
+                lstCourseItems.Add(selection.content_3);
+                lstCourseItems.Add(selection.content_4);
+                lstCourseItems.Add(selection.content_5);
+            }
 
             Cmbx_CourseTopics.ItemsSource = lstCourseItems;
-           
+
         }
 
         private void Cmbx_CourseTopics_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-          if(Cmbx_CourseTopics.SelectedItem != null)
+            if (Cmbx_CourseTopics.SelectedItem != null)
             {
                 XmlDocument doc = new XmlDocument();
                 doc.Load("Data_Course.xml");
 
-                foreach (XmlNode node  in doc.DocumentElement)
+                foreach (XmlNode node in doc.DocumentElement)
                 {
 
-                // Loading a selected image from xml file
+                    // Loading a selected image from xml file
 
                     string name = node.Attributes[0].InnerText;
-                    if (name==Cmbx_CourseTopics.SelectedItem.ToString() + "_img")
+                    if (name == Cmbx_CourseTopics.SelectedItem.ToString() + "_img")
                     {
-                        foreach (XmlNode child  in node.ChildNodes)
+                        foreach (XmlNode child in node.ChildNodes)
                         {
                             string imagePath = child.InnerText;
                             Uri uri = new Uri(imagePath, UriKind.Absolute);

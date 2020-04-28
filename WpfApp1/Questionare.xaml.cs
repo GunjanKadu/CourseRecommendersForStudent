@@ -25,8 +25,10 @@ namespace WpfApp1
         int questionNumber = 1;
         ObservableCollection<AnswerList> lstAnswer = new ObservableCollection<AnswerList>();
         ObservableCollection<string> selectedAnswers = new ObservableCollection<string>();
-        XmlDocument doc = new XmlDocument();
+        ObservableCollection<AnswerList> askedQuestion = new ObservableCollection<AnswerList>();
 
+        XmlDocument doc = new XmlDocument();
+        bool messagePrompt = true;
         public Questionare()
         {
             InitializeComponent();
@@ -40,20 +42,19 @@ namespace WpfApp1
 
         private void Btn_Start_Click(object sender, RoutedEventArgs e)
         {
-            var res = MessageBox.Show("Are You Sure You Want To Start?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (res == MessageBoxResult.Yes)
-            {
-                startApplication(questionNumber,"general");
-            }
+
+            startApplication(questionNumber, "general");
 
         }
 
-        private void startApplication(int questionNumber,string questionType)
+        private void startApplication(int questionNumber, string questionType)
         {
             Txt_PressStart.Visibility = Visibility.Hidden;
             Btn_Start.Visibility = Visibility.Hidden;
             Lst_AnswerList.Visibility = Visibility.Visible;
             Txt_Question.Visibility = Visibility.Visible;
+            Txt_Question_Border.Visibility = Visibility.Visible;
+            Stack_QuestionsAsked.Visibility = Visibility.Visible;
 
             foreach (XmlNode node in doc.DocumentElement)
             {
@@ -69,7 +70,12 @@ namespace WpfApp1
 
                         if (name == "Q" + questionNumber)
                         {
-                            Txt_Question.Text = questionNumber + ")." + child.InnerText;
+                            Txt_Question.Text = questionNumber + "." + child.InnerText;
+
+                            // Filling The Answered Questions
+                            askedQuestion.Add(new AnswerList() { AskedQuestion = child.InnerText });
+                            Lst_AskedQuestion.ItemsSource = askedQuestion;
+
                         }
                         if (name == "A" + questionNumber)
                         {
@@ -85,19 +91,23 @@ namespace WpfApp1
         private void Lst_AnswerList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selection = (sender as ListBox).SelectedItem as AnswerList;
-            //var res = MessageBox.Show("Do You Want To Proceed ?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
-            //if (res == MessageBoxResult.Yes)
-            //{
             if (selection != null)
             {
-                lstAnswer.Clear();
+
                 selectedAnswers.Add(selection.Answer.ToString());
+                lstAnswer.Clear();
                 questionNumber += 1;
+
                 if (selectedAnswers.Contains("Master's In Computer Science"))
                 {
-                    startApplication(questionNumber, "MCS");
 
+                    if (messagePrompt && questionNumber <= 4)
+                    {
+                        MessageBox.Show("Keep It Up..Just A Few More Question", "Keep It Up", MessageBoxButton.OK);
+                        messagePrompt = false;
+                    }
+                    startApplication(questionNumber, "MCS");
                 }
                 else
                 {
@@ -106,7 +116,7 @@ namespace WpfApp1
                 }
             }
 
-            //}
+
 
         }
 
@@ -117,5 +127,7 @@ namespace WpfApp1
 public class AnswerList
 {
     public string Answer { get; set; }
-    public string SelectedAnswer { get; set; }
+    public string AskedQuestion { get; set; }
+
+
 }
