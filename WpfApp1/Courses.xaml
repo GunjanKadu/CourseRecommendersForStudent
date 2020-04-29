@@ -22,7 +22,7 @@
                 </StackPanel>
                 <StackPanel Margin="10,0,10.333,30" Orientation="Horizontal" Height="27">
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Please Select The Topic : " VerticalAlignment="Top" Height="22" Foreground="#FFFBF3F3" FontWeight="Bold" Margin="30,0,0,-4" Width="153"/>
-                    <ComboBox x:Name="Cmbx_CourseTopics" Margin="30 0 0 10 "  SelectionChanged="Cmbx_CourseTopics_SelectionChanged" Width="256" RenderTransformOrigin="0.5,0.5">
+                    <ComboBox x:Name="Cmbx_CourseTopics" Margin="30 0 0 05 "  SelectionChanged="Cmbx_CourseTopics_SelectionChanged" Width="256" RenderTransformOrigin="0.5,0.5">
                         <ComboBox.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>

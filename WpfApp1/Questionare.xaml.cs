@@ -66,12 +66,24 @@ namespace WpfApp1
 
         private void Btn_Continue_Click(object sender, RoutedEventArgs e)
         {
-            questionNumber = _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].QuestionNumber + 1;
-            
-            foreach (QuestionAnswer item in _askedQuestionAnswer)
+            if (_askedQuestionAnswer[_askedQuestionAnswer.Count - 1].QuestionNumber == 3)
             {
-                selectedAnswers.Add(item.SubmittedAnswers);
+                questionNumber = _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].QuestionNumber - 1;
+                foreach (QuestionAnswer item in _askedQuestionAnswer.Take(questionNumber - 1))
+                {
+                    selectedAnswers.Add(item.SubmittedAnswers);
+                }
             }
+            else
+            {
+                questionNumber = _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].QuestionNumber + 1;
+                foreach (QuestionAnswer item in _askedQuestionAnswer)
+                {
+                    selectedAnswers.Add(item.SubmittedAnswers);
+                }
+
+            }
+
             startApplication(questionNumber, _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].Category);
             Btn_Continue.Visibility = Visibility.Hidden;
         }
@@ -113,11 +125,26 @@ namespace WpfApp1
                         {
                             Txt_Question.Text = questionNumber + ". " + child.InnerText;
 
-                            answerList.QuestionNumber = questionNumber;
-                            answerList.AskedQuestion = child.InnerText;
-                            answerList.Category = questionType;
-
-                            Lst_AskedQuestion.ItemsSource = _askedQuestionAnswer;
+                            //if (_askedQuestionAnswer.Count != 0)
+                            //{
+                            //    foreach (QuestionAnswer item in _askedQuestionAnswer)
+                            //    {
+                            //        if (item.QuestionNumber != questionNumber && item.AskedQuestion != child.InnerText)
+                            //        {
+                            //            answerList.QuestionNumber = questionNumber;
+                            //            answerList.AskedQuestion = child.InnerText;
+                            //            answerList.Category = questionType;
+                            //            Lst_AskedQuestion.ItemsSource = _askedQuestionAnswer;
+                            //        }
+                            //    }
+                            //}
+                            //else
+                            //{
+                                answerList.QuestionNumber = questionNumber;
+                                answerList.AskedQuestion = child.InnerText;
+                                answerList.Category = questionType;
+                                Lst_AskedQuestion.ItemsSource = _askedQuestionAnswer;
+                            //}
                         }
                         if (name == "A" + questionNumber)
                         {
@@ -191,6 +218,7 @@ namespace WpfApp1
 
             answerList.SubmittedAnswers = singleAnswer;
             //askedQuestionAnswer.Add(answerList);
+         
             _askedQuestionAnswer.Add(answerList);
 
             selectedAnswers.Add(singleAnswer);

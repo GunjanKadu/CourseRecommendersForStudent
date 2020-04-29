@@ -8,7 +8,7 @@
   </QuestionAnswer>
   <QuestionAnswer>
     <AskedQuestion>What Is The Primary Reason You Are Looking/Taking This Course?</AskedQuestion>
-    <SubmittedAnswers>Further Education</SubmittedAnswers>
+    <SubmittedAnswers> Start A Business</SubmittedAnswers>
     <Category>general</Category>
     <QuestionNumber>2</QuestionNumber>
   </QuestionAnswer>
@@ -17,17 +17,5 @@
     <SubmittedAnswers>Master's In Computer Science</SubmittedAnswers>
     <Category>general</Category>
     <QuestionNumber>3</QuestionNumber>
-  </QuestionAnswer>
-  <QuestionAnswer>
-    <AskedQuestion>Are You Interested In Learning A Language For Web Applications</AskedQuestion>
-    <SubmittedAnswers>Yes</SubmittedAnswers>
-    <Category>MCS</Category>
-    <QuestionNumber>4</QuestionNumber>
-  </QuestionAnswer>
-  <QuestionAnswer>
-    <AskedQuestion>Are You Intrested in Writing Programs that enables processes to communicate over networks</AskedQuestion>
-    <SubmittedAnswers>Yes</SubmittedAnswers>
-    <Category>MCS</Category>
-    <QuestionNumber>5</QuestionNumber>
   </QuestionAnswer>
 </ArrayOfQuestionAnswer>
