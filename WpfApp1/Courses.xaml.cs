@@ -24,7 +24,6 @@ namespace WpfApp1
         public Courses()
         {
             InitializeComponent();
-
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

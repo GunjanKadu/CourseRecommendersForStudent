@@ -57,13 +57,15 @@
                             <!--<TextBlock Margin="0,0,0,0" Text="{Binding AskedQuestion}" TextTrimming="CharacterEllipsis" Width="175" Foreground="Wheat" FontWeight="Bold" ToolTip="{Binding AskedQuestion}"/>
                             
                             <TextBlock Margin="0,0,0,0" Text="{Binding SubmittedAnswers}" Width="175" Foreground="Aqua"  FontWeight="Bold" ToolTip="{Binding SubmittedAnswers}"/>-->
-                            
+
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
 
             </ListBox>
         </StackPanel>
-       
+        <TextBlock HorizontalAlignment="Left" Height="223" Margin="570,143.333,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"  Name="Txt_Block_Hint" TextAlignment="Justify" Visibility="Hidden" Foreground="DarkGray" FontWeight="Bold"
+                   FontSize="10"/>
+
     </Grid>
 </Window>

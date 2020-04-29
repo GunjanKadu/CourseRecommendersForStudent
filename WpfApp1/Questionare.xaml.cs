@@ -24,7 +24,6 @@ namespace WpfApp1
     {
         int questionNumber = 1;
 
-
         ObservableCollection<AnswerList> lstAnswer = new ObservableCollection<AnswerList>();
         ObservableCollection<string> selectedAnswers = new ObservableCollection<string>();
 
@@ -35,7 +34,6 @@ namespace WpfApp1
         {
             InitializeComponent();
             doc.Load("questions.xml");
-
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -45,9 +43,7 @@ namespace WpfApp1
 
         private void Btn_Start_Click(object sender, RoutedEventArgs e)
         {
-
             startApplication(questionNumber, "general");
-
         }
 
         private void startApplication(int questionNumber, string questionType)
@@ -83,11 +79,11 @@ namespace WpfApp1
 
                         if (name == "Q" + questionNumber)
                         {
-                            Txt_Question.Text = questionNumber + "." + child.InnerText;
+                            Txt_Question.Text = questionNumber + ". " + child.InnerText;
 
                             // Filling The Answered Questions
 
-                            askedQuestion.Add(new AnswerList() { AskedQuestion = child.InnerText });
+                            askedQuestion.Add(new AnswerList() { AskedQuestion = child.InnerText, Category=questionType,QuestionNumber=questionNumber });
 
                             Lst_AskedQuestion.ItemsSource = askedQuestion;
 
@@ -100,17 +96,59 @@ namespace WpfApp1
                     }
                 }
             }
-
         }
 
         private void Lst_AnswerList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selection = (sender as ListBox).SelectedItem as AnswerList;
 
-            if (selection != null)
+            if(selection!=null && questionNumber == 3)
+            {
+                switch (selection.Answer.ToString())
+                {
+                    case "Bachelor's In Computer Science":
+                        Txt_Block_Hint.Visibility = Visibility.Visible;
+                        Txt_Block_Hint.Text = Hints.BCS;
+                        break;
+                    case "Master's In Computer Science":
+                        Txt_Block_Hint.Visibility = Visibility.Visible;
+                        Txt_Block_Hint.Text =Hints.MCS;
+                        break;
+
+                    case "Bachelor's In Information Techcnology":
+                        Txt_Block_Hint.Visibility = Visibility.Visible;
+                        Txt_Block_Hint.Text = Hints.BIT;
+                        break;
+                    case "Master's In Information Technology":
+                        Txt_Block_Hint.Visibility = Visibility.Visible;
+                        Txt_Block_Hint.Text = Hints.MIT;
+                        break;
+                    case "Bachelor's In Electronics & Telecomm":
+                        Txt_Block_Hint.Visibility = Visibility.Visible;
+                        Txt_Block_Hint.Text = Hints.BETC;
+                        break;
+                    case "Master's In Big Data & Business Analytics":
+                        Txt_Block_Hint.Visibility = Visibility.Visible;
+                        Txt_Block_Hint.Text = Hints.MBDBA;
+                        break;
+                    case "Master's In International Business And Eng":
+                        Txt_Block_Hint.Visibility = Visibility.Visible;
+                        Txt_Block_Hint.Text = Hints.MIBE;
+                        break;
+                    case "Master's In Computer Engineering":
+                        Txt_Block_Hint.Visibility = Visibility.Visible;
+                        Txt_Block_Hint.Text = Hints.MCE;
+                        break;
+                    default:
+                        break;
+                }
+                selectedAnswers.Add(selection.Answer.ToString());
+                Btn_Next_Question.IsEnabled = true;
+                Btn_Next_Question.DataContext = new Classes.ToolTip() { toolTipText = "Click To See The Next Question" };
+            }
+            else if (selection != null)
             {
                 selectedAnswers.Add(selection.Answer.ToString());
-                questionNumber += 1;
 
                 Btn_Next_Question.IsEnabled = true;
                 Btn_Next_Question.DataContext = new Classes.ToolTip() { toolTipText = "Click To See The Next Question" };
@@ -119,11 +157,12 @@ namespace WpfApp1
 
         private void Btn_Next_Question_Click(object sender, RoutedEventArgs e)
         {
-            askedQuestion.Add(new AnswerList() { SubmittedAnswers = "• " +selectedAnswers.Last<string>() });
-            if (selectedAnswers.Count == questionNumber - 1)
+            Txt_Block_Hint.Visibility = Visibility.Hidden;
+            askedQuestion.Add(new AnswerList() { SubmittedAnswers = "• " + selectedAnswers.Last<string>() });
+            if (selectedAnswers.Count == questionNumber)
             {
-
-                if (selectedAnswers.Contains("Master's In Computer Science") && selectedAnswers[0] == "Master's" && questionNumber==4)
+                questionNumber += 1;
+                if (selectedAnswers.Contains("Master's In Computer Science") && selectedAnswers[0] == "Master's" && questionNumber == 4)
                 {
                     var res = MessageBox.Show("Do You Again Want To Study A Master's Degree?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
                     if (res == MessageBoxResult.Yes)
@@ -136,7 +175,7 @@ namespace WpfApp1
                         return;
                     }
                 }
-                else if(selectedAnswers.Contains("Master's In Computer Science"))
+                else if (selectedAnswers.Contains("Master's In Computer Science"))
                 {
                     lstAnswer.Clear();
                     startApplication(questionNumber, "MCS");
@@ -172,5 +211,9 @@ public class AnswerList
     public string AskedQuestion { get; set; }
 
     public string SubmittedAnswers { get; set; }
+
+    public string Category { get; set; }
+
+    public int QuestionNumber { get; set; }
 
 }
