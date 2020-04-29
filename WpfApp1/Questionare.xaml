@@ -17,9 +17,10 @@
             <Border Name="Txt_Question_Border" Visibility="Hidden" BorderBrush="Black" BorderThickness="0.5"  Width="340" Margin="-30,0,0,0">
                 <TextBlock x:Name="Txt_Question" HorizontalAlignment="Left" Visibility="Hidden" Padding="0" TextWrapping="Wrap"  Text="{Binding qText}" VerticalAlignment="Top" Height="65" Width="340" FontWeight="Bold" FontSize="12" />
             </Border>
-            <TextBlock x:Name="Txt_PressStart" HorizontalAlignment="Left" Height="26" Margin="75,55,0,0" TextWrapping="Wrap" Text="Press Start To Find Your Path" Width="168" FontWeight="Bold" VerticalAlignment="Center"/>
+            <TextBlock x:Name="Txt_PressStart" HorizontalAlignment="Left" Height="36" Margin="75,55,0,0" TextWrapping="Wrap" Width="168" FontWeight="Bold" VerticalAlignment="Center"/>
             <Button x:Name="Btn_Start" Content="START"  Height="46" Margin="-50,0,0,0" Width="233" Click="Btn_Start_Click" Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold"/>
-            <ListBox x:Name="Lst_AnswerList" Visibility="Hidden"    SelectionChanged="Lst_AnswerList_SelectionChanged"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="340" Margin="0,-85,0,0" Height="180">
+            <Button x:Name="Btn_Continue" Visibility="Hidden" Content="CONTINUE"  Height="46" Margin="-50,10,0,0" Width="233"  Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold" Click="Btn_Continue_Click"/>
+            <ListBox x:Name="Lst_AnswerList" Visibility="Hidden"    SelectionChanged="Lst_AnswerList_SelectionChanged"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="340" Margin="0,-130,0,-20" Height="180">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Margin="0,5">
@@ -40,7 +41,7 @@
         <StackPanel Visibility="Hidden" Name="Stack_Summary" Background="#FFB20837" Orientation="Vertical" VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="421"  Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-0.333">
             <TextBlock Text="Summary" Foreground="White" Margin="10,15,0,0" FontWeight="Bold" FontSize="10">
             </TextBlock>
-            <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Wheat" Height="361" Name="Lst_AskedQuestion" Margin="10,10,0,0" Width="182" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+            <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Wheat" Height="361" Name="Lst_AskedQuestion" SelectionChanged="Lst_AskedQuestion_SelectionChanged" Margin="10,10,0,0" Width="182" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
                 <ListBox.ItemTemplate>
                     <DataTemplate >
                         <Grid Margin="0,2">
@@ -53,11 +54,6 @@
                                  <Run Text="{Binding AskedQuestion}" ToolTip="{Binding AskedQuestion}" Foreground="White"/>
                                  <Run Text="{Binding SubmittedAnswers}" FontWeight="Bold" FontSize="10" ToolTip="{Binding SubmittedAnswers}" Foreground="Wheat"/>
                             </TextBlock>
-
-                            <!--<TextBlock Margin="0,0,0,0" Text="{Binding AskedQuestion}" TextTrimming="CharacterEllipsis" Width="175" Foreground="Wheat" FontWeight="Bold" ToolTip="{Binding AskedQuestion}"/>
-                            
-                            <TextBlock Margin="0,0,0,0" Text="{Binding SubmittedAnswers}" Width="175" Foreground="Aqua"  FontWeight="Bold" ToolTip="{Binding SubmittedAnswers}"/>-->
-
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
@@ -66,6 +62,7 @@
         </StackPanel>
         <TextBlock HorizontalAlignment="Left" Height="223" Margin="570,105,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"  Name="Txt_Block_Hint" TextAlignment="Justify" Visibility="Hidden" Foreground="DarkGray" FontWeight="Bold"
                    FontSize="10"/>
+        
 
     </Grid>
 </Window>

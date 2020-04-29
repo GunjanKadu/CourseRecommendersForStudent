@@ -22,33 +22,64 @@ namespace WpfApp1
     /// </summary>
     public partial class Questionare : Window
     {
+        QuestionAnswer answerList;
+
         int questionNumber = 1;
         string singleAnswer;
 
-        ObservableCollection<AnswerList> lstAnswer = new ObservableCollection<AnswerList>();
+        ObservableCollection<QuestionAnswer> lstAnswer = new ObservableCollection<QuestionAnswer>();
         ObservableCollection<string> selectedAnswers = new ObservableCollection<string>();
+        public static ObservableCollection<QuestionAnswer> _askedQuestionAnswer = new ObservableCollection<QuestionAnswer>();
 
-        ObservableCollection<AnswerList> askedQuestion = new ObservableCollection<AnswerList>();
 
         XmlDocument doc = new XmlDocument();
         public Questionare()
         {
             InitializeComponent();
             doc.Load("questions.xml");
+            if (_askedQuestionAnswer.Count != 0)
+            {
+                Txt_PressStart.Text = "Press Start/Continue To Find Your Path";
+                Btn_Continue.Visibility = Visibility.Visible;
+            }
+            else
+            {
+
+                Txt_PressStart.Text = "Press Start To Find Your Path";
+            }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Owner.Visibility = Visibility.Visible;
+            if (questionNumber >= 8)
+            {
+                _askedQuestionAnswer.Clear();
+            }
+            MyStorage.WriteXml<ObservableCollection<QuestionAnswer>>(Questionare._askedQuestionAnswer, "QandA.xml");
         }
 
         private void Btn_Start_Click(object sender, RoutedEventArgs e)
         {
+            _askedQuestionAnswer.Clear();
             startApplication(questionNumber, "general");
+        }
+
+        private void Btn_Continue_Click(object sender, RoutedEventArgs e)
+        {
+            questionNumber = _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].QuestionNumber + 1;
+            startApplication(questionNumber, _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].Category);
+            foreach (QuestionAnswer item in _askedQuestionAnswer)
+            {
+                selectedAnswers.Add(item.Answer);
+            }
+            Btn_Continue.Visibility = Visibility.Hidden;
         }
 
         private void startApplication(int questionNumber, string questionType)
         {
+            answerList = new QuestionAnswer();
+
             Txt_PressStart.Visibility = Visibility.Hidden;
             Btn_Start.Visibility = Visibility.Hidden;
 
@@ -82,16 +113,15 @@ namespace WpfApp1
                         {
                             Txt_Question.Text = questionNumber + ". " + child.InnerText;
 
-                            // Filling The Answered Questions
+                            answerList.QuestionNumber = questionNumber;
+                            answerList.AskedQuestion = child.InnerText;
+                            answerList.Category = questionType;
 
-                            askedQuestion.Add(new AnswerList() { AskedQuestion = child.InnerText, Category=questionType,QuestionNumber=questionNumber });
-
-                            Lst_AskedQuestion.ItemsSource = askedQuestion;
-
+                            Lst_AskedQuestion.ItemsSource = _askedQuestionAnswer;
                         }
                         if (name == "A" + questionNumber)
                         {
-                            lstAnswer.Add(new AnswerList() { Answer = child.InnerText });
+                            lstAnswer.Add(new QuestionAnswer() { Answer = child.InnerText });
                         }
                         Lst_AnswerList.ItemsSource = lstAnswer;
                     }
@@ -101,9 +131,9 @@ namespace WpfApp1
 
         private void Lst_AnswerList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var selection = (sender as ListBox).SelectedItem as AnswerList;
+            var selection = (sender as ListBox).SelectedItem as QuestionAnswer;
 
-            if(selection!=null && questionNumber == 3)
+            if (selection != null && questionNumber == 3)
             {
                 switch (selection.Answer.ToString())
                 {
@@ -113,7 +143,7 @@ namespace WpfApp1
                         break;
                     case "Master's In Computer Science":
                         Txt_Block_Hint.Visibility = Visibility.Visible;
-                        Txt_Block_Hint.Text =Hints.MCS;
+                        Txt_Block_Hint.Text = Hints.MCS;
                         break;
 
                     case "Bachelor's In Information Techcnology":
@@ -158,10 +188,14 @@ namespace WpfApp1
 
         private void Btn_Next_Question_Click(object sender, RoutedEventArgs e)
         {
-            selectedAnswers.Add(singleAnswer);
 
+            answerList.SubmittedAnswers = singleAnswer;
+            //askedQuestionAnswer.Add(answerList);
+            _askedQuestionAnswer.Add(answerList);
+
+            selectedAnswers.Add(singleAnswer);
             Txt_Block_Hint.Visibility = Visibility.Hidden;
-            askedQuestion.Add( new AnswerList() { SubmittedAnswers = "• " + selectedAnswers.Last<string>() });
+
             if (selectedAnswers.Count == questionNumber)
             {
                 questionNumber += 1;
@@ -175,7 +209,23 @@ namespace WpfApp1
                     }
                     else
                     {
-                        askedQuestion.RemoveAt(5);
+                        _askedQuestionAnswer.RemoveAt(2);
+                        selectedAnswers.RemoveAt(questionNumber - 2);
+                        return;
+                    }
+                }
+                else if (selectedAnswers.Contains("Bachelor's In Computer Science") && selectedAnswers[0] == "Bachelor's" && questionNumber == 4)
+                {
+                    var res = MessageBox.Show("Do You Again Want To Study A Bachelor's Degree?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (res == MessageBoxResult.Yes)
+                    {
+                        lstAnswer.Clear();
+                        startApplication(questionNumber, "BCS");
+                    }
+                    else
+                    {
+                        _askedQuestionAnswer.RemoveAt(2);
+                        selectedAnswers.RemoveAt(questionNumber - 2);
                         return;
                     }
                 }
@@ -184,18 +234,29 @@ namespace WpfApp1
                     lstAnswer.Clear();
                     startApplication(questionNumber, "MCS");
                 }
+                else if (selectedAnswers.Contains("Bachelor's In Computer Science"))
+                {
+                    lstAnswer.Clear();
+                    startApplication(questionNumber, "BCS");
+                }
                 else
                 {
                     lstAnswer.Clear();
                     startApplication(questionNumber, "general");
                 }
             }
+
         }
 
         private void Btn_Prev_Question_Click(object sender, RoutedEventArgs e)
         {
             lstAnswer.Clear();
             questionNumber -= 1;
+            if (questionNumber > 0)
+            {
+                _askedQuestionAnswer.RemoveAt(_askedQuestionAnswer.Count - 1);
+                selectedAnswers.RemoveAt(selectedAnswers.Count - 1);
+            }
             if (selectedAnswers.Contains("Master's In Computer Science") && questionNumber >= 5)
             {
                 startApplication(questionNumber, "MCS");
@@ -206,18 +267,20 @@ namespace WpfApp1
             }
 
         }
+
+        private void Lst_AskedQuestion_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selection = (sender as ListBox).SelectedItem as QuestionAnswer;
+
+            if (selection != null)
+            {
+                var questionNumber = selection.QuestionNumber;
+                var questionType = selection.Category;
+
+                startApplication(questionNumber, questionType);
+            }
+        }
+
+
     }
-}
-
-public class AnswerList
-{
-    public string Answer { get; set; }
-    public string AskedQuestion { get; set; }
-
-    public string SubmittedAnswers { get; set; }
-
-    public string Category { get; set; }
-
-    public int QuestionNumber { get; set; }
-
 }

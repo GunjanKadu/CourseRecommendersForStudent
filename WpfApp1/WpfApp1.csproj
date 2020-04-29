@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Classes\Hints.cs" />
     <Compile Include="Classes\Question.cs" />
+    <Compile Include="Classes\QuestionAnswer.cs" />
     <Compile Include="Classes\ToolTip.cs" />
     <Compile Include="Questionare.xaml.cs">
       <DependentUpon>Questionare.xaml</DependentUpon>

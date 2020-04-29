@@ -3,9 +3,9 @@
 	<section name="Question" id="1" type="general">
 		<Question id="Q1">What Is Your Current Qualification?</Question>
 		<Answer id="A1">High School Graduate</Answer>
-		<Answer id="A1"> Bachelor's</Answer>
+		<Answer id="A1">Bachelor's</Answer>
 		<Answer id="A1">Master's</Answer>
-		<Answer id="A1"> Other</Answer>
+		<Answer id="A1">Other</Answer>
 	</section>
 
 
@@ -31,6 +31,9 @@
 		<Answer id="A3">Master's In Computer Engineering</Answer>
 	</section>
 
+
+
+
 	<section name="Question" id="4" type="MCS">
 		<Question id="Q4">Are You Interested In Learning A Language For Web Applications</Question>
 		<Answer id="A4">Yes</Answer>
@@ -47,6 +50,36 @@
 		<Answer id="A6">No</Answer>
 	</section>
 	<section name="Question" id="7" type="MCS">
+		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A7">Yes</Answer>
+		<Answer id="A7">No</Answer>
+	</section>
+	<section name="Question" id="8" type="MCS">
+		<Question id="Q8">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A8">Yes</Answer>
+		<Answer id="A8">No</Answer>
+	</section>
+
+
+
+
+
+	<section name="Question" id="4" type="BCS">
+		<Question id="Q4">Bachelors Questions</Question>
+		<Answer id="A4">Yes</Answer>
+		<Answer id="A4">No</Answer>
+	</section>
+	<section name="Question" id="5" type="BCS">
+		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Answer id="A5">Yes</Answer>
+		<Answer id="A5">No</Answer>
+	</section>
+	<section name="Question" id="6" type="BCS">
+		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Answer id="A6">Yes</Answer>
+		<Answer id="A6">No</Answer>
+	</section>
+	<section name="Question" id="7" type="BCS">
 		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
 		<Answer id="A7">Yes</Answer>
 		<Answer id="A7">No</Answer>
