@@ -23,6 +23,7 @@ namespace WpfApp1
     public partial class Questionare : Window
     {
         int questionNumber = 1;
+        string singleAnswer;
 
         ObservableCollection<AnswerList> lstAnswer = new ObservableCollection<AnswerList>();
         ObservableCollection<string> selectedAnswers = new ObservableCollection<string>();
@@ -142,13 +143,13 @@ namespace WpfApp1
                     default:
                         break;
                 }
-                selectedAnswers.Add(selection.Answer.ToString());
+                singleAnswer = selection.Answer.ToString();
                 Btn_Next_Question.IsEnabled = true;
                 Btn_Next_Question.DataContext = new Classes.ToolTip() { toolTipText = "Click To See The Next Question" };
             }
             else if (selection != null)
             {
-                selectedAnswers.Add(selection.Answer.ToString());
+                singleAnswer = selection.Answer.ToString();
 
                 Btn_Next_Question.IsEnabled = true;
                 Btn_Next_Question.DataContext = new Classes.ToolTip() { toolTipText = "Click To See The Next Question" };
@@ -157,8 +158,10 @@ namespace WpfApp1
 
         private void Btn_Next_Question_Click(object sender, RoutedEventArgs e)
         {
+            selectedAnswers.Add(singleAnswer);
+
             Txt_Block_Hint.Visibility = Visibility.Hidden;
-            askedQuestion.Add(new AnswerList() { SubmittedAnswers = "• " + selectedAnswers.Last<string>() });
+            askedQuestion.Add( new AnswerList() { SubmittedAnswers = "• " + selectedAnswers.Last<string>() });
             if (selectedAnswers.Count == questionNumber)
             {
                 questionNumber += 1;
@@ -172,6 +175,7 @@ namespace WpfApp1
                     }
                     else
                     {
+                        askedQuestion.RemoveAt(5);
                         return;
                     }
                 }
