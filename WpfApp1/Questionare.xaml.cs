@@ -44,7 +44,6 @@ namespace WpfApp1
             }
             else
             {
-
                 Txt_PressStart.Text = "Press Start To Find Your Path";
             }
         }
@@ -68,11 +67,12 @@ namespace WpfApp1
         private void Btn_Continue_Click(object sender, RoutedEventArgs e)
         {
             questionNumber = _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].QuestionNumber + 1;
-            startApplication(questionNumber, _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].Category);
+            
             foreach (QuestionAnswer item in _askedQuestionAnswer)
             {
-                selectedAnswers.Add(item.Answer);
+                selectedAnswers.Add(item.SubmittedAnswers);
             }
+            startApplication(questionNumber, _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].Category);
             Btn_Continue.Visibility = Visibility.Hidden;
         }
 

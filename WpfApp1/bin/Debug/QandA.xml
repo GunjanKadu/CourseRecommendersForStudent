@@ -2,13 +2,13 @@
 <ArrayOfQuestionAnswer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <QuestionAnswer>
     <AskedQuestion>What Is Your Current Qualification?</AskedQuestion>
-    <SubmittedAnswers>Bachelor's</SubmittedAnswers>
+    <SubmittedAnswers>Master's</SubmittedAnswers>
     <Category>general</Category>
     <QuestionNumber>1</QuestionNumber>
   </QuestionAnswer>
   <QuestionAnswer>
     <AskedQuestion>What Is The Primary Reason You Are Looking/Taking This Course?</AskedQuestion>
-    <SubmittedAnswers> Enhance Existing Skill</SubmittedAnswers>
+    <SubmittedAnswers>Further Education</SubmittedAnswers>
     <Category>general</Category>
     <QuestionNumber>2</QuestionNumber>
   </QuestionAnswer>
@@ -17,5 +17,17 @@
     <SubmittedAnswers>Master's In Computer Science</SubmittedAnswers>
     <Category>general</Category>
     <QuestionNumber>3</QuestionNumber>
+  </QuestionAnswer>
+  <QuestionAnswer>
+    <AskedQuestion>Are You Interested In Learning A Language For Web Applications</AskedQuestion>
+    <SubmittedAnswers>Yes</SubmittedAnswers>
+    <Category>MCS</Category>
+    <QuestionNumber>4</QuestionNumber>
+  </QuestionAnswer>
+  <QuestionAnswer>
+    <AskedQuestion>Are You Intrested in Writing Programs that enables processes to communicate over networks</AskedQuestion>
+    <SubmittedAnswers>Yes</SubmittedAnswers>
+    <Category>MCS</Category>
+    <QuestionNumber>5</QuestionNumber>
   </QuestionAnswer>
 </ArrayOfQuestionAnswer>
