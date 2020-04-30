@@ -53,6 +53,7 @@
                             <TextBlock Width="175" TextTrimming="CharacterEllipsis" Margin="0,-5,0,5">
                                  <Run Text="{Binding AskedQuestion}" ToolTip="{Binding AskedQuestion}" Foreground="White"/>
                                 <LineBreak/>
+                                 <Run Text="• " FontWeight="Bold" FontSize="10"  Foreground="Wheat"/>
                                  <Run Text="{Binding SubmittedAnswers}" FontWeight="Bold" FontSize="10" ToolTip="{Binding SubmittedAnswers}" Foreground="Wheat"/>
                             </TextBlock>
                         </Grid>

@@ -84,6 +84,8 @@ namespace WpfApp1
 
             }
 
+            selectedAnswers.Distinct().ToList<string>();
+
             startApplication(questionNumber, _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].Category);
             Btn_Continue.Visibility = Visibility.Hidden;
         }
@@ -125,31 +127,17 @@ namespace WpfApp1
                         {
                             Txt_Question.Text = questionNumber + ". " + child.InnerText;
 
-                            //if (_askedQuestionAnswer.Count != 0)
-                            //{
-                            //    foreach (QuestionAnswer item in _askedQuestionAnswer)
-                            //    {
-                            //        if (item.QuestionNumber != questionNumber && item.AskedQuestion != child.InnerText)
-                            //        {
-                            //            answerList.QuestionNumber = questionNumber;
-                            //            answerList.AskedQuestion = child.InnerText;
-                            //            answerList.Category = questionType;
-                            //            Lst_AskedQuestion.ItemsSource = _askedQuestionAnswer;
-                            //        }
-                            //    }
-                            //}
-                            //else
-                            //{
-                                answerList.QuestionNumber = questionNumber;
-                                answerList.AskedQuestion = child.InnerText;
-                                answerList.Category = questionType;
-                                Lst_AskedQuestion.ItemsSource = _askedQuestionAnswer;
-                            //}
+                            answerList.QuestionNumber = questionNumber;
+                            answerList.AskedQuestion = child.InnerText;
+                            answerList.Category = questionType;
+                            Lst_AskedQuestion.ItemsSource = _askedQuestionAnswer;
+
                         }
                         if (name == "A" + questionNumber)
                         {
                             lstAnswer.Add(new QuestionAnswer() { Answer = child.InnerText });
                         }
+                        lstAnswer.Distinct().ToList<QuestionAnswer>();
                         Lst_AnswerList.ItemsSource = lstAnswer;
                     }
                 }
@@ -218,8 +206,9 @@ namespace WpfApp1
 
             answerList.SubmittedAnswers = singleAnswer;
             //askedQuestionAnswer.Add(answerList);
-         
+
             _askedQuestionAnswer.Add(answerList);
+            _askedQuestionAnswer.Distinct().ToList<QuestionAnswer>();
 
             selectedAnswers.Add(singleAnswer);
             Txt_Block_Hint.Visibility = Visibility.Hidden;
@@ -257,15 +246,135 @@ namespace WpfApp1
                         return;
                     }
                 }
-                else if (selectedAnswers.Contains("Master's In Computer Science"))
+                else if (selectedAnswers.Contains("Bachelor's In Information Techcnology") && selectedAnswers[0] == "Bachelor's" && questionNumber == 4)
+                {
+                    var res = MessageBox.Show("Do You Again Want To Study A Bachelor's Degree?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (res == MessageBoxResult.Yes)
+                    {
+                        lstAnswer.Clear();
+                        startApplication(questionNumber, "BIT");
+                    }
+                    else
+                    {
+                        _askedQuestionAnswer.RemoveAt(2);
+                        selectedAnswers.RemoveAt(questionNumber - 2);
+                        return;
+                    }
+                }
+                else if (selectedAnswers.Contains("Bachelor's In Electronics and Telecomm") && selectedAnswers[0] == "Bachelor's" && questionNumber == 4)
+                {
+                    var res = MessageBox.Show("Do You Again Want To Study A Bachelor's Degree?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (res == MessageBoxResult.Yes)
+                    {
+                        lstAnswer.Clear();
+                        startApplication(questionNumber, "BETC");
+                    }
+                    else
+                    {
+                        _askedQuestionAnswer.RemoveAt(2);
+                        selectedAnswers.RemoveAt(questionNumber - 2);
+                        return;
+                    }
+                }
+                else if (selectedAnswers.Contains("Master's In Big Data and Business Analytics") && selectedAnswers[0] == "Master's" && questionNumber == 4)
+                {
+                    var res = MessageBox.Show("Do You Again Want To Study A Master's Degree?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (res == MessageBoxResult.Yes)
+                    {
+                        lstAnswer.Clear();
+                        startApplication(questionNumber, "MBDBA");
+                    }
+                    else
+                    {
+                        _askedQuestionAnswer.RemoveAt(2);
+                        selectedAnswers.RemoveAt(questionNumber - 2);
+                        return;
+                    }
+                }
+                else if (selectedAnswers.Contains("Master's In Information Technology") && selectedAnswers[0] == "Master's" && questionNumber == 4)
+                {
+                    var res = MessageBox.Show("Do You Again Want To Study A Master's Degree?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (res == MessageBoxResult.Yes)
+                    {
+                        lstAnswer.Clear();
+                        startApplication(questionNumber, "MIT");
+                    }
+                    else
+                    {
+                        _askedQuestionAnswer.RemoveAt(2);
+                        selectedAnswers.RemoveAt(questionNumber - 2);
+                        return;
+                    }
+                }
+                else if (selectedAnswers.Contains("Master's In International Business And Eng") && selectedAnswers[0] == "Master's" && questionNumber == 4)
+                {
+                    var res = MessageBox.Show("Do You Again Want To Study A Master's Degree?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (res == MessageBoxResult.Yes)
+                    {
+                        lstAnswer.Clear();
+                        startApplication(questionNumber, "MIBE");
+                    }
+                    else
+                    {
+                        _askedQuestionAnswer.RemoveAt(2);
+                        selectedAnswers.RemoveAt(questionNumber - 2);
+                        return;
+                    }
+                }
+                else if (selectedAnswers.Contains("Master's In Computer Engineering") && selectedAnswers[0] == "Master's" && questionNumber == 4)
+                {
+                    var res = MessageBox.Show("Do You Again Want To Study A Master's Degree?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (res == MessageBoxResult.Yes)
+                    {
+                        lstAnswer.Clear();
+                        startApplication(questionNumber, "MCE");
+                    }
+                    else
+                    {
+                        _askedQuestionAnswer.RemoveAt(2);
+                        selectedAnswers.RemoveAt(questionNumber - 2);
+                        return;
+                    }
+                }
+                else if (selectedAnswers.Contains("Master's In Computer Engineering"))
                 {
                     lstAnswer.Clear();
-                    startApplication(questionNumber, "MCS");
+                    startApplication(questionNumber, "MCE");
+                }
+                else if (selectedAnswers.Contains("Master's In International Business And Eng"))
+                {
+                    lstAnswer.Clear();
+                    startApplication(questionNumber, "MIBE");
+                }
+                else if (selectedAnswers.Contains("Master's In Information Technology"))
+                {
+                    lstAnswer.Clear();
+                    startApplication(questionNumber, "MIT");
+                }
+                else if (selectedAnswers.Contains("Master's In Big Data and Business Analytics"))
+                {
+                    lstAnswer.Clear();
+                    startApplication(questionNumber, "MBDBA");
+                }
+                else if (selectedAnswers.Contains("Bachelor's In Information Techcnology"))
+                {
+                    lstAnswer.Clear();
+                    startApplication(questionNumber, "BIT");
+                }
+                else if (selectedAnswers.Contains("Bachelor's In Electronics and Telecomm"))
+                {
+                    lstAnswer.Clear();
+                    startApplication(questionNumber, "BETC");
                 }
                 else if (selectedAnswers.Contains("Bachelor's In Computer Science"))
                 {
                     lstAnswer.Clear();
                     startApplication(questionNumber, "BCS");
+                }
+                else if (selectedAnswers.Contains("Master's In Computer Science"))
+                {
+                    lstAnswer.Clear();
+                    startApplication(questionNumber, "MCS");
                 }
                 else
                 {

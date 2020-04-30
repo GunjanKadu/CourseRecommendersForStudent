@@ -23,9 +23,9 @@
 		<Question id="Q3">Which Of The Following Degree Do You Wish To Study?</Question>
 		<Answer id="A3">Bachelor's In Computer Science</Answer>
 		<Answer id="A3">Bachelor's In Information Techcnology</Answer>
-		<Answer id="A3">Bachelor's In Electronics &amp; Telecomm</Answer>
+		<Answer id="A3">Bachelor's In Electronics and Telecomm</Answer>
 		<Answer id="A3">Master's In Computer Science</Answer>
-		<Answer id="A3">Master's In Big Data &amp; Business Analytics</Answer>
+		<Answer id="A3">Master's In Big Data and Business Analytics</Answer>
 		<Answer id="A3">Master's In Information Technology</Answer>
 		<Answer id="A3">Master's In International Business And Eng</Answer>
 		<Answer id="A3">Master's In Computer Engineering</Answer>
@@ -65,7 +65,7 @@
 
 
 	<section name="Question" id="4" type="BCS">
-		<Question id="Q4">Bachelors Questions</Question>
+		<Question id="Q4">Bachelors CS</Question>
 		<Answer id="A4">Yes</Answer>
 		<Answer id="A4">No</Answer>
 	</section>
@@ -80,6 +80,154 @@
 		<Answer id="A6">No</Answer>
 	</section>
 	<section name="Question" id="7" type="BCS">
+		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A7">Yes</Answer>
+		<Answer id="A7">No</Answer>
+	</section>
+
+
+
+
+
+
+	<section name="Question" id="4" type="BIT">
+		<Question id="Q4">Bachelors IT</Question>
+		<Answer id="A4">Yes</Answer>
+		<Answer id="A4">No</Answer>
+	</section>
+	<section name="Question" id="5" type="BIT">
+		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Answer id="A5">Yes</Answer>
+		<Answer id="A5">No</Answer>
+	</section>
+	<section name="Question" id="6" type="BIT">
+		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Answer id="A6">Yes</Answer>
+		<Answer id="A6">No</Answer>
+	</section>
+	<section name="Question" id="7" type="BIT">
+		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A7">Yes</Answer>
+		<Answer id="A7">No</Answer>
+	</section>
+
+
+
+
+	<section name="Question" id="4" type="BETC">
+		<Question id="Q4">Bachelors ETC</Question>
+		<Answer id="A4">Yes</Answer>
+		<Answer id="A4">No</Answer>
+	</section>
+	<section name="Question" id="5" type="BETC">
+		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Answer id="A5">Yes</Answer>
+		<Answer id="A5">No</Answer>
+	</section>
+	<section name="Question" id="6" type="BETC">
+		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Answer id="A6">Yes</Answer>
+		<Answer id="A6">No</Answer>
+	</section>
+	<section name="Question" id="7" type="BETC">
+		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A7">Yes</Answer>
+		<Answer id="A7">No</Answer>
+	</section>
+
+
+
+
+
+
+	<section name="Question" id="4" type="MBDBA">
+		<Question id="Q4">Master MBDBA</Question>
+		<Answer id="A4">Yes</Answer>
+		<Answer id="A4">No</Answer>
+	</section>
+	<section name="Question" id="5" type="MBDBA">
+		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Answer id="A5">Yes</Answer>
+		<Answer id="A5">No</Answer>
+	</section>
+	<section name="Question" id="6" type="MBDBA">
+		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Answer id="A6">Yes</Answer>
+		<Answer id="A6">No</Answer>
+	</section>
+	<section name="Question" id="7" type="MBDBA">
+		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A7">Yes</Answer>
+		<Answer id="A7">No</Answer>
+	</section>
+
+
+
+
+	<section name="Question" id="4" type="MIT">
+		<Question id="Q4">Master MIT</Question>
+		<Answer id="A4">Yes</Answer>
+		<Answer id="A4">No</Answer>
+	</section>
+	<section name="Question" id="5" type="MIT">
+		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Answer id="A5">Yes</Answer>
+		<Answer id="A5">No</Answer>
+	</section>
+	<section name="Question" id="6" type="MIT">
+		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Answer id="A6">Yes</Answer>
+		<Answer id="A6">No</Answer>
+	</section>
+	<section name="Question" id="7" type="MIT">
+		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A7">Yes</Answer>
+		<Answer id="A7">No</Answer>
+	</section>
+
+
+
+
+	<section name="Question" id="4" type="MIBE">
+		<Question id="Q4">Master MIBE</Question>
+		<Answer id="A4">Yes</Answer>
+		<Answer id="A4">No</Answer>
+	</section>
+	<section name="Question" id="5" type="MIBE">
+		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Answer id="A5">Yes</Answer>
+		<Answer id="A5">No</Answer>
+	</section>
+	<section name="Question" id="6" type="MIBE">
+		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Answer id="A6">Yes</Answer>
+		<Answer id="A6">No</Answer>
+	</section>
+	<section name="Question" id="7" type="MIBE">
+		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A7">Yes</Answer>
+		<Answer id="A7">No</Answer>
+	</section>
+
+
+
+
+	<section name="Question" id="4" type="MCE">
+		<Question id="Q4">Master MCE</Question>
+		<Answer id="A4">Yes</Answer>
+		<Answer id="A4">No</Answer>
+	</section>
+	<section name="Question" id="5" type="MCE">
+		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Answer id="A5">Yes</Answer>
+		<Answer id="A5">No</Answer>
+	</section>
+	<section name="Question" id="6" type="MCE">
+		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Answer id="A6">Yes</Answer>
+		<Answer id="A6">No</Answer>
+	</section>
+	<section name="Question" id="7" type="MCE">
 		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
 		<Answer id="A7">Yes</Answer>
 		<Answer id="A7">No</Answer>
