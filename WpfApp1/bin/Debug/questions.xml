@@ -35,27 +35,27 @@
 
 
 	<section name="Question" id="4" type="MCS">
-		<Question id="Q4">Are You Interested In Learning A Language For Web Applications</Question>
+		<Question id="Q4">Do You Have Prior Experience In Coding a Large Application?</Question>
 		<Answer id="A4">Yes</Answer>
 		<Answer id="A4">No</Answer>
 	</section>
 	<section name="Question" id="5" type="MCS">
-		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Question id="Q5">Have You Worked With A Relational Database management System?</Question>
 		<Answer id="A5">Yes</Answer>
 		<Answer id="A5">No</Answer>
 	</section>
 	<section name="Question" id="6" type="MCS">
-		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Question id="Q6">Are You Intrested in Making  Software's that supports a Computer's Core Functionality?</Question>
 		<Answer id="A6">Yes</Answer>
 		<Answer id="A6">No</Answer>
 	</section>
 	<section name="Question" id="7" type="MCS">
-		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Question id="Q7">Have You Ever Developed An Application For Web?</Question>
 		<Answer id="A7">Yes</Answer>
 		<Answer id="A7">No</Answer>
 	</section>
 	<section name="Question" id="8" type="MCS">
-		<Question id="Q8">Are You Interested In Learning A Language For Web Applications</Question>
+		<Question id="Q8">Have You Ever Developed An Application For Windows/Mac/Linux?</Question>
 		<Answer id="A8">Yes</Answer>
 		<Answer id="A8">No</Answer>
 	</section>
@@ -65,12 +65,12 @@
 
 
 	<section name="Question" id="4" type="BCS">
-		<Question id="Q4">Bachelors CS</Question>
+		<Question id="Q4">Do You Have Prior Experience In Coding a Small Application?</Question>
 		<Answer id="A4">Yes</Answer>
 		<Answer id="A4">No</Answer>
 	</section>
 	<section name="Question" id="5" type="BCS">
-		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Question id="Q5">Are You Intrested In Relational Database management System?</Question>
 		<Answer id="A5">Yes</Answer>
 		<Answer id="A5">No</Answer>
 	</section>
@@ -80,60 +80,145 @@
 		<Answer id="A6">No</Answer>
 	</section>
 	<section name="Question" id="7" type="BCS">
-		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Question id="Q7">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
 		<Answer id="A7">Yes</Answer>
 		<Answer id="A7">No</Answer>
 	</section>
-
+	<section name="Question" id="8" type="BCS">
+		<Question id="Q8">Are You Interested In Learning A Language For Web Applications</Question>
+		<Answer id="A8">Yes</Answer>
+		<Answer id="A8">No</Answer>
+	</section>
 
 
 
 
 
 	<section name="Question" id="4" type="BIT">
-		<Question id="Q4">Bachelors IT</Question>
+		<Question id="Q4">Do You Have Prior Experience or Know About Information Coding?</Question>
 		<Answer id="A4">Yes</Answer>
 		<Answer id="A4">No</Answer>
 	</section>
 	<section name="Question" id="5" type="BIT">
-		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Question id="Q5">Are You Intrested in Learning About Computer Graphics and Virtual Reality Systems?</Question>
 		<Answer id="A5">Yes</Answer>
 		<Answer id="A5">No</Answer>
 	</section>
 	<section name="Question" id="6" type="BIT">
-		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Question id="Q6">Are You Intrested In Learning About Information and Network Security?</Question>
 		<Answer id="A6">Yes</Answer>
 		<Answer id="A6">No</Answer>
 	</section>
 	<section name="Question" id="7" type="BIT">
+		<Question id="Q7">Are You Interested In Learning Information Technology for Management of Enterprise?</Question>
+		<Answer id="A7">Yes</Answer>
+		<Answer id="A7">No</Answer>
+	</section>
+	<section name="Question" id="8" type="BIT">
+		<Question id="Q8">Have You Heard About Computational Mathematics?</Question>
+		<Answer id="A8">Yes</Answer>
+		<Answer id="A8">No</Answer>
+	</section>
+
+
+
+
+
+
+
+
+
+	<section name="Question" id="4" type="MIT">
+		<Question id="Q4">Do You Have Prior Experience In Securing Information and Networks?</Question>
+		<Answer id="A4">Yes</Answer>
+		<Answer id="A4">No</Answer>
+	</section>
+	<section name="Question" id="5" type="MIT">
+		<Question id="Q5">Have You Worked With  Computer Graphics and Virtual Reality Systems?</Question>
+		<Answer id="A5">Yes</Answer>
+		<Answer id="A5">No</Answer>
+	</section>
+	<section name="Question" id="6" type="MIT">
+		<Question id="Q6">Are You Intrested in Learning About Networking Technology for Digital Devices?</Question>
+		<Answer id="A6">Yes</Answer>
+		<Answer id="A6">No</Answer>
+	</section>
+	<section name="Question" id="7" type="MIT">
 		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
 		<Answer id="A7">Yes</Answer>
 		<Answer id="A7">No</Answer>
 	</section>
+	<section name="Question" id="8" type="MIT">
+		<Question id="Q8">Have You Ever Solved A Problem With Computational Mathematics?</Question>
+		<Answer id="A8">Yes</Answer>
+		<Answer id="A8">No</Answer>
+	</section>
+
+
+
+
 
 
 
 
 	<section name="Question" id="4" type="BETC">
-		<Question id="Q4">Bachelors ETC</Question>
+		<Question id="Q4">Do You Have Prior Experience In Designing Small Circuit Boards, Sensors and Basic Electronics?</Question>
 		<Answer id="A4">Yes</Answer>
 		<Answer id="A4">No</Answer>
 	</section>
 	<section name="Question" id="5" type="BETC">
-		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks?</Question>
 		<Answer id="A5">Yes</Answer>
 		<Answer id="A5">No</Answer>
 	</section>
 	<section name="Question" id="6" type="BETC">
-		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Question id="Q6">Are You Intrested in Writing Programs In Assembly Language Programming(1's and 0's)</Question>
 		<Answer id="A6">Yes</Answer>
 		<Answer id="A6">No</Answer>
 	</section>
 	<section name="Question" id="7" type="BETC">
-		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Question id="Q7">Which Of the Following Fields Are You Intrested In To Contribute Your Knowledge?</Question>
+		<Answer id="A7">Medical Electronics</Answer>
+		<Answer id="A7">Industrial Electronics</Answer>
+		<Answer id="A7">Power Electronics</Answer>
+		<Answer id="A7">Computer Networks</Answer>
+	</section>
+	<section name="Question" id="8" type="BETC">
+		<Question id="Q8">Are You Intrested In Making Your Own Proccessor?</Question>
+		<Answer id="A8">Yes</Answer>
+		<Answer id="A8">No</Answer>
+	</section>
+
+
+
+	<section name="Question" id="4" type="MCE">
+		<Question id="Q4">Have You Ever Learnt About Computer Architecture?</Question>
+		<Answer id="A4">Yes</Answer>
+		<Answer id="A4">No</Answer>
+	</section>
+	<section name="Question" id="5" type="MCE">
+		<Question id="Q5">Have You Ever Designed A Basic MicroProcessor ?</Question>
+		<Answer id="A5">Yes</Answer>
+		<Answer id="A5">No</Answer>
+	</section>
+	<section name="Question" id="6" type="MCE">
+		<Question id="Q6">Do You Have Prior Experience In Designing Complex Circuit Boards, Sensors ?</Question>
+		<Answer id="A6">Yes</Answer>
+		<Answer id="A6">No</Answer>
+	</section>
+	<section name="Question" id="7" type="MCE">
+		<Question id="Q7">Have You Ever Simulated A Circuit using P Spice or MultiSim or any other? </Question>
 		<Answer id="A7">Yes</Answer>
 		<Answer id="A7">No</Answer>
 	</section>
+	<section name="Question" id="8" type="MCE">
+		<Question id="Q8">Are You Intrested In Advanced Computer Communication Using Fibre Optics?</Question>
+		<Answer id="A8">Yes</Answer>
+		<Answer id="A8">No</Answer>
+	</section>
+
+
+
 
 
 
@@ -164,26 +249,7 @@
 
 
 
-	<section name="Question" id="4" type="MIT">
-		<Question id="Q4">Master MIT</Question>
-		<Answer id="A4">Yes</Answer>
-		<Answer id="A4">No</Answer>
-	</section>
-	<section name="Question" id="5" type="MIT">
-		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
-		<Answer id="A5">Yes</Answer>
-		<Answer id="A5">No</Answer>
-	</section>
-	<section name="Question" id="6" type="MIT">
-		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
-		<Answer id="A6">Yes</Answer>
-		<Answer id="A6">No</Answer>
-	</section>
-	<section name="Question" id="7" type="MIT">
-		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
-		<Answer id="A7">Yes</Answer>
-		<Answer id="A7">No</Answer>
-	</section>
+
 
 
 
@@ -212,24 +278,5 @@
 
 
 
-	<section name="Question" id="4" type="MCE">
-		<Question id="Q4">Master MCE</Question>
-		<Answer id="A4">Yes</Answer>
-		<Answer id="A4">No</Answer>
-	</section>
-	<section name="Question" id="5" type="MCE">
-		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
-		<Answer id="A5">Yes</Answer>
-		<Answer id="A5">No</Answer>
-	</section>
-	<section name="Question" id="6" type="MCE">
-		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
-		<Answer id="A6">Yes</Answer>
-		<Answer id="A6">No</Answer>
-	</section>
-	<section name="Question" id="7" type="MCE">
-		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
-		<Answer id="A7">Yes</Answer>
-		<Answer id="A7">No</Answer>
-	</section>
+
 </root>
