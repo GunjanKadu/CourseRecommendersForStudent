@@ -238,7 +238,6 @@ namespace WpfApp1
         {
             if (!isEditing)
             {
-
                 answerList.SubmittedAnswers = singleAnswer;
                 //askedQuestionAnswer.Add(answerList);
 

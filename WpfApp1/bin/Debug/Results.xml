@@ -1,29 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <root>
 	<section type="MCS">
+		<Result id="college">Hochschule Mannheim</Result>
+		<Result id="college"> • Masters's Of Science In Informatics</Result>
 		<Result id="college">SRH Heidelberg</Result>
-		<Result id="college">  • Masters In Applied Computer Science</Result>
+		<Result id="college">  • Masters Of Science In Applied Computer Science</Result>
 		<Result id="college">University Of Heidelberg</Result>
-		<Result id="college">  • Masters In Computer Science</Result>
-		<Result id="college">  • Masters In Computational Science</Result>
-		<Jobs id="job">Software Developer</Jobs>
-		<Jobs id="job">Web Developer</Jobs>
-		<Jobs id="job">Data Analyst</Jobs>
-		<Jobs id="job">Backend Engineer</Jobs>
-		<Jobs id="job">Network and Computer System Administrator</Jobs>
+		<Result id="college">  • Masters Of Science In Computer Science</Result>
+		<Result id="college">  • Masters Of Science In Computational Science</Result>
+		<Jobs id="job">• Software Developer</Jobs>
+		<Jobs id="job">• Web Developer</Jobs>
+		<Jobs id="job">• Data Analyst</Jobs>
+		<Jobs id="job">• Backend Engineer</Jobs>
+		<Jobs id="job">• Network and Computer System Administrator</Jobs>
 	</section>
 
 
-	<section type="MCS">
+	<section type="BCS">
+		<Result id="college">Hochschule Mannheim</Result>
+		<Result id="college"> • Bachelor's Of Science In Enterprise Software Computing</Result>
 		<Result id="college">SRH Heidelberg</Result>
-		<Result id="college"> • Bachelor's In Applied Computer Science</Result>
+		<Result id="college"> • Bachelor's Of Science In Applied Computer Science</Result>
 		<Result id="college">University Of Heidelberg</Result>
-		<Result id="college"> • Bachelor's In Computer Science</Result>
-		<Result id="college"> • Bachelor's In Computational Science</Result>
-		<Jobs id="job">Software Developer</Jobs>
-		<Jobs id="job">Web Developer</Jobs>
-		<Jobs id="job">Data Analyst</Jobs>
-		<Jobs id="job">Backend Engineer</Jobs>
-		<Jobs id="job">Network and Computer System Administrator</Jobs>
+		<Result id="college"> • Bachelor's Of Science In Computer Science</Result>
+		<Result id="college"> • Bachelor's Of Engineering In Computational Science</Result>
+		<Jobs id="job">• Software Developer</Jobs>
+		<Jobs id="job">• Web Developer</Jobs>
+		<Jobs id="job">• Data Analyst</Jobs>
+		<Jobs id="job">• Backend Engineer</Jobs>
+		<Jobs id="job">• Network and Computer System Administrator</Jobs>
 	</section>
+
+
+
+	<section type="BIT">
+		<Result id="college">Hochschule Mannheim</Result>
+		<Result id="college"> • Bachelor's Of Science In Informatics</Result>
+		<Result id="college">SRH Heidelberg</Result>
+		<Result id="college"> • Bachelor's Of Science In Information Technology</Result>
+		<Result id="college">University Of Heidelberg</Result>
+		<Result id="college"> • Bachelor's Of Science In Information Computing</Result>
+		<Result id="college"> • Bachelor's Of Engineering In Computational Science</Result>
+		<Jobs id="job">• IT Consultant</Jobs>
+		<Jobs id="job">• Cloud Architect</Jobs>
+		<Jobs id="job">• Web Developer</Jobs>
+		<Jobs id="job">• Data Modeler</Jobs>
+		<Jobs id="job">• Data Analyst</Jobs>
+	</section>
+
+
+	<section type="MIT">
+		<Result id="college">Hochschule Mannheim</Result>
+		<Result id="college"> • Masters Of Science In  Informatics</Result>
+		<Result id="college">SRH Heidelberg</Result>
+		<Result id="college"> • Masters Of Science In Information Technology</Result>
+		<Result id="college">University Of Heidelberg</Result>
+		<Result id="college"> • Masters Of Science In Computer Science</Result>
+		<Result id="college"> • Masters Of Engineering In Computational Science</Result>
+		<Jobs id="job">• IT Consultant</Jobs>
+		<Jobs id="job">• Cloud Architect</Jobs>
+		<Jobs id="job">• Web Developer</Jobs>
+		<Jobs id="job">• Data Modeler</Jobs>
+		<Jobs id="job">• Data Analyst</Jobs>
+	</section>
+
+
+	<section type="BETC">
+		<Result id="college">University Of Stuttgart</Result>
+		<Result id="college"> • Bachelor's Of Science In Electrical Engineering</Result>
+		<Result id="college">SRH Heidelberg</Result>
+		<Result id="college"> • Bachelor's Of Science In Information Technology</Result>
+		<Result id="college"> • Bachelor's Of Engineering In Electrical Engineering</Result>
+		<Jobs id="job">• Control and Instrumentation Engineer.</Jobs>
+		<Jobs id="job">• CAD Technician</Jobs>
+		<Jobs id="job">• Electronics Engineer</Jobs>
+		<Jobs id="job">• Systems Analyst</Jobs>
+		<Jobs id="job">• Circuit Design Engineer</Jobs>
+	</section>
+
+
+
 </root>
