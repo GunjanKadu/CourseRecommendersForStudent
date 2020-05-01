@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<section type="MCS">
+		<Result id="college">SRH Heidelberg</Result>
+		<Result id="college"> • Masters In Applied Computer Science</Result>
+		<Result id="college">University Of Heidelberg</Result>
+		<Result id="college"> • Masters In Computer Science</Result>
+		<Result id="college"> • Masters In Computational Science</Result>
+		<Jobs id="job">Software Developer</Jobs>
+		<Jobs id="job">Web Developer</Jobs>
+		<Jobs id="job">Data Analyst</Jobs>
+		<Jobs id="job">Backend Engineer</Jobs>
+		<Jobs id="job">Network and Computer System Administrator</Jobs>
+	</section>
+</root>

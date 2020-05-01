@@ -13,7 +13,7 @@
             <RowDefinition Height="78*"/>
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="FIND YOUR PATH" VerticalAlignment="Top" RenderTransformOrigin="0.713,1.75" Margin="10,10,0,0" Width="111" FontWeight="Bold" Foreground="#FFBEBABA"/>
-        <StackPanel Margin="215,5.333,199.333,22.667" Orientation="Vertical" Grid.Row="1">
+        <StackPanel Name="Stack_QandA"  Margin="215,5.333,199.333,22.667" Orientation="Vertical" Grid.Row="1">
             <Border Name="Txt_Question_Border" Visibility="Hidden" BorderBrush="Black" BorderThickness="0.5"  Width="340" Margin="-30,0,0,0">
                 <TextBlock x:Name="Txt_Question" HorizontalAlignment="Left" Visibility="Hidden" Padding="0" TextWrapping="Wrap"  Text="{Binding qText}" VerticalAlignment="Top" Height="65" Width="340" FontWeight="Bold" FontSize="12" />
             </Border>
@@ -64,7 +64,15 @@
         </StackPanel>
         <TextBlock HorizontalAlignment="Left" Height="223" Margin="570,105,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"  Name="Txt_Block_Hint" TextAlignment="Justify" Visibility="Hidden" Foreground="DarkGray" FontWeight="Bold"
                    FontSize="10"/>
-        
+        <TabControl Name="Tab_Results" HorizontalAlignment="Left" Height="288" VerticalAlignment="Top" Width="455" Visibility="Collapsed" Margin="253,26.333,0,0" Grid.Row="1">
+            <TabItem Header="Recommended Course">
+                <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_College"  Margin="10,10,0,0" Width="282" />
 
+            </TabItem>
+            <TabItem Header="Eligible Jobs">
+                <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_Job"  Margin="10,10,0,0" Width="282" />
+            </TabItem>
+        </TabControl>
+        <Button x:Name="Btn_StartAgain" Content="Start Again"  Height="46" Margin="190,315.333,0,0" Width="233"  Background="#FFB20837" Foreground="Wheat" BorderBrush="#FFB20837" FontWeight="Bold" Grid.Row="1" Visibility="Collapsed" Click="Btn_StartAgain_Click"  />
     </Grid>
 </Window>

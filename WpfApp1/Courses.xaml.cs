@@ -72,6 +72,10 @@ namespace WpfApp1
             }
 
             Cmbx_CourseTopics.ItemsSource = lstCourseItems;
+            if (lstCourseItems.Count != 0)
+            {
+                Cmbx_CourseTopics.SelectedItem = lstCourseItems[0];
+            }
 
         }
 

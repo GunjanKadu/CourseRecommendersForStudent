@@ -55,11 +55,14 @@ namespace WpfApp1
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Owner.Visibility = Visibility.Visible;
-            if (questionNumber >= 8)
+            if (questionNumber >= 9)
             {
                 _askedQuestionAnswer.Clear();
             }
             MyStorage.WriteXml<ObservableCollection<QuestionAnswer>>(Questionare._askedQuestionAnswer, "QandA.xml");
+            App.Colleges.Clear();
+            App.Jobs.Clear();
+
         }
 
         private void Btn_Start_Click(object sender, RoutedEventArgs e)
@@ -107,7 +110,10 @@ namespace WpfApp1
             Stack_Summary.Visibility = Visibility.Visible;
             Btn_Next_Question.Visibility = Visibility.Visible;
             Btn_Next_Question.IsEnabled = false;
-
+            if (questionNumber == 8)
+            {
+                Btn_Next_Question.Content = "Submit";
+            }
             Btn_Next_Question.DataContext = new Classes.ToolTip() { toolTipText = "Select An Answer To See The Next Question" };
 
             if (questionNumber > 1)
@@ -217,7 +223,7 @@ namespace WpfApp1
                         {
                             item.SubmittedAnswers = selection.Answer.ToString();
                         }
-                     
+
                     }
                 }
             }
@@ -234,13 +240,14 @@ namespace WpfApp1
                 _askedQuestionAnswer.Add(answerList);
                 _askedQuestionAnswer.Distinct().ToList<QuestionAnswer>();
 
-                oldQuestionNumber = _askedQuestionAnswer[_askedQuestionAnswer.Count-1].QuestionNumber;
-                oldCategory = _askedQuestionAnswer[_askedQuestionAnswer.Count-1].Category;
+                oldQuestionNumber = _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].QuestionNumber;
+                oldCategory = _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].Category;
 
                 selectedAnswers.Add(singleAnswer);
                 Txt_Block_Hint.Visibility = Visibility.Hidden;
 
-                if (selectedAnswers.Count == questionNumber)
+                
+                if (selectedAnswers.Count == questionNumber && questionNumber != 4)
                 {
                     questionNumber += 1;
                     if (selectedAnswers.Contains("Master's In Computer Science") && selectedAnswers[0] == "Master's" && questionNumber == 4)
@@ -409,6 +416,22 @@ namespace WpfApp1
                         startApplication(questionNumber, "general");
                     }
                 }
+                else if (selectedAnswers.Count == questionNumber && questionNumber == 4)
+                {
+
+                    Lst_AnswerList.Visibility = Visibility.Collapsed;
+                    Txt_Question.Visibility = Visibility.Collapsed;
+                    Txt_Question_Border.Visibility = Visibility.Collapsed;
+                    Btn_Next_Question.Visibility = Visibility.Collapsed;
+                    Btn_Prev_Question.Visibility = Visibility.Collapsed;
+                    Btn_Next_Question.IsEnabled = false;
+                    Stack_QandA.Visibility = Visibility.Collapsed;
+                    Tab_Results.Visibility = Visibility.Visible;
+                    Btn_StartAgain.Visibility = Visibility.Visible;
+
+                    Lst_Result_College.ItemsSource = App.CollegeList(oldCategory);
+                    Lst_Result_Job.ItemsSource = App.JobList();
+                }
             }
             else
             {
@@ -435,6 +458,28 @@ namespace WpfApp1
             {
                 startApplication(questionNumber, "general");
             }
+
+        }
+
+        private void Btn_StartAgain_Click(object sender, RoutedEventArgs e)
+        {
+            App.Colleges.Clear();
+            App.Jobs.Clear();
+            lstAnswer.Clear();
+            selectedAnswers.Clear();
+            _askedQuestionAnswer.Clear();
+            Lst_AnswerList.Visibility = Visibility.Visible;
+            Txt_Question.Visibility = Visibility.Visible;
+            Txt_Question_Border.Visibility = Visibility.Visible;
+            Stack_Summary.Visibility = Visibility.Visible;
+            Btn_Next_Question.Visibility = Visibility.Visible;
+            Stack_QandA.Visibility = Visibility.Visible;
+
+            Btn_StartAgain.Visibility = Visibility.Collapsed;
+            Tab_Results.Visibility = Visibility.Collapsed;
+            questionNumber = 1;
+            startApplication(questionNumber, "general");
+            
 
         }
 

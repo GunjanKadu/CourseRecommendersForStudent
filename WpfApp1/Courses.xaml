@@ -36,7 +36,7 @@
             </StackPanel>
             <Rectangle Fill="#FFF4F4F5" Stroke="Black" Margin="260,81,0,365"/>
             <Image Name="Course_Image" Margin="309,164,297,158"/>
-            <TextBlock x:Name="Txt_CourseDesc" TextWrapping="Wrap" Margin="524,108,36,57" Foreground="#FFFEFEFE" FontSize="14" TextAlignment="Justify" />
+            <TextBlock x:Name="Txt_CourseDesc" TextWrapping="Wrap" Margin="524,108,36,57" Foreground="#FFFEFEFE" FontSize="12" TextAlignment="Justify" />
             <ListBox Name="List_Courses" HorizontalAlignment="Left" Height="379" VerticalAlignment="Bottom" Width="246" Background="{x:Null}"  Margin="5,0,0,33" SelectionChanged="List_Courses_SelectionChanged" FontSize="11"  >
                 <ListBox.ItemTemplate>
                     <DataTemplate>

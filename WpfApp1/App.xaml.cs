@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Xml;
 using WpfApp1.Classes;
 
 namespace WpfApp1
@@ -16,6 +17,9 @@ namespace WpfApp1
     public partial class App : Application
     {
         public static ObservableCollection<Course> _courses;
+
+        public static List<string> Colleges = new List<string>();
+        public static List<string> Jobs = new List<string>();
 
         public static ObservableCollection<Question> _questions;
 
@@ -34,6 +38,40 @@ namespace WpfApp1
             }
         }
 
-       
+        public static void Load_Results(string category)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("Results.xml");
+            foreach (XmlNode node in doc.DocumentElement)
+            {
+                string att1 = node.Attributes[0].InnerText;
+                if (att1 == category)
+                {
+                    foreach (XmlNode child in node.ChildNodes)
+                    {
+                        string innerAtt = child.Attributes[0].InnerText;
+                        if ((innerAtt == "college"))
+                        {
+                            Colleges.Add(child.InnerText);
+                        }
+                        else if (innerAtt == "job")
+                        {
+                            Jobs.Add(child.InnerText);
+                        }
+                    }
+                }
+            }
+        }
+
+        public static List<string> CollegeList(string category)
+        {
+            Load_Results(category);
+            return Colleges;
+        }
+
+        public static List<string> JobList()
+        {
+            return Jobs;
+        }
     }
 }
