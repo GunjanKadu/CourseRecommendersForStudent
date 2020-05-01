@@ -2,10 +2,24 @@
 <root>
 	<section type="MCS">
 		<Result id="college">SRH Heidelberg</Result>
-		<Result id="college"> • Masters In Applied Computer Science</Result>
+		<Result id="college">  • Masters In Applied Computer Science</Result>
 		<Result id="college">University Of Heidelberg</Result>
-		<Result id="college"> • Masters In Computer Science</Result>
-		<Result id="college"> • Masters In Computational Science</Result>
+		<Result id="college">  • Masters In Computer Science</Result>
+		<Result id="college">  • Masters In Computational Science</Result>
+		<Jobs id="job">Software Developer</Jobs>
+		<Jobs id="job">Web Developer</Jobs>
+		<Jobs id="job">Data Analyst</Jobs>
+		<Jobs id="job">Backend Engineer</Jobs>
+		<Jobs id="job">Network and Computer System Administrator</Jobs>
+	</section>
+
+
+	<section type="MCS">
+		<Result id="college">SRH Heidelberg</Result>
+		<Result id="college"> • Bachelor's In Applied Computer Science</Result>
+		<Result id="college">University Of Heidelberg</Result>
+		<Result id="college"> • Bachelor's In Computer Science</Result>
+		<Result id="college"> • Bachelor's In Computational Science</Result>
 		<Jobs id="job">Software Developer</Jobs>
 		<Jobs id="job">Web Developer</Jobs>
 		<Jobs id="job">Data Analyst</Jobs>
