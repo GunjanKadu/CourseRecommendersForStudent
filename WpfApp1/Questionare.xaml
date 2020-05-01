@@ -20,7 +20,7 @@
             <TextBlock x:Name="Txt_PressStart" HorizontalAlignment="Left" Height="36" Margin="75,55,0,0" TextWrapping="Wrap" Width="168" FontWeight="Bold" VerticalAlignment="Center"/>
             <Button x:Name="Btn_Start" Content="START"  Height="46" Margin="-50,0,0,0" Width="233" Click="Btn_Start_Click" Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold"/>
             <Button x:Name="Btn_Continue" Visibility="Hidden" Content="CONTINUE"  Height="46" Margin="-50,10,0,0" Width="233"  Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold" Click="Btn_Continue_Click"/>
-            <ListBox x:Name="Lst_AnswerList" Visibility="Hidden"    SelectionChanged="Lst_AnswerList_SelectionChanged"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="340" Margin="0,-130,0,-20" Height="180">
+            <ListBox x:Name="Lst_AnswerList" Visibility="Hidden"    SelectionChanged="Lst_AnswerList_SelectionChanged"  HorizontalAlignment="left" VerticalAlignment="Top" Width="340" Margin="0,-130,0,-20" Height="180">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Margin="0,5">
@@ -41,7 +41,7 @@
         <StackPanel Visibility="Hidden" Name="Stack_Summary" Background="#FFB20837" Orientation="Vertical" VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="421"  Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-0.333">
             <TextBlock Text="Summary" Foreground="White" Margin="10,15,0,0" FontWeight="Bold" FontSize="10">
             </TextBlock>
-            <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Wheat" Height="361" Name="Lst_AskedQuestion" SelectionChanged="Lst_AskedQuestion_SelectionChanged" Margin="10,10,0,0" Width="182" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+            <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Wheat" Height="361" Name="Lst_AskedQuestion"  Margin="10,10,0,0" Width="182" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
                 <ListBox.ItemTemplate>
                     <DataTemplate >
                         <Grid Margin="0,2">
