@@ -191,6 +191,9 @@
 
 
 
+
+
+
 	<section name="Question" id="4" type="MCE">
 		<Question id="Q4">Have You Ever Learnt About Computer Architecture?</Question>
 		<Answer id="A4">Yes</Answer>
@@ -226,25 +229,33 @@
 
 
 	<section name="Question" id="4" type="MBDBA">
-		<Question id="Q4">Master MBDBA</Question>
+		<Question id="Q4">Do You Have Prior Experience With Design Thinking?</Question>
 		<Answer id="A4">Yes</Answer>
 		<Answer id="A4">No</Answer>
 	</section>
 	<section name="Question" id="5" type="MBDBA">
-		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Question id="Q5">Do You Have Prior Experience In Data Mining?</Question>
 		<Answer id="A5">Yes</Answer>
 		<Answer id="A5">No</Answer>
 	</section>
 	<section name="Question" id="6" type="MBDBA">
-		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Question id="Q6">Are You Intrested In Learning Data Quality and Visualisation?</Question>
 		<Answer id="A6">Yes</Answer>
 		<Answer id="A6">No</Answer>
 	</section>
 	<section name="Question" id="7" type="MBDBA">
-		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
-		<Answer id="A7">Yes</Answer>
-		<Answer id="A7">No</Answer>
+		<Question id="Q7">Which Of The Following Fields Would You Like To Apply Your Knowledge To?</Question>
+		<Answer id="A7">Accounting, Financial Analytics and Reporting</Answer>
+		<Answer id="A7">Digital Manufacturing and Supply Chain</Answer>
+		<Answer id="A7">Marketing Analytics</Answer>
+		<Answer id="A7">Management Analytics</Answer>
 	</section>
+	<section name="Question" id="8" type="MBDBA">
+		<Question id="Q8">Have You Ever Build A Machine Learning Model For Business Analytics?</Question>
+		<Answer id="A8">Yes</Answer>
+		<Answer id="A8">No</Answer>
+	</section>
+
 
 
 
@@ -255,24 +266,29 @@
 
 
 	<section name="Question" id="4" type="MIBE">
-		<Question id="Q4">Master MIBE</Question>
+		<Question id="Q4">Have You Learnt Business Law Before?</Question>
 		<Answer id="A4">Yes</Answer>
 		<Answer id="A4">No</Answer>
 	</section>
 	<section name="Question" id="5" type="MIBE">
-		<Question id="Q5">Are You Intrested in Writing Programs that enables processes to communicate over networks</Question>
+		<Question id="Q5">Have You Ever Done A Market Analysis?</Question>
 		<Answer id="A5">Yes</Answer>
 		<Answer id="A5">No</Answer>
 	</section>
 	<section name="Question" id="6" type="MIBE">
-		<Question id="Q6">Are You Intrested in Learning About Software that supports a Computer's Basic Functions?</Question>
+		<Question id="Q6">Are You Intrested In Marketing And Sales?</Question>
 		<Answer id="A6">Yes</Answer>
 		<Answer id="A6">No</Answer>
 	</section>
 	<section name="Question" id="7" type="MIBE">
-		<Question id="Q7">Are You Interested In Learning A Language For Web Applications</Question>
+		<Question id="Q7">Are You Interested In Learning Business Management?</Question>
 		<Answer id="A7">Yes</Answer>
 		<Answer id="A7">No</Answer>
+	</section>
+	<section name="Question" id="8" type="MIBE">
+		<Question id="Q8">Do You Know the Key Concepts Of International Collaboration?</Question>
+		<Answer id="A8">Yes</Answer>
+		<Answer id="A8">No</Answer>
 	</section>
 
 

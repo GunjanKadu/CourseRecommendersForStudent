@@ -3,8 +3,10 @@
 	<section type="MCS">
 		<Result id="college">Hochschule Mannheim</Result>
 		<Result id="college"> • Masters's Of Science In Informatics</Result>
+		<Result id="college"></Result>
 		<Result id="college">SRH Heidelberg</Result>
 		<Result id="college">  • Masters Of Science In Applied Computer Science</Result>
+		<Result id="college"></Result>
 		<Result id="college">University Of Heidelberg</Result>
 		<Result id="college">  • Masters Of Science In Computer Science</Result>
 		<Result id="college">  • Masters Of Science In Computational Science</Result>
@@ -16,11 +18,15 @@
 	</section>
 
 
+
+
 	<section type="BCS">
 		<Result id="college">Hochschule Mannheim</Result>
 		<Result id="college"> • Bachelor's Of Science In Enterprise Software Computing</Result>
+		<Result id="college"></Result>
 		<Result id="college">SRH Heidelberg</Result>
 		<Result id="college"> • Bachelor's Of Science In Applied Computer Science</Result>
+		<Result id="college"></Result>
 		<Result id="college">University Of Heidelberg</Result>
 		<Result id="college"> • Bachelor's Of Science In Computer Science</Result>
 		<Result id="college"> • Bachelor's Of Engineering In Computational Science</Result>
@@ -33,14 +39,18 @@
 
 
 
+
 	<section type="BIT">
 		<Result id="college">Hochschule Mannheim</Result>
 		<Result id="college"> • Bachelor's Of Science In Informatics</Result>
+		<Result id="college"></Result>
 		<Result id="college">SRH Heidelberg</Result>
 		<Result id="college"> • Bachelor's Of Science In Information Technology</Result>
+		<Result id="college"></Result>
 		<Result id="college">University Of Heidelberg</Result>
 		<Result id="college"> • Bachelor's Of Science In Information Computing</Result>
 		<Result id="college"> • Bachelor's Of Engineering In Computational Science</Result>
+		<Jobs id="job">• Cloud Architect</Jobs>
 		<Jobs id="job">• IT Consultant</Jobs>
 		<Jobs id="job">• Cloud Architect</Jobs>
 		<Jobs id="job">• Web Developer</Jobs>
@@ -49,11 +59,18 @@
 	</section>
 
 
+
+
+
 	<section type="MIT">
 		<Result id="college">Hochschule Mannheim</Result>
 		<Result id="college"> • Masters Of Science In  Informatics</Result>
+		<Result id="college"></Result>
+
 		<Result id="college">SRH Heidelberg</Result>
 		<Result id="college"> • Masters Of Science In Information Technology</Result>
+		<Result id="college"></Result>
+
 		<Result id="college">University Of Heidelberg</Result>
 		<Result id="college"> • Masters Of Science In Computer Science</Result>
 		<Result id="college"> • Masters Of Engineering In Computational Science</Result>
@@ -65,9 +82,15 @@
 	</section>
 
 
+
+
+
+
 	<section type="BETC">
 		<Result id="college">University Of Stuttgart</Result>
 		<Result id="college"> • Bachelor's Of Science In Electrical Engineering</Result>
+		<Result id="college"></Result>
+
 		<Result id="college">SRH Heidelberg</Result>
 		<Result id="college"> • Bachelor's Of Science In Information Technology</Result>
 		<Result id="college"> • Bachelor's Of Engineering In Electrical Engineering</Result>
@@ -77,6 +100,62 @@
 		<Jobs id="job">• Systems Analyst</Jobs>
 		<Jobs id="job">• Circuit Design Engineer</Jobs>
 	</section>
+
+
+
+	<section type="MCE">
+		<Result id="college">University Of Heidelberg</Result>
+		<Result id="college"> • Masters's Of Science In Computer Engineering</Result>
+		<Result id="college"> • Masters's Of Science In Computer Technology</Result>
+		<Result id="college"></Result>
+
+		<Result id="college">University Of Stuttgart</Result>
+		<Result id="college"> • Masters's Of Science In Computer Engineering</Result>
+		<Jobs id="job">• Computer Hardware Engineer.</Jobs>
+		<Jobs id="job">• System Architecture Engineer</Jobs>
+		<Jobs id="job">• Software Developer</Jobs>
+		<Jobs id="job">• Systems Analyst</Jobs>
+		<Jobs id="job">• Embedded Software Engineer</Jobs>
+	</section>
+
+
+
+
+
+
+	<section type="MIBE">
+		<Result id="college">University Of Stuttgart</Result>
+		<Result id="college"> • Masters's In International Business</Result>
+		<Result id="college"></Result>
+
+		<Result id="college">SRH Heidelberg University</Result>
+		<Result id="college"> • Masters's In International Business Engineering</Result>
+		<Jobs id="job">• Business Analyst</Jobs>
+		<Jobs id="job">• Business development manager</Jobs>
+		<Jobs id="job">• Chartered management accountant</Jobs>
+		<Jobs id="job">• Project manager</Jobs>
+		<Jobs id="job">• Supply Chain Manager</Jobs>
+	</section>
+
+
+
+
+
+	<section type="MBDBA">
+		<Result id="college">University Of Stuttgart</Result>
+		<Result id="college"> • Masters's In International Business</Result>
+		<Result id="college"></Result>
+
+		<Result id="college">SRH Heidelberg University</Result>
+		<Result id="college"> • Masters's In Big Data and Business Analytics</Result>
+		<Jobs id="job">• Data Analyst</Jobs>
+		<Jobs id="job">• Data Architect</Jobs>
+		<Jobs id="job">• Investment Analyst</Jobs>
+		<Jobs id="job">• Data Engineer</Jobs>
+		<Jobs id="job">• Digital Marketing Engineer</Jobs>
+	</section>
+
+
 
 
 
