@@ -1,9 +1,2 @@
 <?xml version="1.0"?>
-<ArrayOfQuestionAnswer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <QuestionAnswer>
-    <AskedQuestion>What Is Your Current Qualification?</AskedQuestion>
-    <SubmittedAnswers>Master's</SubmittedAnswers>
-    <Category>general</Category>
-    <QuestionNumber>1</QuestionNumber>
-  </QuestionAnswer>
-</ArrayOfQuestionAnswer>
+<ArrayOfQuestionAnswer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />

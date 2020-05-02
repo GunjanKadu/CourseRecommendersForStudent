@@ -18,7 +18,7 @@
                 <TextBlock x:Name="Txt_Question" HorizontalAlignment="Left" Visibility="Hidden" Padding="0" TextWrapping="Wrap"  Text="{Binding qText}" VerticalAlignment="Top" Height="65" Width="340" FontWeight="Bold" FontSize="12" />
             </Border>
             <TextBlock x:Name="Txt_PressStart" HorizontalAlignment="Left" Height="36" Margin="75,55,0,0" TextWrapping="Wrap" Width="168" FontWeight="Bold" VerticalAlignment="Center"/>
-            <Button x:Name="Btn_Start" Content="START"  Height="46" Margin="-50,0,0,0" Width="233" Click="Btn_Start_Click" Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold"/>
+            <Button x:Name="Btn_Start" Content="NEW"  Height="46" Margin="-50,0,0,0" Width="233" Click="Btn_Start_Click" Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold"/>
             <Button x:Name="Btn_Continue" Visibility="Hidden" Content="CONTINUE"  Height="46" Margin="-50,10,0,0" Width="233"  Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold" Click="Btn_Continue_Click"/>
             <ListBox x:Name="Lst_AnswerList" Visibility="Hidden"    SelectionChanged="Lst_AnswerList_SelectionChanged"  HorizontalAlignment="left" VerticalAlignment="Top" Width="340" Margin="0,-130,0,-20" Height="180">
                 <ListBox.ItemTemplate>
@@ -32,7 +32,10 @@
             </ListBox>
             <StackPanel Margin="-5,30,0,0" Orientation="Horizontal" Height="30">
                 <Button Name="Btn_Prev_Question" Visibility="Hidden" Height="20" Width="70" Style="{StaticResource MyButton}" Background="#FFB20837" BorderBrush="#FFB20837" Foreground="Wheat" Margin="5,10,0,0" Content="&lt;&lt;PREV" FontWeight="Bold" Click="Btn_Prev_Question_Click" ToolTip="Click To See The Previous Question" />
-                <Button x:Name="Btn_Next_Question" Visibility="Hidden" Background="#FFB20837" Style="{StaticResource MyButton}" Foreground="Wheat" Height="20" Width="70" Margin="200,10,0,0" FontWeight="Bold" BorderBrush="#FFB20837" Content="NEXT>>" Click="Btn_Next_Question_Click" 
+                <Border Name="Txt_Question_Number_Border" Visibility="Hidden"  BorderBrush="#FFB20837" Height="20" BorderThickness="0" Width="45" Margin="74,-25.2,0,0">
+                    <TextBlock Name="Txt_Question_Number" Visibility="Hidden" Text="1/10" Margin="11.5,0,0,0"  FontWeight="Black" Foreground="#FFB20837"/>
+                </Border>
+                <Button x:Name="Btn_Next_Question" Visibility="Hidden" Background="#FFB20837" Style="{StaticResource MyButton}" Foreground="Wheat" Height="20" Width="70" Margin="83,10,0,0" FontWeight="Bold" BorderBrush="#FFB20837" Content="NEXT>>" Click="Btn_Next_Question_Click" 
                  ToolTip="{Binding toolTipText}"
                         ToolTipService.ShowOnDisabled="True"
                />
@@ -66,13 +69,16 @@
                    FontSize="10"/>
         <TabControl Name="Tab_Results" HorizontalAlignment="Left" Height="288" VerticalAlignment="Top" Width="455" Visibility="Collapsed" Margin="253,26.333,0,0" Grid.Row="1">
             <TabItem Header="Recommended Course">
-                <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_College"  Margin="10,10,0,0" Width="282" />
-
+             
+                <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_College"  Margin="10,10,0,0" Width="382" />
+            </TabItem>
+            <TabItem Header="Details">
+                <Label Content="Details"/>
             </TabItem>
             <TabItem Header="Eligible Jobs">
                 <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_Job"  Margin="10,10,0,0" Width="282" />
             </TabItem>
         </TabControl>
-        <Button x:Name="Btn_StartAgain" Content="Start Again"  Height="46" Margin="190,315.333,0,0" Width="233"  Background="#FFB20837" Foreground="Wheat" BorderBrush="#FFB20837" FontWeight="Bold" Grid.Row="1" Visibility="Collapsed" Click="Btn_StartAgain_Click"  />
+        <Button x:Name="Btn_StartAgain" Content="Start Again"  Height="46" Margin="190,315.333,0,0" Width="133"  Background="#FFB20837" Foreground="Wheat" BorderBrush="#FFB20837" FontWeight="Bold" Grid.Row="1" Visibility="Collapsed" Click="Btn_StartAgain_Click"  />
     </Grid>
 </Window>

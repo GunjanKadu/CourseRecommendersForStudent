@@ -55,7 +55,7 @@ namespace WpfApp1
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Owner.Visibility = Visibility.Visible;
-            if (questionNumber >= 9)
+            if (questionNumber >= 8)
             {
                 _askedQuestionAnswer.Clear();
             }
@@ -110,10 +110,20 @@ namespace WpfApp1
             Stack_Summary.Visibility = Visibility.Visible;
             Btn_Next_Question.Visibility = Visibility.Visible;
             Btn_Next_Question.IsEnabled = false;
+            Txt_Question_Number.Visibility = Visibility.Visible;
+            Txt_Question_Number_Border.Visibility = Visibility.Visible;
+
+
+            Txt_Question_Number.Text = questionNumber + "/8";
+
 
             if (questionNumber == 8)
             {
-                Btn_Next_Question.Content = "Submit";
+                Btn_Next_Question.Content = "SUBMIT";
+            }
+            else
+            {
+                Btn_Next_Question.Content = "NEXT>>";
             }
             Btn_Next_Question.DataContext = new Classes.ToolTip() { toolTipText = "Select An Answer To See The Next Question" };
 
@@ -432,9 +442,13 @@ namespace WpfApp1
                     Stack_QandA.Visibility = Visibility.Collapsed;
                     Tab_Results.Visibility = Visibility.Visible;
                     Btn_StartAgain.Visibility = Visibility.Visible;
+                    Txt_Question_Number.Visibility = Visibility.Hidden;
+                    Txt_Question_Number_Border.Visibility = Visibility.Hidden;
 
                     Lst_Result_College.ItemsSource = App.CollegeList(oldCategory);
                     Lst_Result_Job.ItemsSource = App.JobList();
+                    
+                 
                 }
             }
             else
