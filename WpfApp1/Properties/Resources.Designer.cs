@@ -22,7 +22,7 @@ namespace WpfApp1.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace WpfApp1.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WpfApp1.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace WpfApp1.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,11 +61,119 @@ namespace WpfApp1.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Smart Choice.
         /// </summary>
-        internal static string appName {
+        public static string appName {
             get {
                 return ResourceManager.GetString("appName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Courses Offered.
+        /// </summary>
+        public static string checkCoursesOfferred {
+            get {
+                return ResourceManager.GetString("checkCoursesOfferred", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to • Check Out The.
+        /// </summary>
+        public static string checkOut {
+            get {
+                return ResourceManager.GetString("checkOut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to • Computer Science - Mathematics, Programming.....
+        /// </summary>
+        public static string computerScience {
+            get {
+                return ResourceManager.GetString("computerScience", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Courses Offered.
+        /// </summary>
+        public static string coursesOffered {
+            get {
+                return ResourceManager.GetString("coursesOffered", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to • Courses Suggested.
+        /// </summary>
+        public static string coursesSuggested {
+            get {
+                return ResourceManager.GetString("coursesSuggested", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to • Electrical and Electronics - Microprocessor, Signals.....
+        /// </summary>
+        public static string electrical {
+            get {
+                return ResourceManager.GetString("electrical", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to How It Works?.
+        /// </summary>
+        public static string howItWorks {
+            get {
+                return ResourceManager.GetString("howItWorks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to • Information Technology - Data Science, Cloud Computing.....
+        /// </summary>
+        public static string informationTechnology {
+            get {
+                return ResourceManager.GetString("informationTechnology", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to • Jobs Eligible For.
+        /// </summary>
+        public static string jobsEligibile {
+            get {
+                return ResourceManager.GetString("jobsEligibile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to •  Select &apos;Find Your Path&apos; to Fill Out the Smart Questionnaire.
+        /// </summary>
+        public static string selectFindYourPath {
+            get {
+                return ResourceManager.GetString("selectFindYourPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to • Universities Offering Thouse Courses.
+        /// </summary>
+        public static string universitiesOffering {
+            get {
+                return ResourceManager.GetString("universitiesOffering", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find Your Path.
+        /// </summary>
+        public static string yourPath {
+            get {
+                return ResourceManager.GetString("yourPath", resourceCulture);
             }
         }
     }

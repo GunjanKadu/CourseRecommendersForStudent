@@ -4,8 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
+        xmlns:Resx="clr-namespace:WpfApp1.Properties"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStyle="None"  WindowStartupLocation="CenterScreen">
+        Title="{x:Static Resx:Resources.appName}" Height="450" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded"
+        >
+    
     <Grid>
 
         <StackPanel VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="442" Background="#FF1E1E1E" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
@@ -24,39 +28,43 @@
         <StackPanel Margin="0,34,453.333,320.333" Orientation="Vertical" HorizontalAlignment="Right" Width="100">
             <Image  Source="Img/MainIcon.png" Stretch="Fill" Height="40" Width="40" RenderTransformOrigin="0.579,-0.306"/>
             <Label Content="SMICE" Margin="11,0,2,0" FontFamily="Arial Black" Foreground="White" FontWeight="Bold" Width="59" HorizontalAlignment="Center" />
-            <Label Content="Smart Choice" FontFamily="Arial" Foreground="White" Width="62" FontSize="8" RenderTransformOrigin="0.662,-0.509" Height="24" Margin="21,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Label Content="{x:Static Resx:Resources.appName}" FontFamily="Arial" Foreground="White" Width="62" FontSize="8" RenderTransformOrigin="0.662,-0.509" Height="24" Margin="10,0,0,0" VerticalAlignment="Center" />
         </StackPanel>
         <StackPanel Margin="22,149,634.333,264.333" Orientation="Horizontal">
             <Image Margin="0,6,0,0" Source="Img/Book.png" Stretch="Fill" Width="30"/>
-            <Button Style="{StaticResource MyButton}" Content="Courses Offered" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Btn_GoToCourses" Margin="0,2,0,-2" />
+            <Button Style="{StaticResource MyButton}" Content="{x:Static Resx:Resources.coursesOffered}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Btn_GoToCourses" Margin="0,2,0,-2" />
         </StackPanel>
         <StackPanel Margin="21,218,635.333,195.333" Orientation="Horizontal">
             <Image Source="Img/Test.png" Stretch="Fill" Width="30"/>
-            <Button Name="Btn_Questionare" Style="{StaticResource MyButton}" Content="Find Your Path" HorizontalAlignment="Left" Width="108" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Button_GoToQuestionareClick" />
+            <Button Name="Btn_Questionare" Style="{StaticResource MyButton}" Content="{x:Static Resx:Resources.yourPath}" HorizontalAlignment="Left" Width="108" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Button_GoToQuestionareClick" />
         </StackPanel>
         <StackPanel Margin="224,175,25.333,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="255">
 
-            <TextBlock Text="How It Works?" FontWeight="Bold" FontSize="18" Height="36" Foreground="White" Margin="10,0,0,0"/>
+            <TextBlock Text="{x:Static Resx:Resources.howItWorks}" HorizontalAlignment="Center" FontWeight="Bold" FontSize="18" Height="36" Foreground="White" Margin="10,0,0,0"/>
 
-            <TextBlock Text="&#x9;• Check The Courses Offered" Foreground="White"/>
-            <TextBlock Text="&#x9;    • Electrical &amp; Electronics - Microprocessor, Signals...." Foreground="White" />
-            <TextBlock Text="&#x9;    • Information Technology - Data Science, Cloud Copmuting...." Foreground="White"/>
-            <TextBlock Text="&#x9;    • Computer Science - Mathematics, Programming...." Foreground="White"/>
+            <TextBlock Margin="55,0,0,0" Text="{x:Static Resx:Resources.checkCoursesOfferred}" Foreground="White"/>
+            <TextBlock Margin="75,0,0,0" Text="{x:Static Resx:Resources.electrical}" Foreground="White" />
+            <TextBlock  Margin="75,0,0,0" Text="{x:Static Resx:Resources.informationTechnology}" Foreground="White"/>
+            <TextBlock  Margin="75,0,0,0" Text="{x:Static Resx:Resources.computerScience}" Foreground="White"/>
 
             <TextBlock />
-            <TextBlock Text="&#x9;• Select 'Find Your Path' to Fill Out the Smart Questionnaire" Foreground="White"/>
+            <TextBlock Margin="55,0,0,0" Text="{x:Static Resx:Resources.selectFindYourPath}" Foreground="White"/>
             <TextBlock />
-            <TextBlock Text="&#x9;• Check Out The" Foreground="White"/>
-            <TextBlock Text="&#x9;    • Courses Suggested" Foreground="White" />
-            <TextBlock Text="&#x9;    • Universities Offering Thouse Courses" Foreground="White" />
-            <TextBlock Text="&#x9;    • Jobs Eligible For" Foreground="White" />
+            <TextBlock  Margin="55,0,0,0" Text="{x:Static Resx:Resources.checkOut}" Foreground="White"/>
+            <TextBlock  Margin="75,0,0,0" Text="{x:Static Resx:Resources.coursesSuggested}" Foreground="White" />
+            <TextBlock  Margin="75,0,0,0" Text="{x:Static Resx:Resources.universitiesOffering}" Foreground="White" />
+            <TextBlock  Margin="75,0,0,0" Text="{x:Static Resx:Resources.jobsEligibile}" Foreground="White" />
 
         </StackPanel>
+
+        <ComboBox Name="Cobx_Language" Width="50" HorizontalAlignment="Right" Margin="0,-365,70,0" Height="20" SelectionChanged="ComboBox_SelectionChanged"/>
+
         <Button x:Name="Btn_Close" Style="{StaticResource MyButton}" Margin="735,20,22.333,0" VerticalAlignment="Top" Height="30" Width="30" BorderBrush="White" Click="Btn_Close_Click">
             <Button.Background>
                 <ImageBrush ImageSource="Img/power1.png"/>
             </Button.Background>
         </Button>
+        
 
 
     </Grid>

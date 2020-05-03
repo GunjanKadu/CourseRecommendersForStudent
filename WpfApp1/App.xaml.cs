@@ -22,10 +22,11 @@ namespace WpfApp1
         public static List<string> Jobs = new List<string>();
 
         public static ObservableCollection<Question> _questions;
-
+     
         private void Application_Startup(object sender, StartupEventArgs e)
         {
             _courses = MyStorage.ReadXML<ObservableCollection<Course>>("courses.xml");
+            
             Questionare._askedQuestionAnswer = MyStorage.ReadXML<ObservableCollection<QuestionAnswer>>("QandA.xml");
             //_questions = MyStorage.ReadXML<ObservableCollection<Question>>("questions.xml");
             if (_courses == null)

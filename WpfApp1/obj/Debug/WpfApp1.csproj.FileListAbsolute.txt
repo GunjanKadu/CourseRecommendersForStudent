@@ -17,7 +17,7 @@ C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStu
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\App.baml
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Questionare.g.cs
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\Questionare.baml
-C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\bin\Debug\de\WpfApp1.resources.dll
-C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.Properties.Resource.de.resources
+C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.de.resources
 C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\de\WpfApp1.resources.dll
+C:\Users\rasuu\OneDrive\Desktop\AdvancedComputerScience\CourseRecommendersForStudent\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache

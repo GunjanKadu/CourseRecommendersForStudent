@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,48 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="appName" xml:space="preserve">
+    <value>Smart Choice</value>
+  </data>
+  <data name="checkCoursesOfferred" xml:space="preserve">
+    <value>Check The Courses Offered</value>
+  </data>
+  <data name="checkOut" xml:space="preserve">
+    <value>• Check Out The</value>
+  </data>
+  <data name="computerScience" xml:space="preserve">
+    <value>• Computer Science - Mathematics, Programming....</value>
+  </data>
+  <data name="coursesOffered" xml:space="preserve">
+    <value>Courses Offered</value>
+  </data>
+  <data name="coursesSuggested" xml:space="preserve">
+    <value>• Courses Suggested</value>
+  </data>
+  <data name="electrical" xml:space="preserve">
+    <value>• Electrical and Electronics - Microprocessor, Signals....</value>
+  </data>
+  <data name="howItWorks" xml:space="preserve">
+    <value>How It Works?</value>
+  </data>
+  <data name="informationTechnology" xml:space="preserve">
+    <value>• Information Technology - Data Science, Cloud Computing....</value>
+  </data>
+  <data name="jobsEligibile" xml:space="preserve">
+    <value>• Jobs Eligible For</value>
+  </data>
+  <data name="selectFindYourPath" xml:space="preserve">
+    <value>•  Select 'Find Your Path' to Fill Out the Smart Questionnaire</value>
+  </data>
+  <data name="universitiesOffering" xml:space="preserve">
+    <value>• Universities Offering Thouse Courses</value>
+  </data>
+  <data name="yourPath" xml:space="preserve">
+    <value>Find Your Path</value>
+  </data>
 </root>

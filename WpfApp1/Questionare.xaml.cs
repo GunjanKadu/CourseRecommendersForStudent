@@ -40,7 +40,27 @@ namespace WpfApp1
         public Questionare()
         {
             InitializeComponent();
-            doc.Load("questions.xml");
+
+            if (MainWindow.language == "en")
+            {
+            Questionare._askedQuestionAnswer = MyStorage.ReadXML<ObservableCollection<QuestionAnswer>>("QandA.xml");
+
+            }
+            if (MainWindow.language == "de")
+            {
+            Questionare._askedQuestionAnswer = MyStorage.ReadXML<ObservableCollection<QuestionAnswer>>("QandA.de.xml");
+
+            }
+           
+
+            if (MainWindow.language == "en")
+            {
+                doc.Load("questions.xml");
+            }
+            if (MainWindow.language == "de")
+            {
+                doc.Load("questions.de.xml");
+            }
             if (_askedQuestionAnswer.Count != 0)
             {
                 Txt_PressStart.Text = "Press Start/Continue To Find Your Path";
@@ -59,7 +79,15 @@ namespace WpfApp1
             {
                 _askedQuestionAnswer.Clear();
             }
+            if (MainWindow.language == "en")
+            {
             MyStorage.WriteXml<ObservableCollection<QuestionAnswer>>(Questionare._askedQuestionAnswer, "QandA.xml");
+            }
+            if (MainWindow.language == "de")
+            {
+                MyStorage.WriteXml<ObservableCollection<QuestionAnswer>>(Questionare._askedQuestionAnswer, "QandA.de.xml");
+
+            }
             App.Colleges.Clear();
             App.Jobs.Clear();
 
@@ -447,8 +475,8 @@ namespace WpfApp1
 
                     Lst_Result_College.ItemsSource = App.CollegeList(oldCategory);
                     Lst_Result_Job.ItemsSource = App.JobList();
-                    
-                 
+
+
                 }
             }
             else

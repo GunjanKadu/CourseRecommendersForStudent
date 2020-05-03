@@ -42,7 +42,7 @@
             </StackPanel>
         </StackPanel>
         <StackPanel Visibility="Hidden" Name="Stack_Summary" Background="#FFB20837" Orientation="Vertical" VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="421"  Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-0.333">
-            <TextBlock Text="Summary" Foreground="White" Margin="10,15,0,0" FontWeight="Bold" FontSize="10">
+            <TextBlock Text="Summary" Foreground="White" Margin="65,15,0,0" FontWeight="Bold" FontSize="13">
             </TextBlock>
             <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Wheat" Height="361" Name="Lst_AskedQuestion"  Margin="10,10,0,0" Width="182" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
                 <ListBox.ItemTemplate>
@@ -67,16 +67,21 @@
         </StackPanel>
         <TextBlock HorizontalAlignment="Left" Height="223" Margin="570,105,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"  Name="Txt_Block_Hint" TextAlignment="Justify" Visibility="Hidden" Foreground="DarkGray" FontWeight="Bold"
                    FontSize="10"/>
-        <TabControl Name="Tab_Results" HorizontalAlignment="Left" Height="288" VerticalAlignment="Top" Width="455" Visibility="Collapsed" Margin="253,26.333,0,0" Grid.Row="1">
+        <TabControl Name="Tab_Results" HorizontalAlignment="Left" Height="288" VerticalAlignment="Top" Width="455" Visibility="Collapsed" Margin="253,15.333,0,0" Grid.Row="1">
             <TabItem Header="Recommended Course">
-             
-                <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_College"  Margin="10,10,0,0" Width="382" />
+                <StackPanel Orientation="Vertical" >
+                 <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Margin="0,15,0,15" FontSize="13.5">Top Recommended Courses Based On Your Choice</TextBlock>
+                <ListBox HorizontalAlignment="Center" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_College"  Margin="10,10,0,0" Width="320" />
+                </StackPanel>
             </TabItem>
             <TabItem Header="Details">
                 <Label Content="Details"/>
             </TabItem>
             <TabItem Header="Eligible Jobs">
-                <ListBox HorizontalAlignment="Left" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_Job"  Margin="10,10,0,0" Width="282" />
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Margin="0,15,0,15" FontSize="13.5">Eligible Jobs After This Course</TextBlock>
+                <ListBox HorizontalAlignment="Center" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_Job"  Margin="10,10,0,0" Width="320" />
+                </StackPanel>
             </TabItem>
         </TabControl>
         <Button x:Name="Btn_StartAgain" Content="Start Again"  Height="46" Margin="190,315.333,0,0" Width="133"  Background="#FFB20837" Foreground="Wheat" BorderBrush="#FFB20837" FontWeight="Bold" Grid.Row="1" Visibility="Collapsed" Click="Btn_StartAgain_Click"  />

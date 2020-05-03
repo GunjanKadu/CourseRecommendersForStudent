@@ -120,10 +120,40 @@
   <data name="appName" xml:space="preserve">
     <value>Kluge Wahl</value>
   </data>
+  <data name="checkCoursesOfferred" xml:space="preserve">
+    <value>• Prüfen Sie die angebotenen Kurse</value>
+  </data>
+  <data name="checkOut" xml:space="preserve">
+    <value>• Besuchen Sie die</value>
+  </data>
+  <data name="computerScience" xml:space="preserve">
+    <value>• Informatik - Mathematik, Programmierung....</value>
+  </data>
   <data name="coursesOffered" xml:space="preserve">
-    <value>Kurse Angebot</value>
+    <value>Kurz Angebot</value>
+  </data>
+  <data name="coursesSuggested" xml:space="preserve">
+    <value>• Vorgeschlagene Kurse</value>
+  </data>
+  <data name="electrical" xml:space="preserve">
+    <value>• Elektrik und Elektronik - Mikroprozessor, Signale....</value>
+  </data>
+  <data name="howItWorks" xml:space="preserve">
+    <value>Wie es funktioniert?</value>
+  </data>
+  <data name="informationTechnology" xml:space="preserve">
+    <value>• Informationstechnologie - Datenwissenschaft, Cloud Computing....</value>
+  </data>
+  <data name="jobsEligibile" xml:space="preserve">
+    <value>• Geeignete Stellen für</value>
+  </data>
+  <data name="selectFindYourPath" xml:space="preserve">
+    <value>• Wählen Sie 'Finden Sie Ihren Weg', um den Smart Questionnaire auszufüllen</value>
+  </data>
+  <data name="universitiesOffering" xml:space="preserve">
+    <value>• Universitäten, die Thouse-Kurse anbieten</value>
   </data>
   <data name="yourPath" xml:space="preserve">
-    <value>Ihren Weg finden</value>
+    <value>Ihr Weg Finden</value>
   </data>
 </root>

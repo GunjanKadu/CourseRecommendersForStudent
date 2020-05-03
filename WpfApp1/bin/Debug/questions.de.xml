@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <section name="Question" id="1" type="general">
+        <Question id="Q1">Was ist Ihre derzeitige Qualifikation?</Question>
+        <Answer id="A1">Hochschulabsolvent</Answer>
+        <Answer id="A1">Bachelor's</Answer>
+        <Answer id="A1">Master's</Answer>
+        <Answer id="A1">Andere</Answer>
+    </section>
+
+
+
+
+
+
+
+    <section name="Question" id="2" type="general">
+        <Question id="Q2">Was ist der Hauptgrund, warum Sie diesen Kurs suchen/machen?</Question>
+        <Answer id="A2">Sofort einen Job bekommen</Answer>
+        <Answer id="A2"> Ein Unternehmen gründen</Answer>
+        <Answer id="A2">Weiterbildung</Answer>
+        <Answer id="A2"> Vorhandene Fertigkeit verbessern</Answer>
+        <Answer id="A2">Andere</Answer>
+    </section>
+
+
+
+
+
+
+
+    <section name="Question" id="3" type="general">
+        <Question id="Q3">Welchen der folgenden Studiengänge möchten Sie studieren?</Question>
+        <Answer id="A3">Bachelor's In Computer Science</Answer>
+        <Answer id="A3">Bachelor's In Information Techcnology</Answer>
+        <Answer id="A3">Bachelor's In Electronics and Telecomm</Answer>
+        <Answer id="A3">Master's In Computer Science</Answer>
+        <Answer id="A3">Master's In Big Data and Business Analytics</Answer>
+        <Answer id="A3">Master's In Information Technology</Answer>
+        <Answer id="A3">Master's In International Business And Eng</Answer>
+        <Answer id="A3">Master's In Computer Engineering</Answer>
+    </section>
+
+
+
+
+
+
+
+
+    <section name="Question" id="4" type="MCS">
+        <Question id="Q4">Haben Sie bereits Erfahrung mit der Kodierung einer großen Anwendung?</Question>
+        <Answer id="A4">Ja</Answer>
+        <Answer id="A4">Nein</Answer>
+    </section>
+    <section name="Question" id="5" type="MCS">
+        <Question id="Q5">Haben Sie mit einem relationalen Datenbankverwaltungssystem gearbeitet?</Question>
+        <Answer id="A5">Ja</Answer>
+        <Answer id="A5">Nein</Answer>
+    </section>
+    <section name="Question" id="6" type="MCS">
+        <Question id="Q6">Interessieren Sie sich für die Herstellung von Software, die die Kernfunktionalität eines Computers unterstützt?</Question>
+        <Answer id="A6">Ja</Answer>
+        <Answer id="A6">Nein</Answer>
+    </section>
+    <section name="Question" id="7" type="MCS">
+        <Question id="Q7">Hatten Sie jemals eine Anwendung für das Web entwickelt?</Question>
+        <Answer id="A7">Ja</Answer>
+        <Answer id="A7">Nein</Answer>
+    </section>
+    <section name="Question" id="8" type="MCS">
+        <Question id="Q8">Haben Sie jemals eine Anwendung für Windows/Mac/Linux entwickelt?</Question>
+        <Answer id="A8">Ja</Answer>
+        <Answer id="A8">Nein</Answer>
+    </section>
+
+
+
+
+
+
+
+    <section name="Question" id="4" type="BCS">
+        <Question id="Q4">Haben Sie bereits Erfahrung mit der Kodierung einer kleinen Anwendung?</Question>
+        <Answer id="A4">Ja</Answer>
+        <Answer id="A4">Nein</Answer>
+    </section>
+    <section name="Question" id="5" type="BCS">
+        <Question id="Q5">Interessieren Sie sich für ein relationales Datenbank-Management-System?</Question>
+        <Answer id="A5">Ja</Answer>
+        <Answer id="A5">Nein</Answer>
+    </section>
+    <section name="Question" id="6" type="BCS">
+        <Question id="Q6">Interessiert es Sie, etwas über Software zu lernen, die die Grundfunktionen eines Computers unterstützt?</Question>
+        <Answer id="A6">Ja</Answer>
+        <Answer id="A6">Nein</Answer>
+    </section>
+    <section name="Question" id="7" type="BCS">
+        <Question id="Q7">Interessieren Sie sich für das Schreiben von Programmen, mit denen Prozesse über Netzwerke kommunizieren können</Question>
+        <Answer id="A7">Ja</Answer>
+        <Answer id="A7">Nein</Answer>
+    </section>
+    <section name="Question" id="8" type="BCS">
+        <Question id="Q8">Sind Sie daran interessiert, eine Sprache für Web-Anwendungen zu lernen</Question>
+        <Answer id="A8">Ja</Answer>
+        <Answer id="A8">Nein</Answer>
+    </section>
+
+
+
+
+
+    <section name="Question" id="4" type="BIT">
+        <Question id="Q4">Haben Sie bereits Erfahrung oder kennen Sie sich mit Informationskodierung aus?</Question>
+        <Answer id="A4">Ja</Answer>
+        <Answer id="A4">Nein</Answer>
+    </section>
+    <section name="Question" id="5" type="BIT">
+        <Question id="Q5">Interessiert es Sie, etwas über Computergrafik und Virtual-Reality-Systeme zu lernen?</Question>
+        <Answer id="A5">Ja</Answer>
+        <Answer id="A5">Nein</Answer>
+    </section>
+    <section name="Question" id="6" type="BIT">
+        <Question id="Q6">Sind Sie daran interessiert, etwas über Informations- und Netzwerksicherheit zu lernen?</Question>
+        <Answer id="A6">Ja</Answer>
+        <Answer id="A6">Nein</Answer>
+    </section>
+    <section name="Question" id="7" type="BIT">
+        <Question id="Q7">Sind Sie daran interessiert, Informationstechnologie für das Management von Unternehmen zu erlernen?</Question>
+        <Answer id="A7">Ja</Answer>
+        <Answer id="A7">Nein</Answer>
+    </section>
+    <section name="Question" id="8" type="BIT">
+        <Question id="Q8">Haben Sie schon von Computermathematik gehört?</Question>
+        <Answer id="A8">Ja</Answer>
+        <Answer id="A8">Nein</Answer>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section name="Question" id="4" type="MIT">
+        <Question id="Q4">Haben Sie bereits Erfahrung mit der Sicherung von Informationen und Netzwerken?</Question>
+        <Answer id="A4">Ja</Answer>
+        <Answer id="A4">Nein</Answer>
+    </section>
+    <section name="Question" id="5" type="MIT">
+        <Question id="Q5">Hatten Sie mit Computergrafik und Virtual-Reality-Systemen gearbeitet?</Question>
+        <Answer id="A5">Ja</Answer>
+        <Answer id="A5">Nein</Answer>
+    </section>
+    <section name="Question" id="6" type="MIT">
+        <Question id="Q6">Interessiert es Sie, etwas über Netzwerktechnologie für digitale Geräte zu lernen?</Question>
+        <Answer id="A6">Ja</Answer>
+        <Answer id="A6">Nein</Answer>
+    </section>
+    <section name="Question" id="7" type="MIT">
+        <Question id="Q7">Sind Sie daran interessiert, eine Sprache für Web-Anwendungen zu lernen</Question>
+        <Answer id="A7">Ja</Answer>
+        <Answer id="A7">Nein</Answer>
+    </section>
+    <section name="Question" id="8" type="MIT">
+        <Question id="Q8">Haben Sie jemals ein Problem mit Computermathematik gelöst?</Question>
+        <Answer id="A8">Ja</Answer>
+        <Answer id="A8">Nein</Answer>
+    </section>
+
+
+
+
+
+    <section name="Question" id="4" type="BETC">
+        <Question id="Q4">Haben Sie bereits Erfahrung im Design von kleinen Leiterplatten, Sensoren und Grundelektronik?</Question>
+        <Answer id="A4">Ja</Answer>
+        <Answer id="A4">Nein</Answer>
+    </section>
+    <section name="Question" id="5" type="BETC">
+        <Question id="Q5">Interessieren Sie sich für das Schreiben von Programmen, die Prozesse über Netzwerke kommunizieren lassen?</Question>
+        <Answer id="A5">Ja</Answer>
+        <Answer id="A5">Nein</Answer>
+    </section>
+    <section name="Question" id="6" type="BETC">
+        <Question id="Q6">Interessieren Sie sich für das Schreiben von Programmen in Assembler-Programmierung(1's und 0's)</Question>
+        <Answer id="A6">Ja</Answer>
+        <Answer id="A6">Nein</Answer>
+    </section>
+    <section name="Question" id="7" type="BETC">
+        <Question id="Q7">Welches der folgenden Felder interessiert Sie, Ihr Wissen einzubringen?</Question>
+        <Answer id="A7">Medizinische Elektronik</Answer>
+        <Answer id="A7">Industrielle Elektronik</Answer>
+        <Answer id="A7">Leistungselektronik</Answer>
+        <Answer id="A7">Computernetzwerke</Answer>
+    </section>
+    <section name="Question" id="8" type="BETC">
+        <Question id="Q8">Sind Sie daran interessiert, Ihren eigenen Nachfolger zu ernennen?</Question>
+        <Answer id="A8">Ja</Answer>
+        <Answer id="A8">Nein</Answer>
+    </section>
+
+
+
+
+
+
+    <section name="Question" id="4" type="MCE">
+        <Question id="Q4">Haben Sie jemals etwas über Computerarchitektur gelernt?</Question>
+        <Answer id="A4">Ja</Answer>
+        <Answer id="A4">Nein</Answer>
+    </section>
+    <section name="Question" id="5" type="MCE">
+        <Question id="Q5">Hatten Sie jemals einen einfachen Mikroprozessor entworfen? </Question>
+        <Answer id="A5">Ja</Answer>
+        <Answer id="A5">Nein</Answer>
+    </section>
+    <section name="Question" id="6" type="MCE">
+        <Question id="Q6">Haben Sie bereits Erfahrung im Design von komplexen Leiterplatten, Sensoren ?</Question>
+        <Answer id="A6">Ja</Answer>
+        <Answer id="A6">Nein</Answer>
+    </section>
+    <section name="Question" id="7" type="MCE">
+        <Question id="Q7">Hatten Sie schon einmal einen Schaltkreis mit P Spice oder MultiSim oder einem anderen simuliert? </Question>
+        <Answer id="A7">Ja</Answer>
+        <Answer id="A7">Nein</Answer>
+    </section>
+    <section name="Question" id="8" type="MCE">
+        <Question id="Q8">Interessieren Sie sich für fortgeschrittene Computerkommunikation mittels Glasfaseroptik?</Question>
+        <Answer id="A8">Ja</Answer>
+        <Answer id="A8">Nein</Answer>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section name="Question" id="4" type="MBDBA">
+        <Question id="Q4">Haben Sie bereits Erfahrung mit Design Thinking?</Question>
+        <Answer id="A4">Ja</Answer>
+        <Answer id="A4">Nein</Answer>
+    </section>
+    <section name="Question" id="5" type="MBDBA">
+        <Question id="Q5">Haben Sie bereits Erfahrung im Data Mining?</Question>
+        <Answer id="A5">Ja</Answer>
+        <Answer id="A5">Nein</Answer>
+    </section>
+    <section name="Question" id="6" type="MBDBA">
+        <Question id="Q6">Interessieren Sie sich für Lerndatenqualität und Visualisierung?</Question>
+        <Answer id="A6">Ja</Answer>
+        <Answer id="A6">Nein</Answer>
+    </section>
+    <section name="Question" id="7" type="MBDBA">
+        <Question id="Q7">auf welches der folgenden Felder möchten Sie Ihr Wissen anwenden?</Question>
+        <Answer id="A7">Buchhaltung, Finanzanalyse und Berichterstattung</Answer>
+        <Answer id="A7">Digitale Fertigung und Lieferkette</Answer>
+        <Answer id="A7">Marketing-Analyse</Answer>
+        <Answer id="A7">Managementanalyse</Answer>
+    </section>
+    <section name="Question" id="8" type="MBDBA">
+        <Question id="Q8">Hatten Sie schon einmal ein maschinelles Lernmodell für Business Analytics entwickelt?</Question>
+        <Answer id="A8">Ja</Answer>
+        <Answer id="A8">Nein</Answer>
+    </section>
+
+
+
+
+
+    <section name="Question" id="4" type="MIBE">
+        <Question id="Q4">Haben Sie zuvor Wirtschaftsrecht gelernt?</Question>
+        <Answer id="A4">Ja</Answer>
+        <Answer id="A4">Nein</Answer>
+    </section>
+    <section name="Question" id="5" type="MIBE">
+        <Question id="Q5">Hatten Sie schon einmal eine Marktanalyse durchgeführt?</Question>
+        <Answer id="A5">Ja</Answer>
+        <Answer id="A5">Nein</Answer>
+    </section>
+    <section name="Question" id="6" type="MIBE">
+        <Question id="Q6">Interessieren Sie sich für Marketing und Vertrieb?</Question>
+        <Answer id="A6">Ja</Answer>
+        <Answer id="A6">Nein</Answer>
+    </section>
+    <section name="Question" id="7" type="MIBE">
+        <Question id="Q7">Interessieren Sie sich für Learning Business Management?</Question>
+        <Answer id="A7">Ja</Answer>
+        <Answer id="A7">Nein</Answer>
+    </section>
+    <section name="Question" id="8" type="MIBE">
+        <Question id="Q8">Kennen Sie die Schlüsselbegriffe der internationalen Zusammenarbeit?</Question>
+        <Answer id="A8">Ja</Answer>
+        <Answer id="A8">Nein</Answer>
+    </section>
+
+
+
+
+</root>
