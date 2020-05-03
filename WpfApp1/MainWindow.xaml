@@ -30,12 +30,12 @@
             <Label Content="SMICE" Margin="11,0,2,0" FontFamily="Arial Black" Foreground="White" FontWeight="Bold" Width="59" HorizontalAlignment="Center" />
             <Label Content="{x:Static Resx:Resources.appName}" FontFamily="Arial" Foreground="White" Width="62" FontSize="8" RenderTransformOrigin="0.662,-0.509" Height="24" Margin="10,0,0,0" VerticalAlignment="Center" />
         </StackPanel>
-        <StackPanel Margin="22,149,634.333,264.333" Orientation="Horizontal">
-            <Image Margin="0,6,0,0" Source="Img/Book.png" Stretch="Fill" Width="30"/>
+        <StackPanel Margin="22,149,634.333,254.333" Orientation="Horizontal">
+            <Image Margin="0,0,0,0" Source="Img/Book.png" Stretch="Fill" Width="30" Height="30"/>
             <Button Style="{StaticResource MyButton}" Content="{x:Static Resx:Resources.coursesOffered}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Btn_GoToCourses" Margin="0,2,0,-2" />
         </StackPanel>
-        <StackPanel Margin="21,218,635.333,195.333" Orientation="Horizontal">
-            <Image Source="Img/Test.png" Stretch="Fill" Width="30"/>
+        <StackPanel Margin="21,218,635.333,165.333" Orientation="Horizontal">
+            <Image Source="Img/Test.png" Stretch="Fill" Width="30" Height="30"/>
             <Button Name="Btn_Questionare" Style="{StaticResource MyButton}" Content="{x:Static Resx:Resources.yourPath}" HorizontalAlignment="Left" Width="108" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Button_GoToQuestionareClick" />
         </StackPanel>
         <StackPanel Margin="224,175,25.333,0" Background="#FFB20837" OpacityMask="Black" VerticalAlignment="Top" Height="255">

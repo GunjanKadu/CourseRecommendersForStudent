@@ -147,8 +147,14 @@
   <data name="jobsEligibile" xml:space="preserve">
     <value>• Geeignete Stellen für</value>
   </data>
+  <data name="searchYourFavCourse" xml:space="preserve">
+    <value>Suche nach Ihrem Lieblingskurs</value>
+  </data>
   <data name="selectFindYourPath" xml:space="preserve">
     <value>• Wählen Sie 'Finden Sie Ihren Weg', um den Smart Questionnaire auszufüllen</value>
+  </data>
+  <data name="selectTopic" xml:space="preserve">
+    <value>Bitte wählen Sie das Thema :</value>
   </data>
   <data name="universitiesOffering" xml:space="preserve">
     <value>• Universitäten, die Thouse-Kurse anbieten</value>

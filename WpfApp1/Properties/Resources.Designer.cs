@@ -151,11 +151,29 @@ namespace WpfApp1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Search For Your Favourite Course.
+        /// </summary>
+        public static string searchYourFavCourse {
+            get {
+                return ResourceManager.GetString("searchYourFavCourse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to •  Select &apos;Find Your Path&apos; to Fill Out the Smart Questionnaire.
         /// </summary>
         public static string selectFindYourPath {
             get {
                 return ResourceManager.GetString("selectFindYourPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please Select The Topic :.
+        /// </summary>
+        public static string selectTopic {
+            get {
+                return ResourceManager.GetString("selectTopic", resourceCulture);
             }
         }
         

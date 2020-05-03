@@ -147,8 +147,14 @@
   <data name="jobsEligibile" xml:space="preserve">
     <value>• Jobs Eligible For</value>
   </data>
+  <data name="searchYourFavCourse" xml:space="preserve">
+    <value>Search For Your Favourite Course</value>
+  </data>
   <data name="selectFindYourPath" xml:space="preserve">
     <value>•  Select 'Find Your Path' to Fill Out the Smart Questionnaire</value>
+  </data>
+  <data name="selectTopic" xml:space="preserve">
+    <value>Please Select The Topic :</value>
   </data>
   <data name="universitiesOffering" xml:space="preserve">
     <value>• Universities Offering Thouse Courses</value>
