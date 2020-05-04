@@ -70,7 +70,7 @@ namespace WpfApp1.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Check The Courses Offered.
+        ///   Looks up a localized string similar to • Check The Courses Offered.
         /// </summary>
         public static string checkCoursesOfferred {
             get {
@@ -147,6 +147,24 @@ namespace WpfApp1.Properties {
         public static string jobsEligibile {
             get {
                 return ResourceManager.GetString("jobsEligibile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Press Continue To Resume Your Session.
+        /// </summary>
+        public static string pressContinue {
+            get {
+                return ResourceManager.GetString("pressContinue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Press New To Find Your Career.
+        /// </summary>
+        public static string pressNew {
+            get {
+                return ResourceManager.GetString("pressNew", resourceCulture);
             }
         }
         

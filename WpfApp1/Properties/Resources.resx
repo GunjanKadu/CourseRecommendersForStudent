@@ -121,7 +121,7 @@
     <value>Smart Choice</value>
   </data>
   <data name="checkCoursesOfferred" xml:space="preserve">
-    <value>Check The Courses Offered</value>
+    <value>• Check The Courses Offered</value>
   </data>
   <data name="checkOut" xml:space="preserve">
     <value>• Check Out The</value>
@@ -146,6 +146,12 @@
   </data>
   <data name="jobsEligibile" xml:space="preserve">
     <value>• Jobs Eligible For</value>
+  </data>
+  <data name="pressContinue" xml:space="preserve">
+    <value>Press Continue To Resume Your Session</value>
+  </data>
+  <data name="pressNew" xml:space="preserve">
+    <value>Press New To Find Your Career</value>
   </data>
   <data name="searchYourFavCourse" xml:space="preserve">
     <value>Search For Your Favourite Course</value>

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
+         xmlns:Resx="clr-namespace:WpfApp1.Properties"
         mc:Ignorable="d"
         Closing="Window_Closing"
         Title="Questionare" Height="450" Width="800" WindowStartupLocation="CenterOwner">
@@ -12,15 +13,32 @@
             <RowDefinition Height="7*"/>
             <RowDefinition Height="78*"/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="FIND YOUR PATH" VerticalAlignment="Top" RenderTransformOrigin="0.713,1.75" Margin="10,10,0,0" Width="111" FontWeight="Bold" Foreground="#FFBEBABA"/>
+        <!--Heading Start -->
+        <TextBlock TextWrapping="Wrap" Text="{x:Static Resx:Resources.yourPath}" VerticalAlignment="Top" FontSize="12"   HorizontalAlignment="Center" RenderTransformOrigin="0.713,1.75" Margin="10,10,0,0" Width="111" FontWeight="Bold" Foreground="Black"/>
+        <!--Heading End -->
+        
+        <!-- Question And Answer Start-->
         <StackPanel Name="Stack_QandA"  Margin="215,5.333,199.333,22.667" Orientation="Vertical" Grid.Row="1">
+            
+            <!--Question and Border Start--> 
             <Border x:Name="Txt_Question_Border" Visibility="Hidden" BorderBrush="Black" BorderThickness="0.5"  Width="340" Margin="-30,0,0,0">
                 <TextBlock x:Name="Txt_Question" HorizontalAlignment="Left" Visibility="Hidden" Padding="0" TextWrapping="Wrap"  Text="{Binding qText}" VerticalAlignment="Top" Height="65" Width="340" FontWeight="Bold" FontSize="12" />
             </Border>
-            <TextBlock x:Name="Txt_PressStart" HorizontalAlignment="Left" Height="36" Margin="75,55,0,0" TextWrapping="Wrap" Width="168" FontWeight="Bold" VerticalAlignment="Center"/>
-            <Button x:Name="Btn_Start" Content="NEW"  Height="46" Margin="-50,0,0,0" Width="233" Click="Btn_Start_Click" Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold"/>
-            <Button x:Name="Btn_Continue" Visibility="Hidden" Content="CONTINUE"  Height="46" Margin="-50,10,0,0" Width="233"  Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold" Click="Btn_Continue_Click"/>
-            <ListBox x:Name="Lst_AnswerList" Visibility="Hidden"    SelectionChanged="Lst_AnswerList_SelectionChanged"  HorizontalAlignment="left" VerticalAlignment="Top" Width="340" Margin="0,-130,0,-20" Height="180">
+            <!--Question and Border End-->
+
+            
+            <!-- Label for New or Continue Start -->
+            <TextBlock x:Name="Txt_PressStart"  Height="36" Margin="15,5,0,0"  TextWrapping="Wrap" Width="250" FontWeight="Bold" VerticalAlignment="Center"/>
+            <!-- Label for New or Continue End -->
+            
+            <!-- Button New And Continue Start -->
+            <Button x:Name="Btn_Start" Content="NEW"  Height="46" Margin="-50,0,0,0" Width="123" Click="Btn_Start_Click" Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold"/>
+            <Button x:Name="Btn_Continue" Visibility="Hidden" Content="CONTINUE"  Height="46" Margin="-50,10,0,0" Width="123"  Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold" Click="Btn_Continue_Click"/>
+            <!-- Button New And Continue End -->
+            
+            
+           <!-- List Answer Start -->
+            <ListBox x:Name="Lst_AnswerList" Visibility="Hidden"    SelectionChanged="Lst_AnswerList_SelectionChanged"  HorizontalAlignment="left" VerticalAlignment="Top" Width="340" Margin="0,-85,0,-20" Height="180">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Margin="0,5">
@@ -30,17 +48,26 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
+            <!-- List Answer End -->
+
+            
+           <!-- Next and Previous Button Start -->
             <StackPanel Margin="-5,30,0,0" Orientation="Horizontal" Height="30">
-                <Button x:Name="Btn_Prev_Question" Visibility="Hidden" Height="20" Width="70" Style="{StaticResource MyButton}" Background="#FFB20837" BorderBrush="#FFB20837" Foreground="Wheat" Margin="5,10,0,0" Content="&lt;&lt;PREV" FontWeight="Bold" Click="Btn_Prev_Question_Click" ToolTip="Click To See The Previous Question" />
+                <Button x:Name="Btn_Prev_Question" Visibility="Hidden" Height="20" Width="70" Style="{StaticResource MyButton}" Background="#FFB20837" BorderBrush="#FFB20837" Foreground="Wheat" Margin="5,10,0,0" Content="&lt;&lt;" FontWeight="Bold" Click="Btn_Prev_Question_Click" ToolTip="Click To See The Previous Question" />
                 <Border x:Name="Txt_Question_Number_Border" Visibility="Hidden"  BorderBrush="#FFB20837" Height="20" BorderThickness="0" Width="45" Margin="74,-25.2,0,0">
                     <TextBlock x:Name="Txt_Question_Number" Visibility="Hidden" Text="1/10" Margin="11.5,0,0,0"  FontWeight="Black" Foreground="#FFB20837"/>
                 </Border>
-                <Button x:Name="Btn_Next_Question" Visibility="Hidden" Background="#FFB20837" Style="{StaticResource MyButton}" Foreground="Wheat" Height="20" Width="70" Margin="83,10,0,0" FontWeight="Bold" BorderBrush="#FFB20837" Content="NEXT&gt;&gt;" Click="Btn_Next_Question_Click" 
+                <Button x:Name="Btn_Next_Question" Visibility="Hidden" Background="#FFB20837" Style="{StaticResource MyButton}" Foreground="Wheat" Height="20" Width="70" Margin="83,10,0,0" FontWeight="Bold" BorderBrush="#FFB20837" Content="&gt;&gt;" Click="Btn_Next_Question_Click" 
                  ToolTip="{Binding toolTipText}"
                         ToolTipService.ShowOnDisabled="True"
                />
+                <!-- Next and Previous Button End -->
             </StackPanel>
         </StackPanel>
+        <!-- Question And Answer End-->
+
+        
+      <!-- Summary For Question Answer Start -->
         <StackPanel Visibility="Hidden" Name="Stack_Summary" Background="#FFB20837" Orientation="Vertical" VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="421"  Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-0.333">
             <TextBlock Text="Summary" Foreground="White" Margin="65,15,0,0" FontWeight="Bold" FontSize="13">
             </TextBlock>
@@ -53,22 +80,30 @@
                                 <ColumnDefinition Width="100" />
                             </Grid.ColumnDefinitions>
 
+                            <!-- Submitted Questions and Answers Start -->
+                            
                             <TextBlock Width="175" TextTrimming="CharacterEllipsis" Margin="0,-5,0,5">
                                  <Run Text="{Binding AskedQuestion}" ToolTip="{Binding AskedQuestion}" Foreground="White"/>
                                 <LineBreak/>
                                  <Run Text="• " FontWeight="Bold" FontSize="10"  Foreground="Wheat"/>
                                  <Run Text="{Binding SubmittedAnswers}" FontWeight="Bold" FontSize="10" ToolTip="{Binding SubmittedAnswers}" Foreground="Wheat"/>
                             </TextBlock>
+                            <!-- Submitted Questions and Answers End -->
+
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
-
             </ListBox>
         </StackPanel>
+        <!-- Summary For Question Answer End -->
+
+
+        <!-- Hint For Questions Start -->
         <TextBlock HorizontalAlignment="Left" Height="223" Margin="570,105,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"  Name="Txt_Block_Hint" TextAlignment="Justify" Visibility="Visible" Foreground="DarkGray" FontWeight="Bold"
                    FontSize="10"/>
-       
-       
+        <!-- Hint For Questions End -->
+
+        <!-- Recommended Courses and Job Start -->
         <TabControl Name="Tab_Results" HorizontalAlignment="Left" Height="288" VerticalAlignment="Top" Width="455" Visibility="Collapsed" Margin="253,15.333,0,0" Grid.Row="1">
             <TabItem Header="Recommended Course">
                 <StackPanel Orientation="Vertical" >
@@ -89,13 +124,11 @@
                 </StackPanel>
             </TabItem>
         </TabControl>
+        <!-- Recommended Courses and Job End -->
+
+        <!-- Start Again Start --> 
         <Button x:Name="Btn_StartAgain" Content="Start Again"  Height="46" Margin="190,315.333,0,0" Width="133"  Background="#FFB20837" Foreground="Wheat" BorderBrush="#FFB20837" FontWeight="Bold" Grid.Row="1" Visibility="Collapsed" Click="Btn_StartAgain_Click"  />
-
-
-        <!--<TextBlock Name="Txt_DidYouKnow" HorizontalAlignment="Left" Margin="644,122,0,209" Visibility="Collapsed" TextWrapping="Wrap" Text="TextBlock" Width="110" RenderTransformOrigin="1.3,-2.872" Grid.Row="1"/>-->
-
-        <!--<Image Name="Img_DidYouKnow" Source="Img/didyouknow.jpef" Stretch="Fill"  Visibility="Visible" Grid.Row="1" Margin="550,0,0,0" Height="69" Width="84"/>-->
-
+        <!-- Start Again End -->
 
     </Grid>
 </Window>

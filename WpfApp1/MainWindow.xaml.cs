@@ -23,17 +23,20 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        //Variables For Language Change Start
         bool firstTime = true;
         public static string language = "de";
+        //Variables For Language Change End
+
         public MainWindow()
         {
+            //Initializing Language Start
             language = Properties.Settings.Default.language;
-
             CultureInfo.CurrentCulture = new CultureInfo(language);
             CultureInfo.CurrentUICulture = new CultureInfo(language);
-           
-             InitializeComponent();
+            //Initializing Language End
+            
+            InitializeComponent();
 
         }
 
@@ -41,7 +44,6 @@ namespace WpfApp1
         {
             var win = new Courses();
             win.Owner = this;
-            //win.Show();
             Visibility = Visibility.Hidden;
             win.ShowDialog();
         }
@@ -84,11 +86,6 @@ namespace WpfApp1
             Cobx_Language.SelectedItem = itm;
             Cobx_Language.ItemsSource = lst;
 
-        }
-
-        public static string getCurrentLanguage()
-        {
-            return language;
         }
     }
 }

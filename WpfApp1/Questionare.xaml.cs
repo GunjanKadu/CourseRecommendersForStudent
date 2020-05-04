@@ -41,18 +41,18 @@ namespace WpfApp1
         {
             InitializeComponent();
 
+            // Loading Previously Stored Question and Answer Start
             if (MainWindow.language == "en")
             {
-            Questionare._askedQuestionAnswer = MyStorage.ReadXML<ObservableCollection<QuestionAnswer>>("QandA.xml");
-
+                Questionare._askedQuestionAnswer = MyStorage.ReadXML<ObservableCollection<QuestionAnswer>>("QandA.xml");
             }
             if (MainWindow.language == "de")
             {
-            Questionare._askedQuestionAnswer = MyStorage.ReadXML<ObservableCollection<QuestionAnswer>>("QandA.de.xml");
-
+                Questionare._askedQuestionAnswer = MyStorage.ReadXML<ObservableCollection<QuestionAnswer>>("QandA.de.xml");
             }
-           
+            // Loading Previously Stored Question and Answer End
 
+            // Loading Question Start
             if (MainWindow.language == "en")
             {
                 doc.Load("Questions.xml");
@@ -61,48 +61,79 @@ namespace WpfApp1
             {
                 doc.Load("Questions.de.xml");
             }
+            // Loading Question End
+
+            //Text for start or Continue start
             if (_askedQuestionAnswer.Count != 0)
             {
-                Txt_PressStart.Text = "Press Start/Continue To Find Your Path";
+                if (MainWindow.language == "en")
+                {
+                    Txt_PressStart.Margin = new System.Windows.Thickness(-45, 0, 0, 0);
+                    Txt_PressStart.Text = "Press Continue To Resume Your Sessions ";
+                }
+                else if (MainWindow.language == "de")
+                {
+                    Txt_PressStart.Margin = new System.Windows.Thickness(-5, 0, 0, 0);
+                    Txt_PressStart.Text = "Weiter drücken, um fortzufahren";
+                }
                 Btn_Continue.Visibility = Visibility.Visible;
             }
             else
             {
-                Txt_PressStart.Text = "Press Start To Find Your Path";
+                if (MainWindow.language == "en")
+                {
+                    Txt_PressStart.Margin = new System.Windows.Thickness(15, 5, 0, 0);
+                    Txt_PressStart.Text = "Press New To Find Your Career";
+                }
+                else if (MainWindow.language == "de")
+                {
+                    Txt_PressStart.Text = "Presse Neu, um Ihre Karriere zu finden";
+
+                }
             }
+            //Text for start or Continue end
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Owner.Visibility = Visibility.Visible;
+
+            //Clearing saved session if all answered start
             if (questionNumber >= 8)
             {
                 _askedQuestionAnswer.Clear();
             }
+            //Clearing saved session if all answered end
+
+            // Storing Answered Question and Answer Start
             if (MainWindow.language == "en")
             {
-            MyStorage.WriteXml<ObservableCollection<QuestionAnswer>>(Questionare._askedQuestionAnswer, "QandA.xml");
+                MyStorage.WriteXml<ObservableCollection<QuestionAnswer>>(Questionare._askedQuestionAnswer, "QandA.xml");
             }
             if (MainWindow.language == "de")
             {
                 MyStorage.WriteXml<ObservableCollection<QuestionAnswer>>(Questionare._askedQuestionAnswer, "QandA.de.xml");
-
             }
+            // Storing Answered Question and Answer End
+
+            //Clearing the Results List Start
             App.Colleges.Clear();
             App.Jobs.Clear();
             App.Details.Clear();
-
-
+            //Clearing the Results List End
         }
 
         private void Btn_Start_Click(object sender, RoutedEventArgs e)
         {
+            //Deleting the previous question and answers if there and starting the appplication Start
             _askedQuestionAnswer.Clear();
             startApplication(questionNumber, "general");
+            //Deleting the previous question and answers if there and starting the application Start
         }
 
         private void Btn_Continue_Click(object sender, RoutedEventArgs e)
         {
+            //Handling the continue click if previously on question 3 or not start
             if (_askedQuestionAnswer[_askedQuestionAnswer.Count - 1].QuestionNumber == 3)
             {
                 questionNumber = _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].QuestionNumber - 1;
@@ -120,20 +151,30 @@ namespace WpfApp1
                 }
 
             }
+            //Handling the continue click if previously on question 3 or not end
 
+            //Adding the previously stored global answer to local answer list start
             selectedAnswers.Distinct().ToList<string>();
-
             startApplication(questionNumber, _askedQuestionAnswer[_askedQuestionAnswer.Count - 1].Category);
+            //Adding the previously stored global answer to local answer list end
+
             Btn_Continue.Visibility = Visibility.Hidden;
         }
 
         private void startApplication(int questionNumber, string questionType)
         {
-            answerList = new QuestionAnswer();
 
+            //Show current question start
+            Txt_Question_Number.Text = questionNumber + "/8";
+            //Show current question end
+
+            //Initializing answerList to store question,answer,category&questionNumber start
+            answerList = new QuestionAnswer();
+            //Initializing answerList to store question,answer,category&questionNumber end
+
+            //Handling the visibility of the elemenss after the application starts start
             Txt_PressStart.Visibility = Visibility.Hidden;
             Btn_Start.Visibility = Visibility.Hidden;
-
             Lst_AnswerList.Visibility = Visibility.Visible;
             Txt_Question.Visibility = Visibility.Visible;
             Txt_Question_Border.Visibility = Visibility.Visible;
@@ -142,27 +183,31 @@ namespace WpfApp1
             Btn_Next_Question.IsEnabled = false;
             Txt_Question_Number.Visibility = Visibility.Visible;
             Txt_Question_Number_Border.Visibility = Visibility.Visible;
-            //Txt_DidYouKnow.Visibility = Visibility.Visible;
-            //Img_DidYouKnow.Visibility = Visibility.Visible;
+            //Initializing answerList to store question,answer,category&questionNumber end
 
 
-            Txt_Question_Number.Text = questionNumber + "/8";
 
-            if (questionNumber==3)
-            {
-                //Txt_DidYouKnow.Visibility = Visibility.Collapsed;
-                //Img_DidYouKnow.Visibility = Visibility.Collapsed;
-            }
-
+            //Handling submit and next button content start
             if (questionNumber == 8)
             {
+                if (MainWindow.language=="en")
+                {
                 Btn_Next_Question.Content = "SUBMIT";
+                }
+                else if (MainWindow.language=="de")
+                {
+                    Btn_Next_Question.Content = "ABGEBEN";          
+                }
             }
             else
             {
-                Btn_Next_Question.Content = "NEXT>>";
+                 Btn_Next_Question.Content = ">>";
             }
+            //Handling submit and next button content end
+
+            //Handling button tooltip start
             Btn_Next_Question.DataContext = new Classes.ToolTip() { toolTipText = "Select An Answer To See The Next Question" };
+            //Handling button content end
 
             if (questionNumber == 1)
             {
@@ -482,12 +527,12 @@ namespace WpfApp1
                     Txt_Question_Number.Visibility = Visibility.Hidden;
                     Txt_Question_Number_Border.Visibility = Visibility.Hidden;
 
-                    if (MainWindow.language=="en")
+                    if (MainWindow.language == "en")
                     {
-                    Lst_Result_College.ItemsSource = App.CollegeList(oldCategory,"Results.xml");
+                        Lst_Result_College.ItemsSource = App.CollegeList(oldCategory, "Results.xml");
 
                     }
-                    else if (MainWindow.language=="de")
+                    else if (MainWindow.language == "de")
                     {
                         Lst_Result_College.ItemsSource = App.CollegeList(oldCategory, "Results.de.xml");
                     }
@@ -580,30 +625,5 @@ namespace WpfApp1
 
 
         }
-
-        //private void Lst_AskedQuestion_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-
-        //    var selection = (sender as ListBox).SelectedItem as QuestionAnswer;
-
-        //    if (selection != null)
-        //    {
-        //        var questionNumber = selection.QuestionNumber;
-        //        var questionType = selection.Category;
-        //        lstAnswer.Clear();
-        //        isEditing = true;
-        //        //foreach (QuestionAnswer item in _askedQuestionAnswer)
-        //        //{
-        //        //    if (item.Answer == selection.Answer.ToString())
-        //        //    {
-        //        //        item.Answer = "";
-        //        //    }
-        //        //}
-        //        //_askedQuestionAnswer.RemoveAt(questionNumber - 1);
-        //        startApplication(questionNumber, questionType);
-        //    }
-        //}
-
-
     }
 }
