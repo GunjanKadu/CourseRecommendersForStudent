@@ -187,7 +187,7 @@ namespace WpfApp1.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find Your Path.
+        ///   Looks up a localized string similar to Find Your Career.
         /// </summary>
         public static string yourPath {
             get {

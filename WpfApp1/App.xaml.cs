@@ -20,6 +20,7 @@ namespace WpfApp1
 
         public static List<string> Colleges = new List<string>();
         public static List<string> Jobs = new List<string>();
+        public static List<string> Details = new List<string>();
 
         public static ObservableCollection<Question> _questions;
      
@@ -59,6 +60,10 @@ namespace WpfApp1
                         {
                             Jobs.Add(child.InnerText);
                         }
+                        else if (innerAtt == "details")
+                        {
+                            Details.Add(child.InnerText);
+                        }
                     }
                 }
             }
@@ -73,6 +78,11 @@ namespace WpfApp1
         public static List<string> JobList()
         {
             return Jobs;
+        }
+
+        public static List<string> DetailsList()
+        {
+            return Details;
         }
     }
 }

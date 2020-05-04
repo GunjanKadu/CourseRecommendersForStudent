@@ -7,34 +7,55 @@
 		<Result id="college">SRH Heidelberg</Result>
 		<Result id="college">  • Masters Of Science In Applied Computer Science</Result>
 		<Result id="college"></Result>
-		<Result id="college">University Of Heidelberg</Result>
-		<Result id="college">  • Masters Of Science In Computer Science</Result>
-		<Result id="college">  • Masters Of Science In Computational Science</Result>
 		<Jobs id="job">• Software Developer</Jobs>
 		<Jobs id="job">• Web Developer</Jobs>
 		<Jobs id="job">• Data Analyst</Jobs>
 		<Jobs id="job">• Backend Engineer</Jobs>
 		<Jobs id="job">• Network and Computer System Administrator</Jobs>
+
+
+		<Details id="details">HOCHSCHULE MANNHEIM - MSC INFORMATICS</Details>
+		<Details id="details"> •  Pre-Requisites: Basics in an object-oriented programming language.</Details>
+		<Details id="details"> •  Start of studies : Winter and Summer Semesters</Details>
+		<Details id="details"> •  Courses : First and Second Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Third semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">SRH HEIDELBERG - MSC APPLIED COMPUTER SCIENCE</Details>
+		<Details id="details"> •  Pre-Requisites: Advanced Knowledge in Java or Object-Oriented Programming Language.</Details>
+		<Details id="details"> •  Start of studies : Winter and Summer Semesters</Details>
+		<Details id="details"> •  Courses : First, Second, Third Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Fourth semester</Details>
 	</section>
 
 
 
 
 	<section type="BCS">
-		<Result id="college">Hochschule Mannheim</Result>
-		<Result id="college"> • Bachelor's Of Science In Enterprise Software Computing</Result>
 		<Result id="college"></Result>
 		<Result id="college">SRH Heidelberg</Result>
 		<Result id="college"> • Bachelor's Of Science In Applied Computer Science</Result>
 		<Result id="college"></Result>
 		<Result id="college">University Of Heidelberg</Result>
 		<Result id="college"> • Bachelor's Of Science In Computer Science</Result>
-		<Result id="college"> • Bachelor's Of Engineering In Computational Science</Result>
 		<Jobs id="job">• Software Developer</Jobs>
 		<Jobs id="job">• Web Developer</Jobs>
 		<Jobs id="job">• Data Analyst</Jobs>
 		<Jobs id="job">• Backend Engineer</Jobs>
 		<Jobs id="job">• Network and Computer System Administrator</Jobs>
+
+		<Details id="details">SRH HEIDELBERG - BSC APPLIED COMPUTER SCIENCE</Details>
+		<Details id="details"> •  Pre-Requisites: Basics in Object-Oriented Programming Language.</Details>
+		<Details id="details"> •  Start of studies : Winter and Summer Semesters</Details>
+		<Details id="details"> •  Courses : First - Seventh Semesters</Details>
+		<Details id="details"> •  Bachelor's Thesis: Eighth semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">UNIVERSITY OF HEIDELBERG - BSC COMPUTER SCIENCE</Details>
+		<Details id="details"> •  Pre-Requisites: Basics in Object-Oriented Programming Language, Algorithms</Details>
+		<Details id="details"> •  Start of studies : Winter</Details>
+		<Details id="details"> •  Courses : First - Seventh Semesters</Details>
+		<Details id="details"> •  Bachelor's Thesis: Eighth semester</Details>
+
+
 	</section>
 
 
@@ -44,18 +65,28 @@
 		<Result id="college">Hochschule Mannheim</Result>
 		<Result id="college"> • Bachelor's Of Science In Informatics</Result>
 		<Result id="college"></Result>
-		<Result id="college">SRH Heidelberg</Result>
-		<Result id="college"> • Bachelor's Of Science In Information Technology</Result>
-		<Result id="college"></Result>
 		<Result id="college">University Of Heidelberg</Result>
 		<Result id="college"> • Bachelor's Of Science In Information Computing</Result>
-		<Result id="college"> • Bachelor's Of Engineering In Computational Science</Result>
 		<Jobs id="job">• Cloud Architect</Jobs>
 		<Jobs id="job">• IT Consultant</Jobs>
 		<Jobs id="job">• Cloud Architect</Jobs>
 		<Jobs id="job">• Web Developer</Jobs>
 		<Jobs id="job">• Data Modeler</Jobs>
 		<Jobs id="job">• Data Analyst</Jobs>
+
+
+		<Details id="details">HOCHSCHULE MANNHEIM - BSC INFORMATICS</Details>
+		<Details id="details"> •  Pre-Requisites: Basics in an object-oriented programming language.</Details>
+		<Details id="details"> •  Start of studies : Winter Semesters</Details>
+		<Details id="details"> •  Courses : First - Seventh Semesters</Details>
+		<Details id="details"> •  Bachelor's Thesis: Eighth semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">UNIVERSITY OF HEIDELBERG - BSC INFORMATION COMPUTING</Details>
+		<Details id="details"> •  Pre-Requisites: Basics in Object-Oriented Programming Language, Algorithms</Details>
+		<Details id="details"> •  Start of studies : Winter</Details>
+		<Details id="details"> •  Courses : First - Seventh Semesters</Details>
+		<Details id="details"> •  Bachelor's Thesis: Eighth semester</Details>
+
 	</section>
 
 
@@ -71,14 +102,26 @@
 		<Result id="college"> • Masters Of Science In Information Technology</Result>
 		<Result id="college"></Result>
 
-		<Result id="college">University Of Heidelberg</Result>
-		<Result id="college"> • Masters Of Science In Computer Science</Result>
-		<Result id="college"> • Masters Of Engineering In Computational Science</Result>
 		<Jobs id="job">• IT Consultant</Jobs>
 		<Jobs id="job">• Cloud Architect</Jobs>
 		<Jobs id="job">• Web Developer</Jobs>
 		<Jobs id="job">• Data Modeler</Jobs>
 		<Jobs id="job">• Data Analyst</Jobs>
+
+
+		<Details id="details">HOCHSCHULE MANNHEIM - MSC INFORMATICS</Details>
+		<Details id="details"> •  Pre-Requisites: Basics in an object-oriented programming language.</Details>
+		<Details id="details"> •  Start of studies : Winter and Summer Semesters</Details>
+		<Details id="details"> •  Courses : First, Second, Third Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Third semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">SRH HEIDELBERG - MSC INFORMATION TECHNOLOGY</Details>
+		<Details id="details"> •  Pre-Requisites: Basics in Electronics and Micro-Controllers.</Details>
+		<Details id="details"> •  Start of studies : Winter and Summer Semesters</Details>
+		<Details id="details"> •  Courses : First, Second Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Third semester</Details>
+
+
 	</section>
 
 
@@ -92,13 +135,25 @@
 		<Result id="college"></Result>
 
 		<Result id="college">SRH Heidelberg</Result>
-		<Result id="college"> • Bachelor's Of Science In Information Technology</Result>
 		<Result id="college"> • Bachelor's Of Engineering In Electrical Engineering</Result>
 		<Jobs id="job">• Control and Instrumentation Engineer.</Jobs>
 		<Jobs id="job">• CAD Technician</Jobs>
 		<Jobs id="job">• Electronics Engineer</Jobs>
 		<Jobs id="job">• Systems Analyst</Jobs>
 		<Jobs id="job">• Circuit Design Engineer</Jobs>
+
+
+		<Details id="details">UNIVERSITY OF STUTTGART - BSC ELECTRICAL ENGINEERING</Details>
+		<Details id="details"> •  Pre-Requisites: Basics in Electronics and Power Devices.</Details>
+		<Details id="details"> •  Start of studies : Winter Semesters</Details>
+		<Details id="details"> •  Courses : First - Seventh Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Eighth semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">SRH HEIDELBERG - BSC ELECTRICAL ENGINEERING</Details>
+		<Details id="details"> •  Pre-Requisites: Basics in Electronics and Power Devices.</Details>
+		<Details id="details"> •  Start of studies : Winter and Summer Semesters</Details>
+		<Details id="details"> •  Courses : First - Seventh Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Eighth semester</Details>
 	</section>
 
 
@@ -106,9 +161,7 @@
 	<section type="MCE">
 		<Result id="college">University Of Heidelberg</Result>
 		<Result id="college"> • Masters's Of Science In Computer Engineering</Result>
-		<Result id="college"> • Masters's Of Science In Computer Technology</Result>
 		<Result id="college"></Result>
-
 		<Result id="college">University Of Stuttgart</Result>
 		<Result id="college"> • Masters's Of Science In Computer Engineering</Result>
 		<Jobs id="job">• Computer Hardware Engineer.</Jobs>
@@ -116,6 +169,20 @@
 		<Jobs id="job">• Software Developer</Jobs>
 		<Jobs id="job">• Systems Analyst</Jobs>
 		<Jobs id="job">• Embedded Software Engineer</Jobs>
+
+
+
+		<Details id="details">UNIVERSITY OF  HEIDELBERG - MSC COMPUTER  ENGINEERING</Details>
+		<Details id="details"> •  Pre-Requisites: Good Knowledge About Computer Architecture and VLSI.</Details>
+		<Details id="details"> •  Start of studies : Winter Semesters</Details>
+		<Details id="details"> •  Courses : First, Second,Third Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Fourth semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">UNIVERSITY OF  STUTTGART - MSC COMPUTER  ENGINEERING</Details>
+		<Details id="details"> •  Pre-Requisites: Advance Knowledge About Micro-Controllers and VLSI.</Details>
+		<Details id="details"> •  Start of studies : Winter Semesters</Details>
+		<Details id="details"> •  Courses : First, Second,Third Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Fourth semester</Details>
 	</section>
 
 
@@ -135,6 +202,22 @@
 		<Jobs id="job">• Chartered management accountant</Jobs>
 		<Jobs id="job">• Project manager</Jobs>
 		<Jobs id="job">• Supply Chain Manager</Jobs>
+
+
+		<Details id="details">UNIVERSITY OF STUTTGART - MSC INTERNATIONAL BUSINESS </Details>
+		<Details id="details"> •  Pre-Requisites: Proficient in English and German </Details>
+		<Details id="details"> •  Start of studies : Winter Semesters</Details>
+		<Details id="details"> •  Courses : First, Second,Third Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Fourth semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">SRH HEIDELBERG - MSC INTERNATIONAL BUSINESS ENGINEERING</Details>
+		<Details id="details"> •  Pre-Requisites: Good Knowledge About Business Administration </Details>
+		<Details id="details"> •  Start of studies : Winter Semesters</Details>
+		<Details id="details"> •  Courses : First, Second,Third Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Fourth semester</Details>
+
+
+
 	</section>
 
 
@@ -153,6 +236,21 @@
 		<Jobs id="job">• Investment Analyst</Jobs>
 		<Jobs id="job">• Data Engineer</Jobs>
 		<Jobs id="job">• Digital Marketing Engineer</Jobs>
+
+
+		<Details id="details">UNIVERSITY OF STUTTGART - MSC INTERNATIONAL BUSINESS </Details>
+		<Details id="details"> •  Pre-Requisites: Proficient in English and German </Details>
+		<Details id="details"> •  Start of studies : Winter Semesters</Details>
+		<Details id="details"> •  Courses : First, Second,Third Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Fourth semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">SRH HEIDELBERG - MSC BIG DATA AND BUSINESS ANALYTICS</Details>
+		<Details id="details"> •  Pre-Requisites: Proficient in Data Engineering using R. </Details>
+		<Details id="details"> •  Start of studies : Winter Semesters</Details>
+		<Details id="details"> •  Courses : First, Second,Third Semesters</Details>
+		<Details id="details"> •  Master's Thesis: Fourth semester</Details>
+
+
 	</section>
 
 

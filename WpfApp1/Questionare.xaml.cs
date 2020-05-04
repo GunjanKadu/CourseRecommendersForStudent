@@ -90,6 +90,8 @@ namespace WpfApp1
             }
             App.Colleges.Clear();
             App.Jobs.Clear();
+            App.Details.Clear();
+
 
         }
 
@@ -140,10 +142,17 @@ namespace WpfApp1
             Btn_Next_Question.IsEnabled = false;
             Txt_Question_Number.Visibility = Visibility.Visible;
             Txt_Question_Number_Border.Visibility = Visibility.Visible;
+            //Txt_DidYouKnow.Visibility = Visibility.Visible;
+            //Img_DidYouKnow.Visibility = Visibility.Visible;
 
 
             Txt_Question_Number.Text = questionNumber + "/8";
 
+            if (questionNumber==3)
+            {
+                //Txt_DidYouKnow.Visibility = Visibility.Collapsed;
+                //Img_DidYouKnow.Visibility = Visibility.Collapsed;
+            }
 
             if (questionNumber == 8)
             {
@@ -475,6 +484,7 @@ namespace WpfApp1
 
                     Lst_Result_College.ItemsSource = App.CollegeList(oldCategory);
                     Lst_Result_Job.ItemsSource = App.JobList();
+                    Lst_Result_Details.ItemsSource = App.DetailsList();
 
 
                 }
@@ -489,7 +499,7 @@ namespace WpfApp1
 
         private void Btn_Prev_Question_Click(object sender, RoutedEventArgs e)
         {
-
+            Txt_Block_Hint.Visibility = Visibility.Hidden;
             lstAnswer.Clear();
             questionNumber -= 1;
             if (questionNumber > 0)
@@ -543,6 +553,7 @@ namespace WpfApp1
         {
             App.Colleges.Clear();
             App.Jobs.Clear();
+            App.Details.Clear();
             lstAnswer.Clear();
             selectedAnswers.Clear();
             _askedQuestionAnswer.Clear();

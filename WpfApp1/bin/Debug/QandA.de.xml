@@ -2,7 +2,7 @@
 <ArrayOfQuestionAnswer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <QuestionAnswer>
     <AskedQuestion>Was ist Ihre derzeitige Qualifikation?</AskedQuestion>
-    <SubmittedAnswers>Bachelor's</SubmittedAnswers>
+    <SubmittedAnswers>Master's</SubmittedAnswers>
     <Category>general</Category>
     <QuestionNumber>1</QuestionNumber>
   </QuestionAnswer>
@@ -11,11 +11,5 @@
     <SubmittedAnswers>Weiterbildung</SubmittedAnswers>
     <Category>general</Category>
     <QuestionNumber>2</QuestionNumber>
-  </QuestionAnswer>
-  <QuestionAnswer>
-    <AskedQuestion>Welchen der folgenden Studiengänge möchten Sie studieren?</AskedQuestion>
-    <SubmittedAnswers>Master's In Computer Science</SubmittedAnswers>
-    <Category>general</Category>
-    <QuestionNumber>3</QuestionNumber>
   </QuestionAnswer>
 </ArrayOfQuestionAnswer>
