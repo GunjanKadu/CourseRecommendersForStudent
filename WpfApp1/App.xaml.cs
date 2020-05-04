@@ -23,11 +23,13 @@ namespace WpfApp1
         public static List<string> Details = new List<string>();
 
         public static ObservableCollection<Question> _questions;
-     
+
+      
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            _courses = MyStorage.ReadXML<ObservableCollection<Course>>("courses.xml");
+            _courses = MyStorage.ReadXML<ObservableCollection<Course>>("Courses.xml");
             
+
             Questionare._askedQuestionAnswer = MyStorage.ReadXML<ObservableCollection<QuestionAnswer>>("QandA.xml");
             //_questions = MyStorage.ReadXML<ObservableCollection<Question>>("questions.xml");
             if (_courses == null)
@@ -40,10 +42,10 @@ namespace WpfApp1
             }
         }
 
-        public static void Load_Results(string category)
+        public static void Load_Results(string category,string file)
         {
             XmlDocument doc = new XmlDocument();
-            doc.Load("Results.xml");
+            doc.Load(file);
             foreach (XmlNode node in doc.DocumentElement)
             {
                 string att1 = node.Attributes[0].InnerText;
@@ -69,9 +71,9 @@ namespace WpfApp1
             }
         }
 
-        public static List<string> CollegeList(string category)
+        public static List<string> CollegeList(string category,string file)
         {
-            Load_Results(category);
+            Load_Results(category,file);
             return Colleges;
         }
 

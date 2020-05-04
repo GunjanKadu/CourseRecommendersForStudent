@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<section type="MCS">
+		<Result id="college">Hochschule Mannheim</Result>
+		<Result id="college"> • Master's Of Science In Informatics</Result>
+		<Result id="college"></Result>
+		<Result id="college">SRH Heidelberg</Result>
+		<Result id="college"> • Master of Science in Angewandter Informatik</Result>
+		<Result id="college"></Result>
+		<Jobs id="job">• Software-Entwickler</Jobs>
+		<Jobs id="job">• Webentwickler</Jobs>
+		<Jobs id="job">• Datenanalytiker</Jobs>
+		<Jobs id="job">• Backend-Engineer</Jobs>
+		<Jobs id="job">• Netzwerk und Computersystemadministrator</Jobs>
+
+
+		<Details id="details">HOCHSCHULE MANNHEIM - MSC INFORMATICS</Details>
+		<Details id="details"> • Voraussetzungen: Grundlagen in einer objektorientierten Programmiersprache.</Details>
+		<Details id="details"> • Studienbeginn : Winter und Sommersemester</Details>
+		<Details id="details"> • Kurse : Erstes und zweites Semester</Details>
+		<Details id="details"> • Master's Thesis: Drittes Semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">SRH HEIDELBERG • MSC APPLIEDED COMPUTER SCIENCE</Details>
+		<Details id="details"> • Voraussetzungen: Fortgeschrittene Kenntnisse in Java oder objektorientierter Programmiersprache.</Details>
+		<Details id="details"> • Studienbeginn : Winter und Sommersemester</Details>
+		<Details id="details"> • Kurse : Erstes, Zweites, Drittes Semester</Details>
+		<Details id="details"> • Master's Thesis: Viertes Semester</Details>
+	</section>
+
+
+
+
+	<section type="BCS">
+		<Result id="college"></Result>
+		<Result id="college">SRH Heidelberg</Result>
+		<Result id="college"> • Bachelor of Science in Angewandter Informatik</Result>
+		<Result id="college"></Result>
+		<Result id="college">Universität Heidelberg</Result>
+		<Result id="college"> • Bachelor of Science in Informatik</Result>
+		<Jobs id="job">• Software-Entwickler</Jobs>
+		<Jobs id="job">• Webentwickler</Jobs>
+		<Jobs id="job">• Datenanalytiker</Jobs>
+		<Jobs id="job">• Backend-Engineer</Jobs>
+		<Jobs id="job">• Netzwerk und Computersystemadministrator</Jobs>
+
+		<Details id="details">SRH HEIDELBERG - BSC APPLIEDED COMPUTER SCIENCE</Details>
+		<Details id="details"> • Voraussetzungen: Grundlagen der objektorientierten Programmiersprache.</Details>
+		<Details id="details"> • Studienbeginn : Winter und Sommersemester</Details>
+		<Details id="details"> • Kurse : Erstes - Siebtes Semester</Details>
+		<Details id="details"> • Bachelor's Thesis: Achtes Semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">UNIVERSITÄT HEIDELBERG - BSC COMPUTER SCIENCE</Details>
+		<Details id="details"> • Voraussetzungen: Grundlagen der objektorientierten Programmiersprache, Algorithmen</Details>
+		<Details id="details"> • Studienbeginn : Winter</Details>
+		<Details id="details"> • Kurse : Erstes - Siebtes Semester</Details>
+		<Details id="details"> • Bachelor's Thesis: Achtes Semester</Details>
+
+
+	</section>
+
+
+
+
+	<section type="BIT">
+		<Result id="college">Hochschule Mannheim</Result>
+		<Result id="college"> • Bachelor of Science in Informatik</Result>
+		<Result id="college"></Result>
+		<Result id="college">Universität Heidelberg</Result>
+		<Result id="college"> • Bachelor of Science in Information Computing</Result>
+		<Jobs id="job">• Cloud Architect</Jobs>
+		<Jobs id="job">• IT•Berater</Jobs>
+		<Jobs id="job">• Cloud Architect</Jobs>
+		<Jobs id="job">• Webentwickler</Jobs>
+		<Jobs id="job">• Datenmodellierer</Jobs>
+		<Jobs id="job">• Datenanalytiker</Jobs>
+
+
+		<Details id="details">HOCHSCHULE MANNHEIM - BSC INFORMATICS</Details>
+		<Details id="details"> • Voraussetzungen: Grundlagen in einer objektorientierten Programmiersprache.</Details>
+		<Details id="details"> • Studienbeginn : Wintersemester</Details>
+		<Details id="details"> • Kurse : Erstes - Siebtes Semester</Details>
+		<Details id="details"> • Bachelor's Thesis: Achtes Semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">UNIVERSITÄT HEIDELBERG - BSC INFORMATION COMPUTING</Details>
+		<Details id="details"> • Voraussetzungen: Grundlagen der objektorientierten Programmiersprache, Algorithmen</Details>
+		<Details id="details"> • Studienbeginn : Winter</Details>
+		<Details id="details"> • Kurse : Erstes - Siebtes Semester</Details>
+		<Details id="details"> • Bachelor's Thesis: Achtes Semester</Details>
+
+	</section>
+
+
+
+
+
+	<section type="MIT">
+		<Result id="college">Hochschule Mannheim</Result>
+		<Result id="college"> • Master of Science in Informatik</Result>
+		<Result id="college"></Result>
+
+		<Result id="college">SRH Heidelberg</Result>
+		<Result id="college"> • Master of Science in Informationstechnologie</Result>
+		<Result id="college"></Result>
+
+		<Jobs id="job">• IT•Berater</Jobs>
+		<Jobs id="job">• Cloud Architect</Jobs>
+		<Jobs id="job">• Webentwickler</Jobs>
+		<Jobs id="job">• Datenmodellierer</Jobs>
+		<Jobs id="job">• Datenanalytiker</Jobs>
+
+
+		<Details id="details">HOCHSCHULE MANNHEIM - MSC INFORMATICS</Details>
+		<Details id="details"> • Voraussetzungen: Grundlagen in einer objektorientierten Programmiersprache.</Details>
+		<Details id="details"> • Studienbeginn : Winter und Sommersemester</Details>
+		<Details id="details"> • Kurse : Erstes, Zweites, Drittes Semester</Details>
+		<Details id="details"> • Master's Thesis: Drittes Semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">SRH HEIDELBERG - MSC INFORMATION TECHNOLOGY</Details>
+		<Details id="details"> • Voraussetzungen: Grundlagen der Elektronik und Mikrocontroller.</Details>
+		<Details id="details"> • Studienbeginn : Winter und Sommersemester</Details>
+		<Details id="details"> • Kurse : Erste, Zweite Semester</Details>
+		<Details id="details"> • Master's Thesis: Drittes Semester</Details>
+
+
+	</section>
+
+
+
+
+
+
+	<section type="BETC">
+		<Result id="college">Universität Stuttgart</Result>
+		<Result id="college"> • Bachelor of Science in Elektrotechnik</Result>
+		<Result id="college"></Result>
+
+		<Result id="college">SRH Heidelberg</Result>
+		<Result id="college"> • Bachelor of Engineering in Elektrotechnik</Result>
+		<Jobs id="job">• Steuerungs und Instrumentierungsingenieur.</Jobs>
+		<Jobs id="job">• CAD-Techniker</Jobs>
+		<Jobs id="job">• Elektronikingenieur</Jobs>
+		<Jobs id="job">• Systemanalytiker/in</Jobs>
+		<Jobs id="job">• Schaltungsentwicklungsingenieur</Jobs>
+
+
+		<Details id="details">UNIVERSITY OF STUTTGART - BSC ELECTRICAL ENGINEERING</Details>
+		<Details id="details"> • Voraussetzungen: Grundlagen der Elektronik und Leistungsbauelemente.</Details>
+		<Details id="details"> • Studienbeginn : Wintersemester</Details>
+		<Details id="details"> • Kurse : Erstes - Siebtes Semester</Details>
+		<Details id="details"> • Master's Thesis: Achtes Semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">SRH HEIDELBERG - BSC ELECTRICAL ENGINEERING</Details>
+		<Details id="details"> • Voraussetzungen: Grundlagen der Elektronik und Leistungsbauelemente.</Details>
+		<Details id="details"> • Studienbeginn : Winter und Sommersemester</Details>
+		<Details id="details"> • Kurse : Erstes - Siebtes Semester</Details>
+		<Details id="details"> • Master's Thesis: Achtes Semester</Details>
+	</section>
+
+
+
+	<section type="MCE">
+		<Result id="college">Universität Heidelberg</Result>
+		<Result id="college"> • Master's Of Science In Computer Engineering</Result>
+		<Result id="college"></Result>
+		<Result id="college">Universität Stuttgart</Result>
+		<Result id="college"> • Master's Of Science In Computer Engineering</Result>
+		<Jobs id="job">• Computer Hardware-Ingenieur.</Jobs>
+		<Jobs id="job">• Systemarchitektur-Ingenieur/in</Jobs>
+		<Jobs id="job">• Software-Entwickler</Jobs>
+		<Jobs id="job">• Systemanalytiker/in</Jobs>
+		<Jobs id="job">• Embedded Software Engineer</Jobs>
+
+
+
+		<Details id="details">UNIVERSITÄT HEIDELBERG - MSC COMPUTER ENGINEERING</Details>
+		<Details id="details"> • Voraussetzungen: Gute Kenntnisse über Computerarchitektur und VLSI.</Details>
+		<Details id="details"> • Studienbeginn : Wintersemester</Details>
+		<Details id="details"> • Kurse : Erstes, Zweites, Drittes Semester</Details>
+		<Details id="details"> • Master's Thesis: Viertes Semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">UNIVERSITY OF STUTTGART - MSC COMPUTER ENGINEERING</Details>
+		<Details id="details"> • Voraussetzungen: Vorkenntnisse über Mikro-Controller und VLSI.</Details>
+		<Details id="details"> • Studienbeginn : Wintersemester</Details>
+		<Details id="details"> • Kurse : Erstes, Zweites, Drittes Semester</Details>
+		<Details id="details"> • Master's Thesis: Viertes Semester</Details>
+	</section>
+
+
+
+
+
+
+	<section type="MIBE">
+		<Result id="college">Universität Stuttgart</Result>
+		<Result id="college"> • Master's in International Business</Result>
+		<Result id="college"></Result>
+
+		<Result id="college">SRH Universität Heidelberg</Result>
+		<Result id="college"> • Master's in International Business Engineering</Result>
+		<Jobs id="job">• Business Analyst</Jobs>
+		<Jobs id="job">• Business Development Manager</Jobs>
+		<Jobs id="job">• Bilanzbuchhalterin</Jobs>
+		<Jobs id="job">• Projektleiter</Jobs>
+		<Jobs id="job">• Lieferkettenmanager</Jobs>
+
+
+		<Details id="details">UNIVERSITY OF STUTTGART - MSC INTERNATIONAL BUSINESS </Details>
+		<Details id="details"> • Voraussetzungen: Beherrschung der englischen und deutschen Sprache </Details>
+		<Details id="details"> • Studienbeginn : Wintersemester</Details>
+		<Details id="details"> • Kurse : Erstes, Zweites, Drittes Semester</Details>
+		<Details id="details"> • Master's Thesis: Viertes Semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">SRH HEIDELBERG - MSC INTERNATIONAL BUSINESS ENGINEERING</Details>
+		<Details id="details"> • Voraussetzungen: Gute Kenntnisse in Betriebswirtschaft </Details>
+		<Details id="details"> • Studienbeginn : Wintersemester</Details>
+		<Details id="details"> • Kurse : Erstes, Zweites, Drittes Semester</Details>
+		<Details id="details"> • Master's Thesis: Viertes Semester</Details>
+
+
+
+
+	</section>
+
+
+
+
+
+	<section type="MBDBA">
+		<Result id="college">Universität Stuttgart</Result>
+		<Result id="college"> • Master's in International Business</Result>
+		<Result id="college"></Result>
+
+		<Result id="college">SRH Universität Heidelberg</Result>
+		<Result id="college"> • Masters in Big Data and Business Analytics</Result>
+		<Jobs id="job">• Datenanalytiker</Jobs>
+		<Jobs id="job">• Datenarchitekt</Jobs>
+		<Jobs id="job">• Investment Analyst</Jobs>
+		<Jobs id="job">• Datentechniker</Jobs>
+		<Jobs id="job">• Digital Marketing Engineer</Jobs>
+
+
+		<Details id="details">UNIVERSITY OF STUTTGART - MSC INTERNATIONAL BUSINESS </Details>
+		<Details id="details"> • Voraussetzungen: Beherrschung der englischen und deutschen Sprache </Details>
+		<Details id="details"> • Studienbeginn : Wintersemester</Details>
+		<Details id="details"> • Kurse : Erstes, Zweites, Drittes Semester</Details>
+		<Details id="details"> • Master's Thesis: Viertes Semester</Details>
+		<Details id="details"></Details>
+		<Details id="details">SRH HEIDELBERG - MSC BIG DATA AND BUSINESS ANALYTICS</Details>
+		<Details id="details"> • Voraussetzungen: Beherrschung des Data Engineering mit R. </Details>
+		<Details id="details"> • Studienbeginn : Wintersemester</Details>
+		<Details id="details"> • Kurse : Erstes, Zweites, Drittes Semester</Details>
+		<Details id="details"> • Master's Thesis: Viertes Semester</Details>
+
+
+	</section>
+
+
+
+
+
+</root>

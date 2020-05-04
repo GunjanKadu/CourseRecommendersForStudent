@@ -32,7 +32,6 @@ namespace WpfApp1
 
             CultureInfo.CurrentCulture = new CultureInfo(language);
             CultureInfo.CurrentUICulture = new CultureInfo(language);
-
            
              InitializeComponent();
 
@@ -85,6 +84,11 @@ namespace WpfApp1
             Cobx_Language.SelectedItem = itm;
             Cobx_Language.ItemsSource = lst;
 
+        }
+
+        public static string getCurrentLanguage()
+        {
+            return language;
         }
     }
 }

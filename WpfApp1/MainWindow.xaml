@@ -56,9 +56,10 @@
             <TextBlock  Margin="75,0,0,0" Text="{x:Static Resx:Resources.jobsEligibile}" Foreground="White" />
 
         </StackPanel>
-
+        
+        
+        
         <ComboBox Name="Cobx_Language" Width="50" HorizontalAlignment="Right" Margin="0,-365,70,0" Height="20" SelectionChanged="ComboBox_SelectionChanged"/>
-
         <Button x:Name="Btn_Close" Style="{StaticResource MyButton}" Margin="735,20,22.333,0" VerticalAlignment="Top" Height="30" Width="30" BorderBrush="White" Click="Btn_Close_Click">
             <Button.Background>
                 <ImageBrush ImageSource="Img/power1.png"/>

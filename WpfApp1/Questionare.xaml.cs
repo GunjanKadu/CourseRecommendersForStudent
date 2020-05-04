@@ -55,11 +55,11 @@ namespace WpfApp1
 
             if (MainWindow.language == "en")
             {
-                doc.Load("questions.xml");
+                doc.Load("Questions.xml");
             }
             if (MainWindow.language == "de")
             {
-                doc.Load("questions.de.xml");
+                doc.Load("Questions.de.xml");
             }
             if (_askedQuestionAnswer.Count != 0)
             {
@@ -482,7 +482,15 @@ namespace WpfApp1
                     Txt_Question_Number.Visibility = Visibility.Hidden;
                     Txt_Question_Number_Border.Visibility = Visibility.Hidden;
 
-                    Lst_Result_College.ItemsSource = App.CollegeList(oldCategory);
+                    if (MainWindow.language=="en")
+                    {
+                    Lst_Result_College.ItemsSource = App.CollegeList(oldCategory,"Results.xml");
+
+                    }
+                    else if (MainWindow.language=="de")
+                    {
+                        Lst_Result_College.ItemsSource = App.CollegeList(oldCategory, "Results.de.xml");
+                    }
                     Lst_Result_Job.ItemsSource = App.JobList();
                     Lst_Result_Details.ItemsSource = App.DetailsList();
 
