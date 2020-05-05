@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Navigation;
 using System.Xml;
 using WpfApp1.Classes;
 
@@ -17,21 +18,22 @@ namespace WpfApp1
     public partial class App : Application
     {
         public static ObservableCollection<Course> _courses;
+        public static ObservableCollection<Question> _questions;
 
+        //Declaring List for Colleges,Jobs and Details start
         public static List<string> Colleges = new List<string>();
         public static List<string> Jobs = new List<string>();
         public static List<string> Details = new List<string>();
+        //Declaring List for Colleges,Jobs and Details end
 
-        public static ObservableCollection<Question> _questions;
 
-      
         private void Application_Startup(object sender, StartupEventArgs e)
         {
+            //loading the courses from the file start
             _courses = MyStorage.ReadXML<ObservableCollection<Course>>("Courses.xml");
             
+            //Questionare._askedQuestionAnswer = MyStorage.ReadXML<ObservableCollection<QuestionAnswer>>("QandA.xml");
 
-            Questionare._askedQuestionAnswer = MyStorage.ReadXML<ObservableCollection<QuestionAnswer>>("QandA.xml");
-            //_questions = MyStorage.ReadXML<ObservableCollection<Question>>("questions.xml");
             if (_courses == null)
             {
                 _courses = new ObservableCollection<Course>();
@@ -40,8 +42,11 @@ namespace WpfApp1
             {
                 Questionare._askedQuestionAnswer = new ObservableCollection<QuestionAnswer>();
             }
+            //loading the courses from the file end
+
         }
 
+        //Load results based on the language start
         public static void Load_Results(string category,string file)
         {
             XmlDocument doc = new XmlDocument();
@@ -70,21 +75,23 @@ namespace WpfApp1
                 }
             }
         }
+        //Load results based on the language end
 
+
+        //Return the Results list Start
         public static List<string> CollegeList(string category,string file)
         {
             Load_Results(category,file);
             return Colleges;
         }
-
         public static List<string> JobList()
         {
             return Jobs;
         }
-
         public static List<string> DetailsList()
         {
             return Details;
         }
+        //Return the Results list End
     }
 }

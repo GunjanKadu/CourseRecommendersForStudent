@@ -28,20 +28,23 @@ namespace WpfApp1
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            // Chaning the owner visibility
             Owner.Visibility = Visibility.Visible;
         }
 
         private void Course_Filter_TextChanged(object sender, TextChangedEventArgs e)
         {
+            //Filtering the result and populating the List courses item source start
             var filter = (sender as TextBox).Text.ToLower();
             var lst = from s in App._courses where s.Title.ToLower().Contains(filter) select s;
             List_Courses.ItemsSource = lst;
+            //Filtering the result and populating the List courses item source end
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //Loading the Course List 
             List_Courses.ItemsSource = App._courses;
-
         }
 
         private void List_Courses_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -51,15 +54,11 @@ namespace WpfApp1
                 // Clean Previously selected course
                 Txt_CourseDesc.Text = "";
 
-                // Clean Previously Selected Image
-                //string imagePath ="";
-                //Uri uri = new Uri(imagePath, UriKind.Absolute);
-                //ImageSource imgSource = new BitmapImage(uri);
+                // Clean Previously Selected Image         
                 Course_Image.Source = null;
-
             }
 
-            // Adding the selected Course Into Combo Box source 
+            // Adding the selected Course Into Combo Box source Start
             var lstCourseItems = new List<string>();
             var selection = (sender as ListBox).SelectedItem as Course;
             if (selection != null)
@@ -70,12 +69,15 @@ namespace WpfApp1
                 lstCourseItems.Add(selection.content_4);
                 lstCourseItems.Add(selection.content_5);
             }
-
             Cmbx_CourseTopics.ItemsSource = lstCourseItems;
+            // Adding the selected Course Into Combo Box source end
+
+            //Default selected item start
             if (lstCourseItems.Count != 0)
             {
                 Cmbx_CourseTopics.SelectedItem = lstCourseItems[0];
             }
+            //Default selected item end
 
         }
 
@@ -88,9 +90,7 @@ namespace WpfApp1
 
                 foreach (XmlNode node in doc.DocumentElement)
                 {
-
-                    // Loading a selected image from xml file
-
+                    // Loading a selected image from xml file start
                     string name = node.Attributes[0].InnerText;
                     if (name == Cmbx_CourseTopics.SelectedItem.ToString() + "_img")
                     {
@@ -102,8 +102,9 @@ namespace WpfApp1
                             Course_Image.Source = imgSource;
                         }
                     }
+                    // Loading a selected image from xml file end
 
-                    // Loading a selected data from xml file
+                    // Loading a selected data from xml file start
                     if (name == Cmbx_CourseTopics.SelectedItem.ToString())
                     {
                         foreach (XmlNode child in node.ChildNodes)
@@ -111,6 +112,8 @@ namespace WpfApp1
                             Txt_CourseDesc.Text = child.InnerText;
                         }
                     }
+                    // Loading a selected data from xml file end
+
                 }
             }
         }

@@ -1,2 +1,27 @@
 <?xml version="1.0"?>
-<ArrayOfQuestionAnswer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfQuestionAnswer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestionAnswer>
+    <AskedQuestion>Was ist Ihre derzeitige Qualifikation?</AskedQuestion>
+    <SubmittedAnswers>Bachelor's</SubmittedAnswers>
+    <Category>general</Category>
+    <QuestionNumber>1</QuestionNumber>
+  </QuestionAnswer>
+  <QuestionAnswer>
+    <AskedQuestion>Was ist der Hauptgrund, warum Sie diesen Kurs suchen/machen?</AskedQuestion>
+    <SubmittedAnswers>Weiterbildung</SubmittedAnswers>
+    <Category>general</Category>
+    <QuestionNumber>2</QuestionNumber>
+  </QuestionAnswer>
+  <QuestionAnswer>
+    <AskedQuestion>Welchen der folgenden Studiengänge möchten Sie studieren?</AskedQuestion>
+    <SubmittedAnswers>Master's In Computer Science</SubmittedAnswers>
+    <Category>general</Category>
+    <QuestionNumber>3</QuestionNumber>
+  </QuestionAnswer>
+  <QuestionAnswer>
+    <AskedQuestion>Haben Sie bereits Erfahrung mit der Kodierung einer großen Anwendung?</AskedQuestion>
+    <SubmittedAnswers>Ja</SubmittedAnswers>
+    <Category>MCS</Category>
+    <QuestionNumber>4</QuestionNumber>
+  </QuestionAnswer>
+</ArrayOfQuestionAnswer>
