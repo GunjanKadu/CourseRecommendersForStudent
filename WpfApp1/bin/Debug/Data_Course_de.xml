@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+
+    <Course name="Objected Oriented Programming C++">
+        <content>Objektorientierte Programmierung - Wie der Name schon sagt, werden Objekte in der Programmierung verwendet. Ziel der objektorientierten Programmierung ist es, Entits Das Hauptziel von OOP besteht darin, die Daten und die Funktionen, die auf ihnen operieren, so zu verbinden, dass kein anderer Teil des Codes außer dieser Funktion auf diese Daten zugreifen kann.
+        </content>
+    </Course>
+    <Course name="Objected Oriented Programming C++_img">
+        <content>
+	https://img-a.udemycdn.com/course/750x422/410862_f0ba_2.jpg
+        </content>
+    </Course>
+
+    <Course name="Objected Oriented Programming Java">
+        <content>Objektorientierte Programmierung ist ein Programmierstil, der mit den Begriffen wie Klasse, Objekt, Vererbung, Kapselung, Abstraktion, Polymorphismus verbunden ist. ... Eine objektorientierte Anwendung in Java basiert auf der Deklaration von Klassen, der Erstellung von Objekten daraus und der Interaktion zwischen diesen Objekten.		</content>
+    </Course>
+    <Course name="Objected Oriented Programming Java_img">
+        <content>
+			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+        </content>
+    </Course>
+
+
+    <Course name="Data Structures And Algorithm">
+        <content>In der Informatik ist eine Datenstruktur ein Datenorganisations-, Verwaltungs- und Speicherformat, das einen effizienten Zugriff und eine effiziente Änderung ermöglicht. Genauer gesagt ist eine Datenstruktur eine Sammlung von Datenwerten, den Beziehungen zwischen ihnen und den Funktionen oder Operationen, die auf die Daten angewendet werden können.</content>
+    </Course>
+    <Course name="Data Structures And Algorithm_img">
+        <content> 
+			https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/11/Banner-Blog-1A-1.jpg
+        </content>
+    </Course>
+
+
+
+    <Course name="Database Mananagement Systems">
+        <content>Ein Datenbankmanagementsystem (DBMS) ist eine Systemsoftware zur Erstellung und Verwaltung von Datenbanken. Ein DBMS ermöglicht es den Endbenutzern, Daten in einer Datenbank zu erstellen, zu lesen, zu aktualisieren und zu löschen. Die am weitesten verbreitete Art der Datenverwaltungsplattform, das DBMS, dient im Wesentlichen als Schnittstelle zwischen Datenbanken und Endbenutzern oder Anwendungsprogrammen und stellt sicher, dass die Daten konsistent organisiert sind und leicht zugänglich bleiben.
+        </content>
+    </Course>
+    <Course name="Database Mananagement Systems_img">
+        <content>
+			https://blogs.bmc.com/wp-content/uploads/2016/06/database-blue.png
+        </content>
+    </Course>
+
+
+
+    <Course name="Computer Networks">
+        <content>Ein Computernetzwerk ist ein digitales Telekommunikationsnetzwerk zur gemeinsamen Nutzung von Ressourcen zwischen Knoten, d.h. Computergeräten, die eine gemeinsame Telekommunikationstechnologie verwenden. Die Datenübertragung zwischen Knoten wird über Datenverbindungen unterstützt, die aus physischen Kabelmedien bestehen, wie z.B. Twisted-Pair- oder Glasfaserkabel, oder über drahtlose Methoden, wie z.B. Wi-Fi
+
+        </content>
+    </Course>
+    <Course name="Computer Networks_img">
+        <content>
+			https://nizamtaher.files.wordpress.com/2013/05/ist2_6764102-computer-network.jpg		</content>
+    </Course>
+
+
+
+    <Course name="Web Technologies">
+        <content>Webtechnologie bezieht sich auf die Mittel, mit denen Computer über Auszeichnungssprachen und Multimediapakete miteinander kommunizieren. Sie gibt uns die Möglichkeit, mit gehosteten Informationen, wie Websites, zu interagieren. Die Webtechnologie beinhaltet die Verwendung von Hypertext Markup Language (HTML) und Cascading Style Sheets (CSS).</content>
+    </Course>
+    <Course name="Web Technologies_img">
+        <content>
+			https://www.eternalorganizer.com/wp-content/uploads/2017/09/Web-1.jpg
+        </content>
+    </Course>
+
+
+
+
+    <Course name="Objected Oriented Programming">
+        <content>Objektorientierte Programmierung - Wie der Name schon sagt, werden Objekte in der Programmierung verwendet. Ziel der objektorientierten Programmierung ist es, Entitäten der realen Welt wie Vererbung, Verstecken, Polymorphismus usw. in der Programmierung zu implementieren. Das Hauptziel von OOP besteht darin, die Daten und die Funktionen, die auf ihnen operieren, so zu verbinden, dass kein anderer Teil des Codes außer dieser Funktion auf diese Daten zugreifen kann.
+
+             
+        </content>
+    </Course>
+    <Course name="Objected Oriented Programming_img">
+        <content>
+			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+        </content>
+    </Course>
+
+
+    <Course name="Computer Architecture">
+        <content>Computerarchitektur ist ein Satz von Regeln und Methoden, die die Funktionalität, Organisation und Implementierung von Computersystemen beschreiben. Einige Definitionen der Architektur definieren sie als Beschreibung der Fähigkeiten und des Programmiermodells eines Computers, aber nicht als Beschreibung einer bestimmten Implementierung</content>
+    </Course>
+    <Course name="Computer Architecture_img">
+        <content>
+			https://c4.wallpaperflare.com/wallpaper/416/182/375/blue-chip-color-fee-wallpaper-preview.jpg
+        </content>
+    </Course>
+
+
+
+    <Course name="Digital Signal Processing">
+        <content>Digitale Signalverarbeitung (DSP) ist die Verwendung digitaler Verarbeitung, z.B. durch Computer oder spezialisiertere digitale Signalprozessoren, um eine Vielzahl von Signalverarbeitungsoperationen durchzuführen. Die auf diese Weise verarbeiteten digitalen Signale sind eine Folge von Zahlen, die Abtastwerte einer kontinuierlichen Variablen in einem Bereich wie Zeit, Raum oder Frequenz darstellen. In der digitalen Elektronik wird ein digitales Signal als Impulsfolge dargestellt.
+        </content>
+    </Course>
+    <Course name="Digital Signal Processing_img">
+        <content>
+			https://www.plm.automation.siemens.com/media/global/en/1280x720_Analog%20to%20Digital%20Signal_tcm27-29850.jpg
+        </content>
+    </Course>
+
+
+
+    <Course name="Image Processing">
+        <content>Bildverarbeitung ist die Verwendung eines digitalen Computers zur Verarbeitung digitaler Bilder durch einen Algorithmus. Als Unterkategorie oder Bereich der digitalen Signalverarbeitung hat die digitale Bildverarbeitung viele Vorteile gegenüber der analogen Bildverarbeitung. Sie ermöglicht die Anwendung einer viel breiteren Palette von Algorithmen auf die Eingabedaten und kann Probleme wie den Aufbau von Rauschen und Verzerrungen während der Verarbeitung vermeiden. 
+        </content>
+    </Course>
+    <Course name="Image Processing_img">
+        <content>
+			https://pbs.twimg.com/media/BqbKOADIIAEfJ0K.png
+        </content>
+    </Course>
+
+
+    <Course name="Electronic Devices And Circuits">
+        <content>Der Zweig der Technik, in dem der Fluss und die Steuerung von Elektronen im Vakuum oder in Halbleitern untersucht werden, wird Elektronik genannt. ... Das Gerät, das den Elektronenfluss steuert, wird als elektronisches Gerät bezeichnet. Diese Vorrichtungen sind die Hauptbausteine der elektronischen Schaltungen.
+        </content>
+    </Course>
+    <Course name="Electronic Devices And Circuits_img">
+        <content>
+			https://upload.wikimedia.org/wikipedia/commons/f/f5/Electronic_circuit.jpg
+        </content>
+    </Course>
+
+
+
+    <Course name="Microprocessors and MicroControllers">
+        <content>Ein Mikroprozessor ist ein Computerprozessor, der die Funktionen einer zentralen Verarbeitungseinheit auf einer einzigen (oder mehreren) integrierten Schaltung (IC) in MOSFET-Bauweise vereint. Der Mikroprozessor ist eine taktgesteuerte, registerbasierte, digitale, integrierte Mehrzweckschaltung, die binäre Daten als Eingabe akzeptiert, sie gemäß den in ihrem Speicher gespeicherten Anweisungen verarbeitet und Ergebnisse (auch in binärer Form) als Ausgabe liefert. Mikroprozessoren enthalten sowohl kombinatorische Logik als auch sequentielle digitale Logik. 
+        </content>
+    </Course>
+    <Course name="Microprocessors and MicroControllers_img">
+        <content>
+			https://upload.wikimedia.org/wikipedia/commons/6/68/TI_TMS1000NLL_1.jpg		</content>
+    </Course>
+
+
+
+    <Course name="Signals &amp; Systems">
+        <content>Signale und Systeme ist eine Einführung in die analoge und digitale Signalverarbeitung, ein Thema, das einen integralen Bestandteil von technischen Systemen in vielen verschiedenen Bereichen bildet, darunter seismische Datenverarbeitung, Kommunikation, Sprachverarbeitung, Bildverarbeitung, Verteidigungselektronik, Unterhaltungselektronik und Konsumgüter.
+        </content>
+    </Course>
+    <Course name="Signals &amp; Systems_img">
+        <content>
+			https://ocw.mit.edu/resources/res-6-007-signals-and-systems-spring-2011/res-6-007s11.jpg		</content>
+    </Course>
+
+
+
+    <Course name="Digital Communication">
+        <content>Datenübertragung (auch Datenkommunikation oder digitale Kommunikation) ist die Übertragung von Daten (ein digitaler Bitstrom oder ein digitalisiertes analoges Signal) über einen Punkt-zu-Punkt- oder Punkt-zu-Mehrpunkt-Kommunikationskanal. Beispiele für solche Kanäle sind Kupferdrähte, optische Fasern, drahtlose Kommunikationskanäle, Speichermedien und Computerbusse. Die Daten werden als elektromagnetisches Signal dargestellt, z. B. als elektrische Spannung, Radiowellen-, Mikrowellen- oder Infrarotsignal.
+        </content>
+    </Course>
+    <Course name="Digital Communication_img">
+        <content>
+			https://www.tutorialspoint.com/digital_communication/images/necessity_of_digitization.jpg
+        </content>
+    </Course>
+
+
+
+    <Course name="VHDL">
+        <content>Very High Speed Integrated Circuit Hardware Description Language (auch VHSIC Hardware Description Language ), kurz VHDL , ist eine Hardware-Beschreibungssprache, mit der es möglich ist, digitale Systeme textbasiert zu beschreiben. VHDL ist seit 1987 als IEEE-Standard definiert und es gibt inzwischen auch einige standardisierte Spracherweiterungen. Es gibt auch Sprachderivate wie VHDL-AMS, mit denen auch analoge oder Mixed-Signal-Systeme beschrieben werden können.
+        </content>
+    </Course>
+    <Course name="VHDL_img">
+        <content>
+			https://designsoftware.com/home/Portuguese/tina/images/VHDL-2.png		</content>
+    </Course>
+
+
+    <Course name="IT-Security">
+        <content>Computersicherheit, Cybersicherheit oder Sicherheit der Informationstechnologie (IT-Sicherheit) ist der Schutz von Computersystemen und Netzwerken vor dem Diebstahl oder der Beschädigung ihrer Hardware, Software oder elektronischen Daten sowie vor der Unterbrechung oder Fehlleitung der von ihnen angebotenen Dienste. Dieser Bereich gewinnt aufgrund der zunehmenden Abhängigkeit von Computersystemen, dem Internet und drahtlosen Netzwerkstandards wie Bluetooth und Wi-Fi sowie aufgrund des Wachstums "intelligenter" Geräte.
+        </content>
+    </Course>
+    <Course name="IT-Security_img">
+        <content>
+			https://www.dotmagazine.online/_Resources/Persistent/93ee6a9be8b75468188369e1cade21133644426e/iStock-901609212-1000x562-720x405.jpg		</content>
+    </Course>
+
+
+    <Course name="International Project Management">
+        <content>Objektorientierte Programmierung - Wie der Name schon sagt, werden Objekte in der Programmierung verwendet. Die primäre Herausforderung des Projektmanagements besteht darin, alle Projektziele innerhalb der vorgegebenen Grenzen zu erreichen.
+        </content>
+    </Course>
+    <Course name="International Project Management_img">
+        <content>
+			https://www.invensislearning.com/blog/wp-content/uploads/2019/07/Value-of-Project-Management.png		</content>
+    </Course>
+
+
+
+    <Course name="Software Architecture &amp; Development">
+        <content>Software-Architektur bezieht sich auf die grundlegenden Strukturen eines Softwaresystems und die Disziplin der Schaffung solcher Strukturen und Systeme. Jede Struktur umfasst Softwareelemente, Beziehungen zwischen ihnen und Eigenschaften sowohl der Elemente als auch der Beziehungen. Die Architektur eines Softwaresystems ist eine Metapher, analog zur Architektur eines Gebäudes. Sie fungiert als Blaupause für das System und das Entwicklungsprojekt und legt die Aufgaben fest, die von den Entwurfsteams ausgeführt werden müssen.
+        </content>
+    </Course>
+    <Course name="Software Architecture &amp; Development_img">
+        <content>https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+        </content>
+    </Course>
+
+
+    <Course name="Advanced Database">
+        <content>Eine Datenbank ist eine organisierte Sammlung von Daten, die in der Regel elektronisch gespeichert und von einem Computersystem aus zugänglich ist. Wo Datenbanken komplexer sind, werden sie oft mit formalen Entwurfs- und Modellierungstechniken entwickelt.Das Datenbankmanagementsystem (DBMS) ist die Software, die mit Endbenutzern, Anwendungen und der Datenbank selbst interagiert, um die Daten zu erfassen und zu analysieren. Die DBMS-Software umfasst zusätzlich die Kernfunktionen, die zur Verwaltung der Datenbank bereitgestellt werden.
+        </content>
+    </Course>
+    <Course name="Advanced Database_img">
+        <content>
+			https://hlassets.paessler.com/common/files/illustration/database-monitoring.png	</content>
+    </Course>
+
+
+    <Course name="Business Computing">
+        <content>Ein Business and Computing ist ein dualer Studiengang, der von einigen Computer- und Wirtschaftshochschulen gemeinsam angeboten wird. Das Programm dauert in der Regel vier bis fünf Jahre statt sieben bis acht Jahre, um die beiden Abschlüsse getrennt voneinander zu absolvieren, und führt dazu, dass der Kandidat sowohl einen Bachelor of Business als auch einen Bachelor of Computing erwirbt. Studierende mit einem Abschluss in Wirtschaft und Informatik können sich entscheiden, in der Informatik/Technik zu arbeiten, in die Geschäftswelt einzusteigen oder sogar die Grauzone zwischen Wirtschaft und Informatik.
+        </content>
+    </Course>
+    <Course name="Business Computing_img">
+        <content>
+			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+        </content>
+    </Course>
+
+
+
+    <Course name="UI &amp; UX">
+        <content>Die Benutzerschnittstelle (User Interface, UI) ist im industriellen Designbereich der Mensch-Computer-Interaktion der Raum, in dem Interaktionen zwischen Mensch und Maschine stattfinden. Das Ziel dieser Interaktion ist es, eine effektive Bedienung und Steuerung der Maschine vom menschlichen Ende aus zu ermöglichen, während die Maschine gleichzeitig Informationen zurückmeldet, die den Entscheidungsprozess des Bedieners unterstützen. Beispiele für dieses weit gefasste Konzept von Benutzerschnittstellen sind die interaktiven Aspekte von Computer-Betriebssystemen, Handwerkzeugen, Bedienelementen für schwere Maschinen und Prozesssteuerungen. 
+        </content>
+    </Course>
+    <Course name="UI &amp; UX_img">
+        <content>
+			https://en.wikipedia.org/wiki/User_interface#/media/File:Reactable_Multitouch.jpg		</content>
+    </Course>
+
+
+    <Course name="Data Engineering">
+        <content>Datentechnik ist der Aspekt der Datenwissenschaft, der sich auf praktische Anwendungen der Datenerfassung und -analyse konzentriert. Für all die Arbeit, die Datenwissenschaftler leisten, um Fragen unter Verwendung großer Informationsmengen zu beantworten, muss es Mechanismen zur Sammlung und Validierung dieser Informationen geben.
+        </content>
+    </Course>
+    <Course name="Data Engineering_img">
+        <content> https://alicedaish.files.wordpress.com/2016/03/datascienceprocess.jpg?w=723		</content>
+    </Course>
+
+
+    <Course name="Data Management">
+        <content>Das Konzept der Datenverwaltung entstand in den 1980er Jahren, als die Technologie von der sequentiellen Verarbeitung (zuerst Lochkarten, dann Magnetband) zur Speicherung mit wahlfreiem Zugriff überging. Da es nun möglich war, eine diskrete Tatsache zu speichern und mit Hilfe der Diskettentechnologie mit wahlfreiem Zugriff schnell darauf zuzugreifen, benutzten diejenigen, die behaupteten, dass die Datenverwaltung wichtiger sei als die Geschäftsprozessverwaltung.
+        </content>
+    </Course>
+    <Course name="Data Management_img">
+        <content>https://en.wikipedia.org/wiki/Data_management#/media/File:The_Data_Lifecycle.jpg</content>
+    </Course>
+
+
+
+
+    <Course name="Privacy,Ethics &amp; Management">
+        <content> Es befasst sich mit den Fragen, die sich aus dem Schutz der Privatsphäre und der Sicherheit der Menschen in einer Online-Umgebung ergeben, einschließlich der Grundsätze und der Praxis des Datenschutzrechts und innovativer Ansätze zum Verständnis der Cyberkriminalität und zur Unterstützung der Cybersicherheit. Wir erforschen faire und vertrauenswürdige Mittel des Datenaustauschs, ethische Fragen im Zusammenhang mit der Entwicklung und dem Einsatz autonomer Waffensysteme.
+        </content>
+    </Course>
+    <Course name="Privacy,Ethics &amp; Management_img">
+        <content>
+			https://studyqa.com/media/upload/articles/images/lawww.jpg		</content>
+    </Course>
+
+
+
+
+
+    <Course name="International Law">
+        <content>Das Völkerrecht, auch Völkerrecht und Recht der Nationen genannt, ist die Gesamtheit der Regeln, Normen und Standards, die in den Beziehungen zwischen den Nationen allgemein anerkannt sind. Es legt normative Richtlinien und einen gemeinsamen konzeptionellen Rahmen fest, um Staaten in einem breiten Spektrum von Bereichen, darunter Krieg, Diplomatie, Handel und Menschenrechte, zu leiten. Auf diese Weise bietet das Völkerrecht den Staaten ein Mittel, stabilere, konsistentere und besser organisierte internationale Beziehungen zu praktizieren.
+        </content>
+    </Course>
+    <Course name="International Law_img">
+        <content>
+			https://studyqa.com/media/upload/articles/images/lawww.jpg		</content>
+    </Course>
+
+
+    <Course name="Data Story Telling">
+        <content>Data Storytelling ist der schnellste und beste Weg, um Ihr Team in die Lage zu versetzen, Daten durch die Kraft von Geschichten zu verstehen und darauf zu reagieren. Es baut eine datengesteuerte und transparente Kultur auf, schafft Gespräche über das, was wichtig ist, und gibt Ihren Mitarbeitern die Freiheit, das zu tun, wofür sie angestellt wurden.Data Storytelling nimmt Ihre Daten ganz wörtlich und verwandelt sie automatisch in einfache englische Geschichten
+        </content>
+    </Course>
+    <Course name="Data Story Telling_img">
+        <content>https://upload.wikimedia.org/wikipedia/commons/3/37/Data_Science_storytelling.jpg
+        </content>
+    </Course>
+
+
+
+    <Course name="Information &amp; Coding Theory">
+        <content>Die Informations- und Codierungstheorie ist die Untersuchung der Eigenschaften von Codes und ihrer jeweiligen Eignung für bestimmte Anwendungen. Codes werden für Datenkompression, Kryptographie, Fehlererkennung und -korrektur, Datenübertragung und Datenspeicherung verwendet. Codes werden von verschiedenen wissenschaftlichen Disziplinen - wie Informationstheorie, Elektrotechnik, Mathematik, Linguistik und Informatik - mit dem Ziel untersucht, effiziente und zuverlässige 
+        </content>
+    </Course>
+    <Course name="Information &amp; Coding Theory_img">
+        <content>
+			https://en.wikipedia.org/wiki/Coding_theory#/media/File:Hamming.jpg
+        </content>
+    </Course>
+
+
+
+    <Course name="Real Time Programming">
+        <content>Real-Time-Computing (RTC) oder reaktives Rechnen ist der Informatik-Begriff für Hardware- und Softwaresysteme, die einer "Echtzeitbeschränkung" unterliegen, z.B. vom Ereignis bis zur Systemreaktion.[Zitat erforderlich] Echtzeitprogramme müssen eine Reaktion innerhalb festgelegter Zeitbeschränkungen, die oft als "Deadlines" bezeichnet werden, garantieren.Echtzeitantworten werden oft in der Größenordnung von Millisekunden und manchmal Mikrosekunden verstanden.
+        </content>
+    </Course>
+    <Course name="Real Time Programming_img">
+        <content>https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png
+        </content>
+    </Course>
+
+
+
+    <Course name="Embedded Systems">
+        <content>Ein eingebettetes System ist ein Computersystem - eine Kombination aus einem Computerprozessor, einem Computerspeicher und Ein-/Ausgabe-Peripheriegeräten -, das eine bestimmte Funktion innerhalb eines größeren mechanischen oder elektrischen Systems hat und als Teil eines vollständigen Geräts eingebettet ist, das häufig elektrische oder elektronische Hardware und mechanische Teile enthält. Da ein eingebettetes System in der Regel die physischen Operationen der Maschine steuert, in die es eingebettet ist, hat es oft Echtzeit-Rechenbeschränkungen. 
+        </content>
+    </Course>
+    <Course name="Embedded Systems_img">
+        <content>
+			https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png
+        </content>
+    </Course>
+
+
+
+
+    <Course name="Embedded Security">
+        <content>Die schnelle Verkleinerung der Strukturgrößen in der Halbleitertechnik ermöglicht die Herstellung immer leistungsfähigerer, energiesparenderer und preisgünstigerer Mikroprozessoren. Kleine Mikrocontroller finden sich heute in immer mehr Geräten des täglichen Lebens, wie Autos oder Mobiltelefonen. Diese so genannten eingebetteten Systeme erfüllen verschiedene anspruchsvolle und manchmal sicherheitskritische Aufgaben. Ausfälle dieser Systeme haben unmittelbare Auswirkungen auf unser reales Leben.
+        </content>
+    </Course>
+    <Course name="Embedded Security_img">
+        <content>
+			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+        </content>
+    </Course>
+
+
+
+
+    <Course name="Robotics">
+        <content>Die Robotik ist ein interdisziplinäres Forschungsgebiet an der Schnittstelle von Informatik und Ingenieurwissenschaften. Die Robotik umfasst Entwurf, Konstruktion, Betrieb und Einsatz von Robotern. Das Ziel der Robotik ist es, intelligente Maschinen zu entwerfen, die den Menschen in seinem täglichen Leben helfen und unterstützen und für die Sicherheit aller Menschen sorgen. Die Robotik stützt sich auf die Errungenschaften der Informationstechnik, der Computertechnik, des Maschinenbaus, der Elektrotechnik und anderer Bereiche.
+        </content>
+    </Course>
+    <Course name="Robotics_img">
+        <content>
+			https://en.wikipedia.org/wiki/Robotics#/media/File:Shadow_Hand_Bulb_large.jpg		</content>
+    </Course>
+
+
+
+
+
+    <Course name="Image Processing">
+        <content>Bildverarbeitung ist die Verwendung eines digitalen Computers zur Verarbeitung digitaler Bilder durch einen Algorithmus. Als Unterkategorie oder Bereich der digitalen Signalverarbeitung hat die digitale Bildverarbeitung viele Vorteile gegenüber der analogen Bildverarbeitung. Sie ermöglicht die Anwendung einer viel breiteren Palette von Algorithmen auf die Eingabedaten und kann Probleme wie den Aufbau von Rauschen und Verzerrungen während der Verarbeitung vermeiden.
+        </content>
+    </Course>
+    <Course name="Image Processing_img">
+        <content>
+			https://pbs.twimg.com/media/BqbKOADIIAEfJ0K.png
+        </content>
+    </Course>
+
+
+    <Course name="Business Law">
+        <content>Das Handels- oder Wirtschaftsrecht ist die Rechtsordnung, die die Wirtschaft und den Handel regelt. Es wird oft als ein Zweig des Zivilrechts angesehen und befasst sich sowohl mit Fragen des Privatrechts als auch des öffentlichen Rechts. Das Handelsrecht regelt Unternehmensverträge, Einstellungspraktiken sowie die Herstellung und den Verkauf von Konsumgütern.
+        </content>
+    </Course>
+    <Course name="Business Law_img">
+        <content>
+			https://www.burhanlaw.com/images/businesslaw.jpg
+        </content>
+    </Course>
+
+
+    <Course name="Market Analysis">
+        <content>Eine Marktanalyse ist eine quantitative und qualitative Bewertung eines Marktes. Sie untersucht die Größe des Marktes sowohl im Volumen als auch im Wert, die verschiedenen Kundensegmente und das Kaufverhalten, den Wettbewerb und das wirtschaftliche Umfeld im Hinblick auf Eintrittsbarrieren und Regulierung.
+        </content>
+    </Course>
+    <Course name="Market Analysis_img">
+        <content>
+			https://previews.123rf.com/images/marigranula/marigranula1507/marigranula150700143/41935395-market-analysis.jpg		</content>
+    </Course>
+
+
+
+
+    <Course name="Marketing &amp; Sales">
+        <content>Der Begriff "Verkauf" bezieht sich auf alle Aktivitäten, die zum Verkauf von Waren und Dienstleistungen führen. Und Marketing ist der Prozess, Menschen für die verkauften Waren und Dienstleistungen zu interessieren. Der Begriff "Verkauf" bezeichnet die Aktivitäten, die zum Verkauf von Waren oder Dienstleistungen führen.
+        </content>
+    </Course>
+    <Course name="Marketing &amp; Sales_img">
+        <content>
+			https://www.phocus-direct.de/hubfs/AdobeStock_140771171.jpeg
+        </content>
+    </Course>
+
+
+
+    <Course name="Human Resources">
+        <content>Humanressourcen beschreiben die Personen, die die Belegschaft einer Organisation, einer Branche, eines Geschäftssektors oder einer Wirtschaft ausmachen. "Humankapital" wird manchmal synonym mit "Humanressourcen" verwendet, obwohl sich Humankapital typischerweise auf einen engeren Effekt bezieht (d.h. auf das Wissen, das die Individuen verkörpern, und auf wirtschaftliches Wachstum). Ebenso schließen andere manchmal verwendete Begriffe Arbeitskraft, Arbeit, Personal, Mitarbeiter oder einfach Menschen ein.
+        </content>
+    </Course>
+    <Course name="Human Resources_img">
+        <content>
+			https://miro.medium.com/max/1000/0*6NOeTGcuCsG3fY6u.jpg		</content>
+    </Course>
+
+
+    <Course name="Business Startup">
+        <content>Eine Neugründung oder ein Start-up ist ein Unternehmen, das von einem Unternehmer gegründet wird, um ein skalierbares Geschäftsmodell zu suchen, effektiv zu entwickeln und zu validieren. Während Unternehmertum sich auf alle neuen Unternehmen bezieht, einschließlich Selbständiger und Unternehmen, die nie die Absicht haben, sich registrieren zu lassen, beziehen sich Start-ups auf die neuen Unternehmen, die beabsichtigen, über den Einzelgründer hinaus groß zu wachsen. 
+        </content>
+    </Course>
+    <Course name="Business Startup_img">
+        <content>
+			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+        </content>
+    </Course>
+
+
+
+    <Course name="Computer Architecture">
+        <content>Computerarchitektur ist ein Satz von Regeln und Methoden, die die Funktionalität, Organisation und Implementierung von Computersystemen beschreiben. Einige Definitionen der Architektur definieren sie als Beschreibung der Fähigkeiten und des Programmiermodells eines Computers, aber nicht als Beschreibung einer bestimmten Implementierung.
+        </content>
+    </Course>
+    <Course name="Computer Architecture_img">
+        <content>
+			https://c4.wallpaperflare.com/wallpaper/416/182/375/blue-chip-color-fee-wallpaper-preview.jpg		</content>
+    </Course>
+
+
+
+    <Course name="VLSI Design">
+        <content>Very Large Scale Integration (VLSI) ist der Prozess der Schaffung einer integrierten Schaltung (IC) durch die Kombination von Millionen von MOS-Transistoren auf einem einzigen Chip. VLSI begann in den 1970er Jahren, als MOS-Chips mit integrierten Schaltkreisen weit verbreitet waren und die Entwicklung komplexer Halbleiter- und Telekommunikationstechnologien ermöglichten. Bei den Mikroprozessor- und Speicherchips handelt es sich um VLSI-Bausteine. 
+        </content>
+    </Course>
+    <Course name="VLSI Design_img">
+        <content>
+			https://en.wikipedia.org/wiki/Very_Large_Scale_Integration#/media/File:Diopsis.jpg		</content>
+    </Course>
+
+
+
+    <Course name="Advanced Data Structure">
+        <content>Erweiterte Datenstrukturen. Datenstrukturen dienen dazu, Daten effizient und organisiert zu speichern und zu verwalten, um einen schnelleren und einfacheren Zugriff auf Daten und deren Änderung zu ermöglichen. Einige der grundlegenden Datenstrukturen sind Arrays, LinkedList, Stacks, Queues usw.
+        </content>
+    </Course>
+    <Course name="Advanced Data Structure_img">
+        <content>
+			https://courses.csail.mit.edu/6.851/spring12/illus.png		</content>
+    </Course>
+
+
+
+
+    <Course name="Networks &amp; Systems">
+        <content>In der Vergangenheit wurden Betriebssysteme mit Netzwerkfähigkeiten als Netzwerkbetriebssysteme bezeichnet, weil sie es Personal Computern (PCs) ermöglichten, an Computernetzwerken teilzunehmen und innerhalb eines lokalen Netzwerks (LAN) auf Dateien und Drucker zuzugreifen. Diese Beschreibung von Betriebssystemen ist heute weitgehend historisch, da gängige Betriebssysteme einen Netzwerk-Stack zur Unterstützung eines Client-Server-Modells enthalten.
+        </content>
+    </Course>
+    <Course name="Networks &amp; Systems_img">
+        <content>
+			https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Ethernet_LAN.svg/1200px-Ethernet_LAN.svg.png		</content>
+    </Course>
+
+
+
+    <Course name="Embedded Systems">
+        <content>Ein eingebettetes System ist ein Computersystem - eine Kombination aus einem Computerprozessor, einem Computerspeicher und Ein-/Ausgabe-Peripheriegeräten -, das eine bestimmte Funktion innerhalb eines größeren mechanischen oder elektrischen Systems hat und als Teil eines vollständigen Geräts eingebettet ist, das häufig elektrische oder elektronische Hardware und mechanische Teile enthält. Da ein eingebettetes System in der Regel die physischen Operationen der Maschine steuert, in die es eingebettet ist, hat es oft Echtzeit-Rechenbeschränkungen. 
+        </content>
+    </Course>
+    <Course name="Embedded Systems_img">
+        <content>
+			https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png
+        </content>
+    </Course>
+</root>

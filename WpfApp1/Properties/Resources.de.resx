@@ -129,8 +129,14 @@
   <data name="computerScience" xml:space="preserve">
     <value>• Informatik - Mathematik, Programmierung....</value>
   </data>
+  <data name="continue" xml:space="preserve">
+    <value>Weiter</value>
+  </data>
+  <data name="continueHint" xml:space="preserve">
+    <value>Wenn Sie Weiter sehen, können Sie Ihre vorherige Sitzung wieder aufnehmen.</value>
+  </data>
   <data name="coursesOffered" xml:space="preserve">
-    <value>Kurz Angebot</value>
+    <value>Kurz Bieten</value>
   </data>
   <data name="coursesSuggested" xml:space="preserve">
     <value>• Vorgeschlagene Kurse</value>
@@ -159,6 +165,12 @@
   <data name="jobsEligibile" xml:space="preserve">
     <value>• Geeignete Stellen für</value>
   </data>
+  <data name="new" xml:space="preserve">
+    <value>Neu</value>
+  </data>
+  <data name="newHint" xml:space="preserve">
+    <value>Der Fragebogen wird gestartet, sobald Sie auf Neu klicken.</value>
+  </data>
   <data name="recommendedCourse" xml:space="preserve">
     <value>Empfohlener Kurs</value>
   </data>
@@ -172,7 +184,7 @@
     <value>Bitte wählen Sie das Thema :</value>
   </data>
   <data name="startAgain" xml:space="preserve">
-    <value>neu anfangen.</value>
+    <value>Neu Anfangen</value>
   </data>
   <data name="topRecommendedCourse" xml:space="preserve">
     <value>Empfohlene Kurse basierend auf Ihrer Wahl</value>

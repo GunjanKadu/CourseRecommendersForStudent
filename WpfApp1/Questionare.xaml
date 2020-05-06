@@ -32,8 +32,8 @@
             <!-- Label for New or Continue End -->
             
             <!-- Button New And Continue Start -->
-            <Button x:Name="Btn_Start" Content="NEW"  Height="46" Margin="-50,0,0,0" Width="123" Click="Btn_Start_Click" Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold"/>
-            <Button x:Name="Btn_Continue" Visibility="Hidden" Content="CONTINUE"  Height="46" Margin="-50,10,0,0" Width="123"  Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold" Click="Btn_Continue_Click"/>
+            <Button x:Name="Btn_Start" Content="{x:Static Resx:Resources._new}"  Height="46" Margin="-50,0,0,0" Width="123" Click="Btn_Start_Click" Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold"/>
+            <Button x:Name="Btn_Continue" Visibility="Hidden" Content="{x:Static Resx:Resources._continue}"  Height="46" Margin="-50,10,0,0" Width="123"  Background="#FFB20837" Foreground="#FFF7F2F2" BorderBrush="#FFB20837" FontWeight="Bold" Click="Btn_Continue_Click"/>
             <!-- Button New And Continue End -->
             
             
@@ -67,7 +67,22 @@
         <!-- Question And Answer End-->
 
         
-      <!-- Summary For Question Answer Start -->
+        
+       <!--New And Continue Button Hints start-->
+        <StackPanel Name="Stack_New_Continue_Hint" VerticalAlignment="Bottom" Margin="0,0,0,-310" HorizontalAlignment="Center" Visibility="Visible">
+            <Border BorderBrush="#FFB20837" BorderThickness="0.5" Padding="10">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock TextAlignment="Center" FontWeight="Bold" Text="{x:Static Resx:Resources.newHint}"/>
+                    <TextBlock FontWeight="Bold" Text="{x:Static Resx:Resources.continueHint}"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <!--New And Continue Button Hints end-->
+
+
+        
+        
+        <!-- Summary For Question Answer Start -->
         <StackPanel Visibility="Hidden" Name="Stack_Summary" Background="#FFB20837" Orientation="Vertical" VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="421"  Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-0.333">
             <TextBlock Text="Summary" Foreground="White" Margin="65,15,0,0" FontWeight="Bold" FontSize="13">
             </TextBlock>
@@ -81,7 +96,6 @@
                             </Grid.ColumnDefinitions>
 
                             <!-- Submitted Questions and Answers Start -->
-                            
                             <TextBlock Width="175" TextTrimming="CharacterEllipsis" Margin="0,-5,0,5">
                                  <Run Text="{Binding AskedQuestion}" ToolTip="{Binding AskedQuestion}" Foreground="White"/>
                                 <LineBreak/>

@@ -29,6 +29,7 @@ namespace WpfApp1
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
+
             //loading the courses from the file start
             _courses = MyStorage.ReadXML<ObservableCollection<Course>>("Courses.xml");
             

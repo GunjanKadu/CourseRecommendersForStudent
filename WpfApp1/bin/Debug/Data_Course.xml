@@ -54,7 +54,7 @@
 
 
 	<Course name="Web Technologies">
-		<content>Web technology refers to the means by which computers communicate with each other using markup languages and multimedia packages. It gives us a way to interact with hosted information, like websites. Web technology involves the use of hypertext markup language (HTML) and cascading style sheets (CSS).May		</content>
+		<content>Web technology refers to the means by which computers communicate with each other using markup languages and multimedia packages. It gives us a way to interact with hosted information, like websites. Web technology involves the use of hypertext markup language (HTML) and cascading style sheets (CSS).		</content>
 	</Course>
 	<Course name="Web Technologies_img">
 		<content>
@@ -77,7 +77,7 @@
 
 
 	<Course name="Computer Architecture">
-		<content>computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems. Some definitions of architecture define it as describing the capabilities and programming model of a computer but not a particular implementation</content>
+		<content>Computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems. Some definitions of architecture define it as describing the capabilities and programming model of a computer but not a particular implementation</content>
 	</Course>
 	<Course name="Computer Architecture_img">
 		<content>
@@ -100,8 +100,7 @@
 
 
 	<Course name="Image Processing">
-		<content>
-			 Image processing is the use of a digital computer to process digital images through an algorithm. As a subcategory or field of digital signal processing, digital image processing has many advantages over analog image processing. It allows a much wider range of algorithms to be applied to the input data and can avoid problems such as the build-up of noise and distortion during processing. Since images are defined over two dimensions (perhaps more) digital image processing may be modeled in the form of multidimensional systems
+		<content>Image processing is the use of a digital computer to process digital images through an algorithm. As a subcategory or field of digital signal processing, digital image processing has many advantages over analog image processing. It allows a much wider range of algorithms to be applied to the input data and can avoid problems such as the build-up of noise and distortion during processing. Since images are defined over two dimensions (perhaps more) digital image processing may be modeled in the form of multidimensional systems
 		</content>
 	</Course>
 	<Course name="Image Processing_img">
@@ -112,33 +111,30 @@
 
 
 	<Course name="Electronic Devices And Circuits">
-		<content>
-			The branch of engineering in which the flow and control of electrons in vacuum or semiconductor are studied is called electronics. ... The device which controls the flow of electrons is called electronic device. These devices are the main building blocks of electronic circuits.
+		<content>The branch of engineering in which the flow and control of electrons in vacuum or semiconductor are studied is called electronics. ... The device which controls the flow of electrons is called electronic device. These devices are the main building blocks of electronic circuits.
 		</content>
 	</Course>
 	<Course name="Electronic Devices And Circuits_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+			https://upload.wikimedia.org/wikipedia/commons/f/f5/Electronic_circuit.jpg
 		</content>
 	</Course>
 
 
 
 	<Course name="Microprocessors and MicroControllers">
-		<content>
-			A microprocessor is a computer processor that incorporates the functions of a central processing unit on a single (or more) integrated circuit (IC) of MOSFET construction. The microprocessor is a multipurpose, clock driven, register based, digital integrated circuit that accepts binary data as input, processes it according to instructions stored in its memory and provides results (also in binary form) as output. Microprocessors contain both combinational logic and sequential digital logic. Microprocessors operate on numbers and symbols represented in the binary number system.
+		<content>A microprocessor is a computer processor that incorporates the functions of a central processing unit on a single (or more) integrated circuit (IC) of MOSFET construction. The microprocessor is a multipurpose, clock driven, register based, digital integrated circuit that accepts binary data as input, processes it according to instructions stored in its memory and provides results (also in binary form) as output. Microprocessors contain both combinational logic and sequential digital logic. Microprocessors operate on numbers and symbols represented in the binary number system.
 		</content>
 	</Course>
 	<Course name="Microprocessors and MicroControllers_img">
 		<content>
-			https://en.wikipedia.org/wiki/Microprocessor#/media/File:TI_TMS1000NLL_1.jpg		</content>
+			https://upload.wikimedia.org/wikipedia/commons/6/68/TI_TMS1000NLL_1.jpg		</content>
 	</Course>
 
 
 
 	<Course name="Signals &amp; Systems">
-		<content>
-			Signals and Systems is an introduction to analog and digital signal processing, a topic that forms an integral part of engineering systems in many diverse areas, including seismic data processing, communications, speech processing, image processing, defense electronics, consumer electronics, and consumer products.
+		<content>Signals and Systems is an introduction to analog and digital signal processing, a topic that forms an integral part of engineering systems in many diverse areas, including seismic data processing, communications, speech processing, image processing, defense electronics, consumer electronics, and consumer products.
 		</content>
 	</Course>
 	<Course name="Signals &amp; Systems_img">
@@ -149,8 +145,7 @@
 
 
 	<Course name="Digital Communication">
-		<content>
-			Data transmission (also data communication or digital communications) is the transfer of data (a digital bitstream or a digitized analog signal[1]) over a point-to-point or point-to-multipoint communication channel. Examples of such channels are copper wires, optical fibers, wireless communication channels, storage media and computer buses. The data are represented as an electromagnetic signal, such as an electrical voltage, radiowave, microwave, or infrared signal.
+		<content>Data transmission (also data communication or digital communications) is the transfer of data (a digital bitstream or a digitized analog signal[1]) over a point-to-point or point-to-multipoint communication channel. Examples of such channels are copper wires, optical fibers, wireless communication channels, storage media and computer buses. The data are represented as an electromagnetic signal, such as an electrical voltage, radiowave, microwave, or infrared signal.
 		</content>
 	</Course>
 	<Course name="Digital Communication_img">
@@ -162,8 +157,7 @@
 
 
 	<Course name="VHDL">
-		<content>
-			Very High Speed ​​Integrated Circuit Hardware Description Language (also VHSIC Hardware Description Language ), VHDL for short , is a hardware description language with which it is possible to describe digital systems based on text. VHDL has been defined as an IEEE standard since 1987 and there are now also some standardized language extensions. There are also language derivatives such as VHDL-AMS, which can also be used to describe analog or mixed-signal systems.
+		<content>Very High Speed ​​Integrated Circuit Hardware Description Language (also VHSIC Hardware Description Language ), VHDL for short , is a hardware description language with which it is possible to describe digital systems based on text. VHDL has been defined as an IEEE standard since 1987 and there are now also some standardized language extensions. There are also language derivatives such as VHDL-AMS, which can also be used to describe analog or mixed-signal systems.
 		</content>
 	</Course>
 	<Course name="VHDL_img">
@@ -173,10 +167,8 @@
 
 
 	<Course name="IT-Security">
-		<content>
-			omputer security, cybersecurity or information technology security (IT security) is the protection of computer systems and networks from the theft of or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide.
-
-The field is becoming more important due to increased reliance on computer systems, the Internet and wireless network standards such as Bluetooth and Wi-Fi, and due to the growth of "smart" devices, including smartphones, televisions, and the various devices that constitute the "Internet of things". Owing to its complexity, both in terms of politics and technology, cybersecurity is also one of the major challenges in the contemporary world.
+		<content>Computer security, cybersecurity or information technology security (IT security) is the protection of computer systems and networks from the theft of or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide.
+The field is becoming more important due to increased reliance on computer systems, the Internet and wireless network standards such as Bluetooth and Wi-Fi, and due to the growth of "smart" devices, including smartphones, televisions.
 		</content>
 	</Course>
 	<Course name="IT-Security_img">
@@ -186,8 +178,7 @@ The field is becoming more important due to increased reliance on computer syste
 
 
 	<Course name="International Project Management">
-		<content>
-			Project management is the practice of initiating, planning, executing, controlling, and closing the work of a team to achieve specific goals and meet specific success criteria at the specified time. The primary challenge of project management is to achieve all of the project goals within the given constraints.
+		<content>Project management is the practice of initiating, planning, executing, controlling, and closing the work of a team to achieve specific goals and meet specific success criteria at the specified time. The primary challenge of project management is to achieve all of the project goals within the given constraints.
 		</content>
 	</Course>
 	<Course name="International Project Management_img">
@@ -198,33 +189,28 @@ The field is becoming more important due to increased reliance on computer syste
 
 
 	<Course name="Software Architecture &amp; Development">
-		<content>
-			Software architecture refers to the fundamental structures of a software system and the discipline of creating such structures and systems. Each structure comprises software elements, relations among them, and properties of both elements and relations. The architecture of a software system is a metaphor, analogous to the architecture of a building. It functions as a blueprint for the system and the developing project, laying out the tasks necessary to be executed by the design teams.
+		<content>Software architecture refers to the fundamental structures of a software system and the discipline of creating such structures and systems. Each structure comprises software elements, relations among them, and properties of both elements and relations. The architecture of a software system is a metaphor, analogous to the architecture of a building. It functions as a blueprint for the system and the developing project, laying out the tasks necessary to be executed by the design teams.
 		</content>
 	</Course>
 	<Course name="Software Architecture &amp; Development_img">
-		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+		<content>https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
 		</content>
 	</Course>
 
 
 	<Course name="Advanced Database">
-		<content>
-			A database is an organized collection of data, generally stored and accessed electronically from a computer system. Where databases are more complex they are often developed using formal design and modeling techniques.
-
-The database management system (DBMS) is the software that interacts with end users, applications, and the database itself to capture and analyze the data. The DBMS software additionally encompasses the core facilities provided to administer the database. The sum total of the database, the DBMS and the associated applications can be referred to as a "database system"
+		<content>A database is an organized collection of data, generally stored and accessed electronically from a computer system. Where databases are more complex they are often developed using formal design and modeling techniques.
+		The database management system (DBMS) is the software that interacts with end users, applications, and the database itself to capture and analyze the data. The DBMS software additionally encompasses the core facilities provided to administer the database. The sum total of the database, the DBMS and the associated applications can be referred to as a "database system"
 		</content>
 	</Course>
 	<Course name="Advanced Database_img">
 		<content>
-			https://en.wikipedia.org/wiki/Database#/media/File:DVD_Rental_Query.png		</content>
+			https://hlassets.paessler.com/common/files/illustration/database-monitoring.png	</content>
 	</Course>
 
 
 	<Course name="Business Computing">
-		<content>
-			A Business and Computing is a dual degree program offered jointly by some computing and business schools. The program generally lasts four-five years instead of seven-eight years to complete separate the two degrees and results in the candidate earning both a Bachelor of Business degree and a Bachelor of Computing degree. Graduating Business and Computing students may choose to work on computing/technical matter, or enter the business world, or even enjoy the gray area between business and computing fields such as IT security officer, IT consultant, etc. Even though a majority of Business and Computing graduate from a single university, there are people who earn these degrees from different universities.
+		<content>A Business and Computing is a dual degree program offered jointly by some computing and business schools. The program generally lasts four-five years instead of seven-eight years to complete separate the two degrees and results in the candidate earning both a Bachelor of Business degree and a Bachelor of Computing degree. Graduating Business and Computing students may choose to work on computing/technical matter, or enter the business world, or even enjoy the gray area between business and computing fields such as IT security officer, IT consultant, etc. 
 		</content>
 	</Course>
 	<Course name="Business Computing_img">
@@ -236,8 +222,7 @@ The database management system (DBMS) is the software that interacts with end us
 
 
 	<Course name="UI &amp; UX">
-		<content>
-			The user interface (UI), in the industrial design field of human-computer interaction, is the space where interactions between humans and machines occur. The goal of this interaction is to allow effective operation and control of the machine from the human end, whilst the machine simultaneously feeds back information that aids the operators' decision-making process. Examples of this broad concept of user interfaces include the interactive aspects of computer operating systems, hand tools, heavy machinery operator controls, and process controls. 
+		<content>The user interface (UI), in the industrial design field of human-computer interaction, is the space where interactions between humans and machines occur. The goal of this interaction is to allow effective operation and control of the machine from the human end, whilst the machine simultaneously feeds back information that aids the operators' decision-making process. Examples of this broad concept of user interfaces include the interactive aspects of computer operating systems, hand tools, heavy machinery operator controls, and process controls. 
 		</content>
 	</Course>
 	<Course name="UI &amp; UX_img">
@@ -247,8 +232,7 @@ The database management system (DBMS) is the software that interacts with end us
 
 
 	<Course name="Data Engineering">
-		<content>
-			Data engineering is the aspect of data science that focuses on practical applications of data collection and analysis. For all the work that data scientists do to answer questions using large sets of information, there have to be mechanisms for collecting and validating that information.
+		<content>Data engineering is the aspect of data science that focuses on practical applications of data collection and analysis. For all the work that data scientists do to answer questions using large sets of information, there have to be mechanisms for collecting and validating that information.
 		</content>
 	</Course>
 	<Course name="Data Engineering_img">
@@ -257,27 +241,23 @@ The database management system (DBMS) is the software that interacts with end us
 
 
 	<Course name="Data Management">
-		<content>
-			The concept of data management arose in the 1980s as technology moved from sequential processing (first punched cards, then magnetic tape) to random access storage. Since it was now possible to store a discrete fact and quickly access it using random access disk technology, those suggesting that data management was more important than business process management used arguments such as "a customer's home address is stored in 75 (or some other large number) places in our computer systems." However, during this period, random access processing was not competitively fast, so those suggesting "process management" was more important than "data management" used batch processing time as their primary argument.
+		<content>The concept of data management arose in the 1980s as technology moved from sequential processing (first punched cards, then magnetic tape) to random access storage. Since it was now possible to store a discrete fact and quickly access it using random access disk technology, those suggesting that data management was more important than business process management used arguments such as "a customer's home address is stored in 75 (or some other large number) places in our computer systems." 
 		</content>
 	</Course>
 	<Course name="Data Management_img">
-		<content>
-			https://en.wikipedia.org/wiki/Data_management#/media/File:The_Data_Lifecycle.jpg		</content>
+		<content>https://en.wikipedia.org/wiki/Data_management#/media/File:The_Data_Lifecycle.jpg</content>
 	</Course>
 
 
 
 
 	<Course name="Privacy,Ethics &amp; Management">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content> It deals with the issues arising from protecting people's privacy and security in an online environment, including the principles and practice of data protection law and innovative approaches to understanding cybercrime and supporting cybersecurity. We are exploring fair and trustworthy means of data sharing, ethical questions relating to the development and deployment of autonomous weapons systems, understanding algorithmic bias and accountability and the broader ethical and epistemological questions of digital data, algorithmic decision making and artificial intelligence.
 		</content>
 	</Course>
 	<Course name="Privacy,Ethics &amp; Management_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
-		</content>
+			https://studyqa.com/media/upload/articles/images/lawww.jpg		</content>
 	</Course>
 
 
@@ -285,64 +265,57 @@ The database management system (DBMS) is the software that interacts with end us
 
 
 	<Course name="International Law">
-		<content>
-			International law, also known as public international law and law of nations, is the set of rules, norms, and standards generally accepted in relations between nations. It establishes normative guidelines and a common conceptual framework to guide states across a broad range of domains, including war, diplomacy, trade, and human rights. International law thus provides a means for states to practice more stable, consistent, and organized international relations.
+		<content>International law, also known as public international law and law of nations, is the set of rules, norms, and standards generally accepted in relations between nations. It establishes normative guidelines and a common conceptual framework to guide states across a broad range of domains, including war, diplomacy, trade, and human rights. International law thus provides a means for states to practice more stable, consistent, and organized international relations.
 		</content>
 	</Course>
 	<Course name="International Law_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
-		</content>
+			https://studyqa.com/media/upload/articles/images/lawww.jpg		</content>
 	</Course>
 
 
 	<Course name="Data Story Telling">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Data storytelling is the fastest and best way to empower your team to both understand and act on data through the power of stories. It builds a data-driven and transparent culture, creates conversations about what matters, and frees your people to do what they were hired to do.Data storytelling quite literally takes your data and automatically turns it into plain-English stories.
 		</content>
 	</Course>
 	<Course name="Data Story Telling_img">
-		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+		<content>https://upload.wikimedia.org/wikipedia/commons/3/37/Data_Science_storytelling.jpg
 		</content>
 	</Course>
 
 
 
 	<Course name="Information &amp; Coding Theory">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Information and Coding theory is the study of the properties of codes and their respective fitness for specific applications. Codes are used for data compression, cryptography, error detection and correction, data transmission and data storage. Codes are studied by various scientific disciplines—such as information theory, electrical engineering, mathematics, linguistics, and computer science—for the purpose of designing efficient and reliable data transmission methods.
 		</content>
 	</Course>
 	<Course name="Information &amp; Coding Theory_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+			https://en.wikipedia.org/wiki/Coding_theory#/media/File:Hamming.jpg
 		</content>
 	</Course>
 
 
 
 	<Course name="Real Time Programming">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Real-time computing (RTC), or reactive computing is the computer science term for hardware and software systems subject to a "real-time constraint", for example from event to system response.[citation needed] Real-time programs must guarantee response within specified time constraints, often referred to as "deadlines".
+			Real-time responses are often understood to be in the order of milliseconds, and sometimes microseconds.
 		</content>
 	</Course>
 	<Course name="Real Time Programming_img">
-		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+		<content>https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png
 		</content>
 	</Course>
 
 
 
 	<Course name="Embedded Systems">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>An embedded system is a computer system—a combination of a computer processor, computer memory, and input/output peripheral devices—that has a dedicated function within a larger mechanical or electrical system.It is embedded as part of a complete device often including electrical or electronic hardware and mechanical parts. Because an embedded system typically controls physical operations of the machine that it is embedded within, it often has real-time computing constraints. 
 		</content>
 	</Course>
 	<Course name="Embedded Systems_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+			https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png
 		</content>
 	</Course>
 
@@ -350,8 +323,7 @@ The database management system (DBMS) is the software that interacts with end us
 
 
 	<Course name="Embedded Security">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>The fast reduction of structure sizes in semiconductor technology allows the fabrication of increasingly powerful, energy-saving, and low-price microprocessors. Small micro-controllers can nowadays be found in more and more devices of daily life, like cars or mobile phones. These so-called embedded systems perform various sophisticated and sometimes safety-critical tasks. Failures of these systems have an immediate impact on our real live. These systems impose high requirements on safety and reliability.
 		</content>
 	</Course>
 	<Course name="Embedded Security_img">
@@ -364,14 +336,12 @@ The database management system (DBMS) is the software that interacts with end us
 
 
 	<Course name="Robotics">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Robotics is an interdisciplinary research area at the interface of computer science and engineering. Robotics involves design, construction, operation, and use of robots. The goal of robotics is to design intelligent machines that can help and assist humans in their day-to-day lives and keep everyone safe. Robotics draws on the achievement of information engineering, computer engineering, mechanical engineering, electronic engineering and others.
 		</content>
 	</Course>
 	<Course name="Robotics_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
-		</content>
+			https://en.wikipedia.org/wiki/Robotics#/media/File:Shadow_Hand_Bulb_large.jpg		</content>
 	</Course>
 
 
@@ -379,71 +349,63 @@ The database management system (DBMS) is the software that interacts with end us
 
 
 	<Course name="Image Processing">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Image processing is the use of a digital computer to process digital images through an algorithm. As a subcategory or field of digital signal processing, digital image processing has many advantages over analog image processing. It allows a much wider range of algorithms to be applied to the input data and can avoid problems such as the build-up of noise and distortion during processing. Since images are defined over two dimensions (perhaps more) digital image processing may be modeled in the form of multidimensional systems
 		</content>
 	</Course>
 	<Course name="Image Processing_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+			https://pbs.twimg.com/media/BqbKOADIIAEfJ0K.png
 		</content>
 	</Course>
 
 
 	<Course name="Business Law">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Commercial law or business law is the body of law which governs business and commerce and is often considered to be a branch of civil law and deals both with issues of private law and public law. Commercial law regulates corporate contracts, hiring practices, and the manufacture and sales of consumer goods.
 		</content>
 	</Course>
 	<Course name="Business Law_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+			https://www.burhanlaw.com/images/businesslaw.jpg
 		</content>
 	</Course>
 
 
 	<Course name="Market Analysis">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>A market analysis is a quantitative and qualitative assessment of a market. It looks into the size of the market both in volume and in value, the various customer segments and buying patterns, the competition, and the economic environment in terms of barriers to entry and regulation.
 		</content>
 	</Course>
 	<Course name="Market Analysis_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
-		</content>
+			https://previews.123rf.com/images/marigranula/marigranula1507/marigranula150700143/41935395-market-analysis.jpg		</content>
 	</Course>
 
 
 
 
-	<Course name="Marketing &amp; Saled">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+	<Course name="Marketing &amp; Sales">
+		<content>The term, sales, refers to all activities that lead to the selling of goods and services. And marketing is the process of getting people interested in the goods and services being sold. Sales is a term used to describe the activities that lead to the selling of goods or services.
 		</content>
 	</Course>
-	<Course name="Marketing &amp; Saled_img">
+	<Course name="Marketing &amp; Sales_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+			https://www.phocus-direct.de/hubfs/AdobeStock_140771171.jpeg
 		</content>
 	</Course>
 
 
 
 	<Course name="Human Resources">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Human resources describes the people who make up the workforce of an organization, industry, business sector, or economy. "Human capital" is sometimes used synonymously with "human resources", although human capital typically refers to a narrower effect (i.e., the knowledge the individuals embody and economic growth). Likewise, other terms sometimes used include manpower, labour, personnel, associates or simply people.
 		</content>
 	</Course>
 	<Course name="Human Resources_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
-		</content>
+			https://miro.medium.com/max/1000/0*6NOeTGcuCsG3fY6u.jpg		</content>
 	</Course>
 
 
 	<Course name="Business Startup">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>A startup or start-up is a company started by an entrepreneur to seek, effectively develop, and validate a scalable business model. While entrepreneurship refers to all new businesses, including self-employment and businesses that never intend to become registered, startups refer to the new businesses that intend to grow large beyond the solo founder. Startups face high uncertainty and have high rates of failure, but a minority of them do go on to be successful and influential.[5] Some startups become unicorns, i.e. privately held startup companies valued at over US$1 billion.
 		</content>
 	</Course>
 	<Course name="Business Startup_img">
@@ -455,66 +417,57 @@ The database management system (DBMS) is the software that interacts with end us
 
 
 	<Course name="Computer Architecture">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems. Some definitions of architecture define it as describing the capabilities and programming model of a computer but not a particular implementation.
 		</content>
 	</Course>
 	<Course name="Computer Architecture_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
-		</content>
+			https://c4.wallpaperflare.com/wallpaper/416/182/375/blue-chip-color-fee-wallpaper-preview.jpg		</content>
 	</Course>
 
 
 
 	<Course name="VLSI Design">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Very large-scale integration (VLSI) is the process of creating an integrated circuit (IC) by combining millions of MOS transistors onto a single chip. VLSI began in the 1970s when MOS integrated circuit chips were widely adopted, enabling complex semiconductor and telecommunication technologies to be developed. The microprocessor and memory chips are VLSI devices. Before the introduction of VLSI technology, most ICs had a limited set of functions they could perform. An electronic circuit might consist of a CPU, ROM, RAM and other glue logic. VLSI lets IC designers add all of these into one chip.
 		</content>
 	</Course>
 	<Course name="VLSI Design_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
-		</content>
+			https://en.wikipedia.org/wiki/Very_Large_Scale_Integration#/media/File:Diopsis.jpg		</content>
 	</Course>
 
 
 
 	<Course name="Advanced Data Structure">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>Advanced Data Structures. Data Structures are used to store and manage data in an efficient and organised way for faster and easy access and modification of Data. Some of the basic data structures are Arrays, LinkedList, Stacks, Queues etc.
 		</content>
 	</Course>
 	<Course name="Advanced Data Structure_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
-		</content>
+			https://courses.csail.mit.edu/6.851/spring12/illus.png		</content>
 	</Course>
 
 
 
 
 	<Course name="Networks &amp; Systems">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>A network operating system is a specialized operating system for a network device such as a router, switch or firewall.Historically operating systems with networking capabilities were described as network operating system, because they allowed personal computers (PCs) to participate in computer networks and shared file and printer access within a local area network (LAN). This description of operating systems is now largely historical, as common operating systems include a network stack to support a client–server model.
 		</content>
 	</Course>
 	<Course name="Networks &amp; Systems_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
-		</content>
+			https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Ethernet_LAN.svg/1200px-Ethernet_LAN.svg.png		</content>
 	</Course>
 
 
 
 	<Course name="Embedded Systems">
-		<content>
-			Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+		<content>An embedded system is a computer system—a combination of a computer processor, computer memory, and input/output peripheral devices—that has a dedicated function within a larger mechanical or electrical system.It is embedded as part of a complete device often including electrical or electronic hardware and mechanical parts. Because an embedded system typically controls physical operations of the machine that it is embedded within, it often has real-time computing constraints. 
 		</content>
 	</Course>
 	<Course name="Embedded Systems_img">
 		<content>
-			https://miro.medium.com/max/4000/1*_FFpkCWD-KwQmc7oevCRBQ.jpeg
+			https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png
 		</content>
 	</Course>
 </root>

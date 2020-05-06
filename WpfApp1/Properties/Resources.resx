@@ -129,6 +129,12 @@
   <data name="computerScience" xml:space="preserve">
     <value>• Computer Science - Mathematics, Programming....</value>
   </data>
+  <data name="continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="continueHint" xml:space="preserve">
+    <value>If you See Continue You Can Resume Your Previous Session</value>
+  </data>
   <data name="coursesOffered" xml:space="preserve">
     <value>Courses Offered</value>
   </data>
@@ -158,6 +164,12 @@
   </data>
   <data name="jobsEligibile" xml:space="preserve">
     <value>• Jobs Eligible For</value>
+  </data>
+  <data name="new" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="newHint" xml:space="preserve">
+    <value>The Questionare Will Start Once You Click New.</value>
   </data>
   <data name="pressContinue" xml:space="preserve">
     <value>Press Continue To Resume Your Session</value>

@@ -12,7 +12,7 @@
     
     <Grid>
 
-       
+       <!--Background Color start -->
         <StackPanel VerticalAlignment="Top" Width="202" HorizontalAlignment="Left" Height="442" Background="#FF1E1E1E" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
             <StackPanel.RenderTransform>
                 <TransformGroup>
@@ -23,7 +23,8 @@
                 </TransformGroup>
             </StackPanel.RenderTransform>
         </StackPanel>
-      
+        <!--Background Color end -->
+
 
 
         <!-- Logo Start -->
@@ -53,14 +54,18 @@
 
         <!-- Navigation Start -->
         <StackPanel Margin="18,149,634.333,254.333" Orientation="Horizontal">
-            <Image Margin="0,0,0,0" Source="Img/Book.png" Stretch="Fill" Width="30" Height="30"/>
-            <Button Style="{StaticResource MyButton}" Content="{x:Static Resx:Resources.coursesOffered}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Btn_GoToCourses" Margin="0,2,0,-2" />
+            <Image Margin="0,0,0,0" Source="Img/Book.png" Stretch="Fill" Width="30" Height="26"/>
+            <Button Style="{StaticResource MyButton}" Content="{x:Static Resx:Resources.coursesOffered}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Height="30" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Btn_GoToCourses" Margin="-4,2,0,-2" />
         </StackPanel>
         <StackPanel Margin="18,218,635.333,165.333" Orientation="Horizontal">
             <Image Source="Img/Test.png" Stretch="Fill" Width="30" Height="30"/>
-            <Button Name="Btn_Questionare" Style="{StaticResource MyButton}" Content="{x:Static Resx:Resources.yourPath}" HorizontalAlignment="Left" Width="108" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Button_GoToQuestionareClick" />
+            <Button Name="Btn_Questionare" Style="{StaticResource MyButton}" Content="{x:Static Resx:Resources.yourPath}" HorizontalAlignment="Left" Width="109" Background="#FF1E1E1E" Foreground="White" BorderBrush="#FF1C1C1C"  RenderTransformOrigin="0.503,2.2" FontWeight="Bold" FontFamily="Arial" Click="Button_GoToQuestionareClick" />
         </StackPanel>
         <!-- Navigation End -->
+        
+        
+        
+        
         
         
         <!-- How It Works Start -->

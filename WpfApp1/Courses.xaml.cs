@@ -86,7 +86,14 @@ namespace WpfApp1
             if (Cmbx_CourseTopics.SelectedItem != null)
             {
                 XmlDocument doc = new XmlDocument();
-                doc.Load("Data_Course.xml");
+                if (MainWindow.language == "en")
+                {
+                    doc.Load("Data_Course.xml");
+                }
+                else if (MainWindow.language == "de")
+                {
+                    doc.Load("Data_Course_de.xml");
+                }
 
                 foreach (XmlNode node in doc.DocumentElement)
                 {

@@ -61,6 +61,24 @@ namespace WpfApp1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Continue.
+        /// </summary>
+        public static string _continue {
+            get {
+                return ResourceManager.GetString("continue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New.
+        /// </summary>
+        public static string _new {
+            get {
+                return ResourceManager.GetString("new", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Smart Choice.
         /// </summary>
         public static string appName {
@@ -93,6 +111,15 @@ namespace WpfApp1.Properties {
         public static string computerScience {
             get {
                 return ResourceManager.GetString("computerScience", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you See Continue You Can Resume Your Previous Session.
+        /// </summary>
+        public static string continueHint {
+            get {
+                return ResourceManager.GetString("continueHint", resourceCulture);
             }
         }
         
@@ -183,6 +210,15 @@ namespace WpfApp1.Properties {
         public static string jobsEligibile {
             get {
                 return ResourceManager.GetString("jobsEligibile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Questionare Will Start Once You Click New..
+        /// </summary>
+        public static string newHint {
+            get {
+                return ResourceManager.GetString("newHint", resourceCulture);
             }
         }
         

@@ -186,6 +186,7 @@ namespace WpfApp1
             Btn_Next_Question.IsEnabled = false;
             Txt_Question_Number.Visibility = Visibility.Visible;
             Txt_Question_Number_Border.Visibility = Visibility.Visible;
+            Stack_New_Continue_Hint.Visibility = Visibility.Collapsed;
             //Initializing answerList to store question,answer,category&questionNumber end
 
 
