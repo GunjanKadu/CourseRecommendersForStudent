@@ -363,7 +363,11 @@ namespace WpfApp1
                     {
                         _askedQuestionAnswer.RemoveAt(2);
                         selectedAnswers.RemoveAt(questionNumber - 2);
+                        //Lst_AnswerList.SelectedItem = null;
+                        //startApplication(3, "general");
+                        questionNumber -= 1;
                         return;
+                        
                     }
                 }
                 else if (selectedAnswers.Contains("Bachelor's In Computer Science") && selectedAnswers[0] == "Bachelor's" && questionNumber == 4)
@@ -378,6 +382,7 @@ namespace WpfApp1
                     {
                         _askedQuestionAnswer.RemoveAt(2);
                         selectedAnswers.RemoveAt(questionNumber - 2);
+                        questionNumber -= 1;
                         return;
                     }
                 }
@@ -393,6 +398,8 @@ namespace WpfApp1
                     {
                         _askedQuestionAnswer.RemoveAt(2);
                         selectedAnswers.RemoveAt(questionNumber - 2);
+                        questionNumber -= 1;
+
                         return;
                     }
                 }
@@ -408,6 +415,8 @@ namespace WpfApp1
                     {
                         _askedQuestionAnswer.RemoveAt(2);
                         selectedAnswers.RemoveAt(questionNumber - 2);
+                        questionNumber -= 1;
+
                         return;
                     }
                 }
@@ -423,6 +432,8 @@ namespace WpfApp1
                     {
                         _askedQuestionAnswer.RemoveAt(2);
                         selectedAnswers.RemoveAt(questionNumber - 2);
+                        questionNumber -= 1;
+
                         return;
                     }
                 }
@@ -438,6 +449,8 @@ namespace WpfApp1
                     {
                         _askedQuestionAnswer.RemoveAt(2);
                         selectedAnswers.RemoveAt(questionNumber - 2);
+                        questionNumber -= 1;
+
                         return;
                     }
                 }
@@ -453,6 +466,8 @@ namespace WpfApp1
                     {
                         _askedQuestionAnswer.RemoveAt(2);
                         selectedAnswers.RemoveAt(questionNumber - 2);
+                        questionNumber -= 1;
+
                         return;
                     }
                 }
@@ -468,6 +483,8 @@ namespace WpfApp1
                     {
                         _askedQuestionAnswer.RemoveAt(2);
                         selectedAnswers.RemoveAt(questionNumber - 2);
+                        questionNumber -= 1;
+
                         return;
                     }
                 }

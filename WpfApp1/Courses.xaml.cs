@@ -61,8 +61,6 @@ namespace WpfApp1
 
         private void List_Courses_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
-
             if (Txt_CourseDesc.Text != "" && Course_Image.Source != null)
             {
                 // Clean Previously selected course
