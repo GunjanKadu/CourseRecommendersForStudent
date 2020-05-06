@@ -187,6 +187,15 @@ namespace WpfApp1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please Select A Course To See The Details..
+        /// </summary>
+        public static string hintSelectCourse {
+            get {
+                return ResourceManager.GetString("hintSelectCourse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to How It Works?.
         /// </summary>
         public static string howItWorks {

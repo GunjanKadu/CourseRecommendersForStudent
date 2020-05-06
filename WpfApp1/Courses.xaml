@@ -25,10 +25,15 @@
                 </StackPanel>
                 <!-- Title of the Course End -->
 
+                <!--Select A Course Hint Text Block Start-->
+                <TextBlock Name="Txt_Select_Course_Hint" Visibility="Visible" Text="{x:Static Resx:Resources.hintSelectCourse}" Foreground="Wheat" Margin="10,150,10,0" FontSize="14.5" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center" Width="512"/>
+                <Image Name="Img_Left" Source="Img/left.png" Height="30" Width="30" RenderTransformOrigin="-3.8,0.633" Margin="-440,-22,0,0"/>
+                <!--Select A Course Hint Text Block End-->
+
                 <!-- Combobox for selecting the topics of each course start -->
-                <StackPanel Margin="10,0,10.333,30" Orientation="Horizontal" Height="27">
-                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{x:Static Resx:Resources.selectTopic}" VerticalAlignment="Top" Height="22" Foreground="#FFFBF3F3" FontWeight="Bold" Margin="30,0,0,-4" Width="173"/>
-                    <ComboBox x:Name="Cmbx_CourseTopics" Margin="30 0 0 05 "  SelectionChanged="Cmbx_CourseTopics_SelectionChanged" Width="256" RenderTransformOrigin="0.5,0.5">
+                <StackPanel Name="Stack_Select_Topic" Visibility="Collapsed"  Margin="10,0,10.333,30" Orientation="Horizontal" Height="27">
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{x:Static Resx:Resources.selectTopic}" VerticalAlignment="Top" Height="22" Foreground="#FFFBF3F3" FontWeight="Bold" Margin="30,0,0,0" Width="164"/>
+                    <ComboBox x:Name="Cmbx_CourseTopics" Margin="10 0 0 05 "  SelectionChanged="Cmbx_CourseTopics_SelectionChanged" Width="248" RenderTransformOrigin="0.5,0.5">
                         <ComboBox.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -41,20 +46,20 @@
                 </StackPanel>
                 <!-- Combobox for selecting the topics of each course end -->
             </StackPanel>
-            
-            <Rectangle Fill="#FFF4F4F5" Stroke="Black" Margin="260,81,0,365"/>
-            
+
+            <Rectangle Name="Rect_Divider" Visibility="Collapsed" Fill="#FFF4F4F5" Stroke="Black" Margin="260,81,0,365"/>
+
             <!--Course Description and Image Start-->
             <Image Name="Course_Image" Margin="309,164,297,158"/>
             <TextBlock x:Name="Txt_CourseDesc" TextWrapping="Wrap" Margin="524,138,36,57" Foreground="#FFFEFEFE" FontSize="12" TextAlignment="Justify" />
             <!--Course Description and Image End-->
-            
-            
+
+
             <!-- Title Select the topic and details of the topic end -->
-            
-            
+
+
             <!-- Display all the courses is the list box start-->
-            <ListBox Name="List_Courses" HorizontalAlignment="Left" Height="336" VerticalAlignment="Bottom" Width="246" Background="{x:Null}"  Margin="5,0,0,33" SelectionChanged="List_Courses_SelectionChanged" FontSize="11"  >
+            <ListBox Name="List_Courses" HorizontalAlignment="Left" Height="341" VerticalAlignment="Bottom" Width="246" Background="{x:Null}"  Margin="5,0,0,28" SelectionChanged="List_Courses_SelectionChanged" FontSize="11"  >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid Margin="0,2">
@@ -69,13 +74,12 @@
             </ListBox>
             <!-- Display all the courses is the list box end -->
         </Grid>
-        
+
         <!--Filtering the result search bar start-->
         <TextBlock Text="{x:Static Resx:Resources.searchYourFavCourse}" Margin="8,10,0,352" FontSize="10" Foreground="DarkGray" FontWeight="Bold" HorizontalAlignment="Left" Height="20"/>
         <TextBox HorizontalAlignment="Left" Name="Course_Filter" TextChanged="Course_Filter_TextChanged"   Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="245" Margin="6,42,0,0"/>
         <Image Margin="228,38,10,340" Height="15" Width="15" Source="Img/Search.png" Stretch="Fill" RenderTransformOrigin="-0.568,0.457"/>
         <!--Filtering the result search bar end-->
-
 
     </Grid>
 </Window>

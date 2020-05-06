@@ -156,6 +156,9 @@
   <data name="eligibleJobsAfter" xml:space="preserve">
     <value>Eligible Jobs After This Course</value>
   </data>
+  <data name="hintSelectCourse" xml:space="preserve">
+    <value>Please Select A Course To See The Details.</value>
+  </data>
   <data name="howItWorks" xml:space="preserve">
     <value>How It Works?</value>
   </data>

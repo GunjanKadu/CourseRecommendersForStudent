@@ -156,6 +156,9 @@
   <data name="eligibleJobsAfter" xml:space="preserve">
     <value>Anspruchsberechtigte Jobs nach diesem Kurs</value>
   </data>
+  <data name="hintSelectCourse" xml:space="preserve">
+    <value>Bitte wählen Sie einen Kurs aus, um die Details zu sehen.</value>
+  </data>
   <data name="howItWorks" xml:space="preserve">
     <value>Wie es funktioniert?</value>
   </data>

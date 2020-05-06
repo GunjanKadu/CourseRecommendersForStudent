@@ -20,7 +20,7 @@ namespace WpfApp1
     /// </summary>
     public partial class Courses : Window
     {
-
+        XmlDocument doc = new XmlDocument();
         public Courses()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace WpfApp1
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            // Chaning the owner visibility
+            // Changing the owner visibility
             Owner.Visibility = Visibility.Visible;
         }
 
@@ -45,10 +45,24 @@ namespace WpfApp1
         {
             //Loading the Course List 
             List_Courses.ItemsSource = App._courses;
+
+            // Loading the Course File Start
+            if (MainWindow.language == "en")
+            {
+                doc.Load("Data_Course.xml");
+            }
+            else if (MainWindow.language == "de")
+            {
+                doc.Load("Data_Course_de.xml");
+            }
+            // Loading the Course File End
+
         }
 
         private void List_Courses_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+           
+
             if (Txt_CourseDesc.Text != "" && Course_Image.Source != null)
             {
                 // Clean Previously selected course
@@ -63,6 +77,14 @@ namespace WpfApp1
             var selection = (sender as ListBox).SelectedItem as Course;
             if (selection != null)
             {
+                //Handling the visbility of the Divider and the combobox Start
+                Rect_Divider.Visibility = Visibility.Visible; 
+                Stack_Select_Topic.Visibility = Visibility.Visible;
+                Txt_Select_Course_Hint.Visibility = Visibility.Collapsed;
+                Img_Left.Visibility = Visibility.Collapsed;
+                //Handling the visbility of the Divider and the combobox End
+
+
                 lstCourseItems.Add(selection.content_1);
                 lstCourseItems.Add(selection.content_2);
                 lstCourseItems.Add(selection.content_3);
@@ -85,16 +107,6 @@ namespace WpfApp1
         {
             if (Cmbx_CourseTopics.SelectedItem != null)
             {
-                XmlDocument doc = new XmlDocument();
-                if (MainWindow.language == "en")
-                {
-                    doc.Load("Data_Course.xml");
-                }
-                else if (MainWindow.language == "de")
-                {
-                    doc.Load("Data_Course_de.xml");
-                }
-
                 foreach (XmlNode node in doc.DocumentElement)
                 {
                     // Loading a selected image from xml file start
@@ -110,6 +122,7 @@ namespace WpfApp1
                         }
                     }
                     // Loading a selected image from xml file end
+
 
                     // Loading a selected data from xml file start
                     if (name == Cmbx_CourseTopics.SelectedItem.ToString())

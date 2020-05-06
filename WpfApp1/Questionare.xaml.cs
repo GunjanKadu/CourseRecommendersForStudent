@@ -171,9 +171,11 @@ namespace WpfApp1
             Txt_Question_Number.Text = questionNumber + "/8";
             //Show current question end
 
+            
             //Initializing answerList to store question,answer,category&questionNumber start
             answerList = new QuestionAnswer();
             //Initializing answerList to store question,answer,category&questionNumber end
+
 
             //Handling the visibility of the elemenss after the application starts start
             Txt_PressStart.Visibility = Visibility.Hidden;
@@ -294,7 +296,7 @@ namespace WpfApp1
                         Txt_Block_Hint.Visibility = Visibility.Visible;
                         Txt_Block_Hint.Text = Hints.BETC;
                         break;
-                    case "Master's In Big Data & Business Analytics":
+                    case "Master's In Big Data and Business Analytics":
                         Txt_Block_Hint.Visibility = Visibility.Visible;
                         Txt_Block_Hint.Text = Hints.MBDBA;
                         break;

@@ -9,6 +9,8 @@
              <!--Exit="Application_Exit"-->
             
     <Application.Resources>
+        
+        <!--Remove Default On Hover From The Button Start -->
             <Style x:Key="MyButton" TargetType="Button">
                 <Setter Property="OverridesDefaultStyle" Value="True" />
                 <Setter Property="Cursor" Value="Hand" />
@@ -27,5 +29,7 @@
                     </Setter.Value>
                 </Setter>
             </Style>
+        <!--Remove Default On Hover From The Button End -->
+
     </Application.Resources>
 </Application>
