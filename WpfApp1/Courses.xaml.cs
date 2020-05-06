@@ -39,6 +39,16 @@ namespace WpfApp1
             var lst = from s in App._courses where s.Title.ToLower().Contains(filter) select s;
             List_Courses.ItemsSource = lst;
             //Filtering the result and populating the List courses item source end
+
+            if (List_Courses.SelectedItem == null)
+            {
+                //Handling the visbility of the Divider and the combobox Start
+                Rect_Divider.Visibility = Visibility.Hidden;
+                Stack_Select_Topic.Visibility = Visibility.Hidden;
+                Txt_Select_Course_Hint.Visibility = Visibility.Visible;
+                Img_Left.Visibility = Visibility.Visible;
+                //Handling the visbility of the Divider and the combobox End
+            }
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
