@@ -115,11 +115,47 @@ namespace WpfApp1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Details.
+        /// </summary>
+        public static string details {
+            get {
+                return ResourceManager.GetString("details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Details Of The Course Recommended.
+        /// </summary>
+        public static string detailsRecommendedCourse {
+            get {
+                return ResourceManager.GetString("detailsRecommendedCourse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to • Electrical and Electronics - Microprocessor, Signals.....
         /// </summary>
         public static string electrical {
             get {
                 return ResourceManager.GetString("electrical", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eligible Jobs.
+        /// </summary>
+        public static string eligibleJobs {
+            get {
+                return ResourceManager.GetString("eligibleJobs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eligible Jobs After This Course.
+        /// </summary>
+        public static string eligibleJobsAfter {
+            get {
+                return ResourceManager.GetString("eligibleJobsAfter", resourceCulture);
             }
         }
         
@@ -169,6 +205,15 @@ namespace WpfApp1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Recommended Course.
+        /// </summary>
+        public static string recommendedCourse {
+            get {
+                return ResourceManager.GetString("recommendedCourse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search For Your Favourite Course.
         /// </summary>
         public static string searchYourFavCourse {
@@ -192,6 +237,24 @@ namespace WpfApp1.Properties {
         public static string selectTopic {
             get {
                 return ResourceManager.GetString("selectTopic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Again.
+        /// </summary>
+        public static string startAgain {
+            get {
+                return ResourceManager.GetString("startAgain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Top Recommended Courses Based On Your Choice.
+        /// </summary>
+        public static string topRecommendedCourse {
+            get {
+                return ResourceManager.GetString("topRecommendedCourse", resourceCulture);
             }
         }
         

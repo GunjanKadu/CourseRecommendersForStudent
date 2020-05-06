@@ -135,8 +135,20 @@
   <data name="coursesSuggested" xml:space="preserve">
     <value>• Vorgeschlagene Kurse</value>
   </data>
+  <data name="details" xml:space="preserve">
+    <value>Daten</value>
+  </data>
+  <data name="detailsRecommendedCourse" xml:space="preserve">
+    <value>Details des empfohlenen Kurses</value>
+  </data>
   <data name="electrical" xml:space="preserve">
     <value>• Elektrik und Elektronik - Mikroprozessor, Signale....</value>
+  </data>
+  <data name="eligibleJobs" xml:space="preserve">
+    <value>Jobs</value>
+  </data>
+  <data name="eligibleJobsAfter" xml:space="preserve">
+    <value>Anspruchsberechtigte Jobs nach diesem Kurs</value>
   </data>
   <data name="howItWorks" xml:space="preserve">
     <value>Wie es funktioniert?</value>
@@ -147,6 +159,9 @@
   <data name="jobsEligibile" xml:space="preserve">
     <value>• Geeignete Stellen für</value>
   </data>
+  <data name="recommendedCourse" xml:space="preserve">
+    <value>Empfohlener Kurs</value>
+  </data>
   <data name="searchYourFavCourse" xml:space="preserve">
     <value>Suche nach Ihrem Lieblingskurs</value>
   </data>
@@ -155,6 +170,12 @@
   </data>
   <data name="selectTopic" xml:space="preserve">
     <value>Bitte wählen Sie das Thema :</value>
+  </data>
+  <data name="startAgain" xml:space="preserve">
+    <value>neu anfangen.</value>
+  </data>
+  <data name="topRecommendedCourse" xml:space="preserve">
+    <value>Empfohlene Kurse basierend auf Ihrer Wahl</value>
   </data>
   <data name="universitiesOffering" xml:space="preserve">
     <value>• Universitäten, die Thouse-Kurse anbieten</value>

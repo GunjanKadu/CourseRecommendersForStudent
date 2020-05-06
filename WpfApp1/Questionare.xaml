@@ -105,29 +105,29 @@
 
         <!-- Recommended Courses and Job Start -->
         <TabControl Name="Tab_Results" HorizontalAlignment="Left" Height="288" VerticalAlignment="Top" Width="455" Visibility="Collapsed" Margin="253,15.333,0,0" Grid.Row="1">
-            <TabItem Header="Recommended Course">
+            <TabItem Header="{x:Static Resx:Resources.recommendedCourse}">
                 <StackPanel Orientation="Vertical" >
-                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Margin="0,15,0,15" FontSize="13.5">Top Recommended Courses Based On Your Choice</TextBlock>
+                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Margin="0,15,0,15" FontSize="13.5" Text="{x:Static Resx:Resources.topRecommendedCourse}"/>
                     <ListBox HorizontalAlignment="Center" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_College"  Margin="10,10,0,0" Width="320" />
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Details">
+            <TabItem Header="{x:Static Resx:Resources.details}">
                 <StackPanel Orientation="Vertical" >
-                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Margin="0,15,0,15" FontSize="13.5"> Details Of The Course Recommended</TextBlock>
+                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Margin="0,15,0,15" FontSize="13.5" Text="{x:Static Resx:Resources.detailsRecommendedCourse}"/>
                     <ListBox HorizontalAlignment="Center" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_Details"  Margin="10,10,0,0" Width="420"  />
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Eligible Jobs">
+            <TabItem Header="{x:Static Resx:Resources.eligibleJobs}">
                 <StackPanel Orientation="Vertical">
-                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Margin="0,15,0,15" FontSize="13.5">Eligible Jobs After This Course</TextBlock>
+                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Margin="0,15,0,15" FontSize="13.5" Text="{x:Static Resx:Resources.eligibleJobsAfter}"/>
                     <ListBox HorizontalAlignment="Center" Background="{x:Null}" Foreground="Black" Height="161" Name="Lst_Result_Job"  Margin="10,10,0,0" Width="320" />
                 </StackPanel>
             </TabItem>
         </TabControl>
         <!-- Recommended Courses and Job End -->
 
-        <!-- Start Again Start --> 
-        <Button x:Name="Btn_StartAgain" Content="Start Again"  Height="46" Margin="190,315.333,0,0" Width="133"  Background="#FFB20837" Foreground="Wheat" BorderBrush="#FFB20837" FontWeight="Bold" Grid.Row="1" Visibility="Collapsed" Click="Btn_StartAgain_Click"  />
+        <!-- Start Again Start -->
+        <Button x:Name="Btn_StartAgain" Content="{x:Static Resx:Resources.startAgain}"  Height="46" Margin="190,315.333,0,0" Width="133"  Background="#FFB20837" Foreground="Wheat" BorderBrush="#FFB20837" FontWeight="Bold" Grid.Row="1" Visibility="Collapsed" Click="Btn_StartAgain_Click"  />
         <!-- Start Again End -->
 
     </Grid>
