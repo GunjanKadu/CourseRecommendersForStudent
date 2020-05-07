@@ -40,16 +40,21 @@ Later The app will be ask some questions and analysing the input from the user i
 
 <h2 align=center>Demo</h2>
 <h3 align=center>Looking For A Particular Course and It's Sub Courses</h3>
+
 ![Looking for a particular course](https://github.com/GunjanKadu/CourseRecommendersForStudent/blob/master/gif/1.gif)
 </br>
 <h3 align=center>Giving the Test </h3>
+
 ![Giving the Test](https://github.com/GunjanKadu/CourseRecommendersForStudent/blob/master/gif/2.gif)
 </br>
 <h3 align=center> Finding Out The Recommended Course & Jobs </h3>
+
 ![Finding Out Recommended Course](gif/https://github.com/GunjanKadu/CourseRecommendersForStudent/blob/master/gif/3.gif)
 </br>
 <h3 align=center>Resume A Previous Session</h3>
+
 ![Resume Previous Session](https://github.com/GunjanKadu/CourseRecommendersForStudent/blob/master/gif/4.gif)
 </br>
 <h3 align=center>Internationalization and German Language Support</h3>
+
 ![Language Support](https://github.com/GunjanKadu/CourseRecommendersForStudent/blob/master/gif/ChangingLanguage.gif)
