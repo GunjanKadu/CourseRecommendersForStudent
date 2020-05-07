@@ -49,7 +49,7 @@ Later The app will be ask some questions and analysing the input from the user i
 </br>
 <h3 align=center> Finding Out The Recommended Course & Jobs </h3>
 
-![Finding Out Recommended Course](gif/https://github.com/GunjanKadu/CourseRecommendersForStudent/blob/master/gif/3.gif)
+![Finding Out Recommended Course](https://github.com/GunjanKadu/CourseRecommendersForStudent/blob/master/gif/3.gif)
 </br>
 <h3 align=center>Resume A Previous Session</h3>
 
