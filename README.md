@@ -25,3 +25,13 @@ Later The app will be ask some questions and analysing the input from the user i
 </p>
 <h2 align=center>Demo</h2>
 <h3 align=center>Looking For A Particular Course and It's Sub Courses</h3>
+![](gif/1.gif)
+</br>
+<h3 align=center>Giving the Test And Finding Out The Recommended Course & Jobs</h3>
+![](gif/2.gif)
+</br>
+<h3 align=center>Resuming Your Previous Session</h3>
+![](gif/3.gif)
+</br>
+<h3 align=center>Internationalization and German Language Support</h3>
+![](gif/4.gif)
