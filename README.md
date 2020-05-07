@@ -23,15 +23,33 @@ Later The app will be ask some questions and analysing the input from the user i
 </p>
 <p>Also then the user can see more details about the Career path and also the eligible jobs for this career path.
 </p>
+
+<h2 align=center>Functionalities</h2>
+<p align="left">
+<li> A Variety of Courses to read with detailed explanation of each of the subject in the particular course.</li><br/>
+<li> A Clean UI explaining the workflow of the application.</li><br/>
+<li> An Questionnaire for the user to answer.</li><br/>
+<li> Supports i18n with English and German Language.</li><br/>
+<li> Ability to Save the Current Session of the User and then resume if something goes’s wrong.</li><br/>
+<li>Navigating Between Questions and Answers.</li><br/>
+<li> Editing Previously Answered Questions.</li><br/>
+<li> A Summary Showing all the answered Questions and Answers.</li><br/>
+<li> Details of the Recommended Course with the Universities offering those courses.</li><br/>
+<li> Eligibility of the jobs after taking the recommended Courses.</li><br/>
+</p>
+
 <h2 align=center>Demo</h2>
 <h3 align=center>Looking For A Particular Course and It's Sub Courses</h3>
 ![](gif/1.gif)
 </br>
-<h3 align=center>Giving the Test And Finding Out The Recommended Course & Jobs</h3>
+<h3 align=center>Giving the Test </h3>
 ![](gif/2.gif)
 </br>
-<h3 align=center>Resuming Your Previous Session</h3>
+<h3 align=center> Finding Out The Recommended Course & Jobs </h3>
 ![](gif/3.gif)
 </br>
-<h3 align=center>Internationalization and German Language Support</h3>
+<h3 align=center>Resume A Previous Session</h3>
 ![](gif/4.gif)
+</br>
+<h3 align=center>Internationalization and German Language Support</h3>
+![](gif/5.gif)
